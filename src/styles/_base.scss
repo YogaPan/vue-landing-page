@@ -1,0 +1,57 @@
+/* Initialize box-model */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+// @import url('https://fonts.googleapis.com/css?family=Asap');
+@import url('https://fonts.googleapis.com/css?family=Asap|Roboto|Open+Sans');
+
+body {
+  background-color: $dark;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  // font-family: 'Asap', Helvetica, Arial, sans-serif;
+  // font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Customize chrome scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+
+  &-track {
+    background: rgb(10, 12, 18);
+  }
+
+  &-thumb {
+    background: rgb(110, 196, 187);
+    border-radius: 5px;
+
+    &:hover {
+      background: rgb(128, 203, 196);
+    }
+  }
+}

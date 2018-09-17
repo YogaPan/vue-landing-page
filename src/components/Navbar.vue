@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <div class="navbar" :class="{ 'navbar--add-background': !isOnTop }">
     <div class="container l-row">
 
       <div class="navbar__logo l-row">
@@ -32,8 +32,18 @@
 
 export default {
   name: 'Navbar',
+  data() {
+    return {
+      isOnTop: true,
+    }
+  },
   mounted() {
-    // TODO
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset || document.documentElement.scrollTop != 0)
+        this.isOnTop = false
+      else
+        this.isOnTop = true
+    })
   },
   methods: {
     scroll(section) {
@@ -53,12 +63,11 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 98;  // always above relative elements but under loading scene.
 
-  // padding: 20px 0;
-  // padding: 10px 0;
-  background-color: $dark;
+  width: 100%;
+  transition: background-color .3s;
+  background-color: transparent;
 
   ul {
     display: flex;
@@ -118,6 +127,10 @@ export default {
       color: $white;
       margin-left: 20px;
     }
+  }
+
+  &--add-background {
+    background-color: $dark;
   }
 }
 

@@ -21,20 +21,22 @@ export default {
   },
   mounted() {
     let start_point
+    const _perimeter = 376.8
 
     switch (this.timeFormat) {
       case 'days':
-        this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / this.period_days) * 376.8
+        this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / this.period_days) * _perimeter
         break
       case 'hrs':
-        this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 24) * 376.8
+        this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 24) * _perimeter
         break
       case 'min':
-        this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 60) * 376.8
+        this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 60) * _perimeter
         break
       case 'sec':
         start_point =  -(60 - this.countdownNumber)
         // console.log(start_point)
+        // animation: spin-countdown 60s linear infinite forwards;
         this.$refs.outsideCircle.style.animation = `spin-countdown 60s linear ${start_point}s infinite forwards`
         break
       // }
@@ -44,13 +46,13 @@ export default {
     countdownNumber: function() {
       switch(this.timeFormat) {
         case 'days':
-          this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 10) * 376.8
+          this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 10) * _perimeter
           break
         case 'hrs':
-          this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 24) * 376.8
+          this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 24) * _perimeter
           break
         case 'min':
-          this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 60) * 376.8
+          this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 60) * _perimeter
           break
       }
     },
@@ -69,7 +71,7 @@ export default {
     height: 150px;
     width: 150px;
 
-    transition: .2s;
+    transition: transform .2s;
 
     &:hover {
       transform: scale(1.2);

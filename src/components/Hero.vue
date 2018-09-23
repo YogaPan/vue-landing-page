@@ -1,34 +1,36 @@
 <template>
   <div class="hero" v-bind:style="{ 'background-image': 'url(' + require('../assets/background.png')  + ')' }">
     <div id="particles-js"></div>
-    <div id="main-info" class="container l-row">
 
-    <div class="l-column">
-      <h1 class="hero__title">Next generation blockchain-based betting gaming platform</h1>
-      <p class="hero__content">Spirit is a global, community-driven, decentralized, secure and unique PvP gambling gaming platfrom..</p>
-      <button class="whitepaper-button">White Paper</button>
+    <div id="main-info" class="container">
+      <div class="hero__body">
+        <h1 class="hero__title">Next generation blockchain-based betting gaming platform</h1>
+        <p class="hero__content">Spirit is a global, community-driven, decentralized, secure and unique PvP gambling gaming platfrom..</p>
 
-      <div class="hero__social l-row l-row--from-start">
+        <button class="whitepaper-button">White Paper</button>
 
-        <div class="social-icon">
-          <img src="../assets/discord.svg" alt="">
-        </div>
 
-        <div class="social-icon">
-          <img src="../assets/telegram.svg" alt="">
-        </div>
+        <!-- <div class="hero__social l-row">
+          <div class="social-icon">
+            <img src="../assets/discord.svg" alt="">
+          </div>
 
+          <div class="social-icon">
+            <img src="../assets/telegram.svg" alt="">
+          </div>
+        </div> -->
       </div>
 
+      <Countdown
+        countdownTitle="Time Left"
+        v-bind:startTime="new Date(2018, 6, 14, 12, 12)"
+        v-bind:endTime="new Date(2018, 9, 14, 12, 12)"
+      />
+      
     </div>
 
-    <Countdown
-      countdownTitle="Time Left"
-      v-bind:startTime="new Date(2018, 6, 14, 12, 12)"
-      v-bind:endTime="new Date(2018, 9, 14, 12, 12)"
-    />
-
-
+    <div class="scroll-down" @click="scroll('describe')">
+      <span></span>
     </div>
   </div>
 </template>
@@ -161,6 +163,14 @@ export default {
     })
 
     
+  },
+  methods: {
+    scroll(section) {
+      window.scrollTo({
+        top: document.getElementsByClassName(section)[0].offsetTop,
+        behavior: "smooth"
+      })
+    },
   }
 }
 
@@ -169,14 +179,79 @@ export default {
 <style lang="scss" scoped>
 
 .hero {
-  @extend %content-in-center;
-
   min-height: 750px;
-  padding: 50px 0;
-  //background-color: $dark;
-  //background-image: "../src/assets/background.png";
+  padding: 170px 0;  // padding-top 70px is navbar's height.
   color: $white;
   position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  }
+ 
+  span {
+    position: absolute;
+    z-index: 10;
+    bottom: 50px;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+    &:hover {
+      opacity: .5;
+      cursor: pointer;
+      transition: opacity .3s;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      top: 0;
+      left: 0;
+      // z-index: -1;
+      width: 44px;
+      height: 44px;
+
+      box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+      border-radius: 50%;
+      opacity: 0;
+      animation: shine 2s infinite;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      top: 50%;
+      left: 50%;
+      width: 16px;
+      height: 16px;
+      margin: -12px 0 0 -8px;
+
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__body {
+    // text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   // &__title {
     // margin-top: 30px;
@@ -184,52 +259,48 @@ export default {
   // }
 
   &__content {
-    margin-top: 3px;
+    margin-top: 30px;
   }
 
   &__social {
     margin-top: 30px;
+    width: 500px;
+  }
+
+  @media (max-width: $break-small) {
+    padding: 100px 0;  // padding-top 70px is navbar's height.
   }
 }
 
-.l-column {
-  width: 40%;
-}
+// .l-column {
+//   width: 40%;
+// }
 
 .whitepaper-button {
+  @extend %content-in-center;
+
   margin-top: 30px;
 
-  height: 60px;
+  height: 75px;
   width: 225px;
-  // border: 2px solid white;
-  border: 2px solid $green;
+  border: 0px solid $green;
   border-radius: 40px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: transparent;
+  background-color: rgb(108, 183, 176);
   font-size: 30px;
   font-weight: 100;
-  // color: white;
-  color: $green;
+  color: $white;
+
+  box-shadow: 0px 0px 10px 0px $green;
 
   &:hover {
     cursor: pointer;
+    border: 3px solid $green;
   }
 
   &:focus {
     outline: 0;
   }
-}
-
-.skew {
-  transform: skewY(-5deg) translateY(-70px);
-}
-// 保持內容正常顯示
-.skew-back {
-  transform: skewY(5deg) translateY(70px);
 }
 
 #particles-js {
@@ -239,11 +310,27 @@ export default {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 0;
 }
 
 #main-info {
   z-index: 10;
+  position: relative;
+}
+
+@keyframes shine {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 </style>

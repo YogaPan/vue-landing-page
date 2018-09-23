@@ -1,5 +1,5 @@
 <template>
-  <div class="hero" v-bind:style="{ 'background-image': 'url(' + require('../assets/background.png')  + ')' }">
+  <div class="hero">
     <div id="particles-js"></div>
 
     <div id="main-info" class="container">
@@ -32,6 +32,9 @@
     <div class="scroll-down" @click="scroll('describe')">
       <span></span>
     </div>
+    <img style="position: absolute;bottom: 0px;width: 100%;z-index: -1;opacity: 0.8;" src="../assets/background_earth.png" >
+    <div src="/img/background_earth.84df4e2d.png" style="position: absolute;top: 0px;width: 100%; z-index: -2; height: 100%; background-color: #010101;"></div>
+
   </div>
 </template>
 
@@ -51,23 +54,23 @@ export default {
       particlesJS('particles-js', {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 232,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 1183
       }
     },
     "color": {
-      "value": "#1e5f6f"
+      "value": "#c0ffff"
     },
     "shape": {
       "type": "circle",
       "stroke": {
-        "width": 0,
-        "color": "#000000"
+        "width": 4,
+        "color": "#1ad2de"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 3
       },
       "image": {
         "src": "img/github.svg",
@@ -76,17 +79,17 @@ export default {
       }
     },
     "opacity": {
-      "value": 0.48927926008349276,
-      "random": false,
+      "value": 1,
+      "random": true,
       "anim": {
         "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
+        "speed": 1.7582417582417584,
+        "opacity_min": 0.7112887112887113,
         "sync": false
       }
     },
     "size": {
-      "value": 3.5,
+      "value": 2.4,
       "random": true,
       "anim": {
         "enable": false,
@@ -97,21 +100,21 @@ export default {
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
-      "color": "#00fff9",
-      "opacity": 0.4,
-      "width": 1
+      "distance": 130,
+      "color": "#4194cf",
+      "opacity": 0.49705773886831206,
+      "width": 0.9
     },
     "move": {
       "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
+      "speed": 1.0,
+      "direction": "top",
+      "random": true,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
       "attract": {
-        "enable": true,
+        "enable": false,
         "rotateX": 600,
         "rotateY": 1200
       }
@@ -132,7 +135,7 @@ export default {
     },
     "modes": {
       "grab": {
-        "distance": 202.70270270270254,
+        "distance": 170.53621458328246,
         "line_linked": {
           "opacity": 1
         }
@@ -179,7 +182,7 @@ export default {
 <style lang="scss" scoped>
 
 .hero {
-  min-height: 750px;
+  min-height: 100vh;
   padding: 170px 0;  // padding-top 70px is navbar's height.
   color: $white;
   position: relative;
@@ -191,9 +194,9 @@ export default {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 80%;
+    height: 100%;
 
-    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+    background: linear-gradient(to top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
   }
  
   span {
@@ -307,9 +310,11 @@ export default {
   position: absolute;
   display: block;
   width: 100%;
-  height: 100%;
+  height: 95%;
   top: 0;
   left: 0;
+  z-index: 0;
+  opacity: 0.5;
 }
 
 #main-info {

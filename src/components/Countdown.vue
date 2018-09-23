@@ -2,8 +2,9 @@
   <div class="countdown l-column l-column--stretch">
 
     <div class="countdown__title l-column l-column--stretch">
-      <h1>ICO start on</h1>
-      <h1>September 30, 2018</h1>
+      <!-- <h1>ICO start on </h1>
+      <h1>September 30, 2018</h1> -->
+      <h1>ICO start on September 30, 2018</h1>
       <p>{{ countdownTitle }}<span class="blinking-cursor">:</span></p>
     </div>
 
@@ -96,8 +97,12 @@ export default {
 <style lang="scss" scoped>
 
 .countdown {
-  flex: 0 0 350px;
+  // flex: 0 0 350px;
   // padding: 150px 0;
+  margin: 50px auto 0 auto;
+  padding: 30px 0;
+  max-width: 800px;
+
   background-color: #111;
   opacity: 0.9;
   border-radius: 30px;
@@ -123,7 +128,7 @@ export default {
 
     p {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 10px;
       font-size: 20px;
       font-weight: normal;
     }

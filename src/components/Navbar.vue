@@ -130,7 +130,7 @@ export default {
   }
 
   &--add-background {
-    background-color: $dark;
+    background-color: #111;
   }
 }
 

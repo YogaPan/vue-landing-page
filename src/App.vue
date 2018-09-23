@@ -71,7 +71,7 @@ export default {
 
   height: 100vh;
   width: 100vw;
-  background-color: $dark;
+  background-color: #111;
 
   display: flex;
   align-items: center;

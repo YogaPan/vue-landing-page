@@ -261,12 +261,9 @@ $team-color: #1497fc;
 $future-preserve-color: #8881f0;
 
 %token-column {
-  padding: 0 50px;
-  // flex-basis: 50%;
   width: 50%;
 
   @media (max-width: $break-middle) {
-    // flex-basis: auto;
     width: 100%;
   }
 }
@@ -287,7 +284,7 @@ $future-preserve-color: #8881f0;
     @extend %content-in-center;
 
     @media (max-width: $break-middle) {
-      margin-top: 100px;
+      margin-top: 50px;
     }
   }
 

@@ -179,7 +179,7 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 .hero {
   min-height: 100vh;
@@ -199,7 +199,7 @@ export default {
     background: linear-gradient(to top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
   }
  
-  span {
+  .scroll-down {
     position: absolute;
     z-index: 10;
     bottom: 50px;

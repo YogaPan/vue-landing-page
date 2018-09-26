@@ -252,7 +252,7 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 $token-sale-color: #fe554c;
 $community-develop-color: #1ab49c;

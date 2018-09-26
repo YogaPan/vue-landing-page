@@ -94,7 +94,7 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 .countdown {
   // flex: 0 0 350px;

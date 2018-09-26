@@ -75,7 +75,7 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 .describe {
   &__part-1 {

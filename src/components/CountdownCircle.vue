@@ -12,6 +12,8 @@
 
 <script>
 
+const PERIMETER = 376.8
+
 export default {
   name: 'CountdownCircle',
   props: {
@@ -21,38 +23,35 @@ export default {
   },
   mounted() {
     let start_point
-    const _perimeter = 376.8
 
     switch (this.timeFormat) {
       case 'days':
-        this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / this.period_days) * _perimeter
+        this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / this.period_days) * PERIMETER
         break
       case 'hrs':
-        this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 24) * _perimeter
+        this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 24) * PERIMETER
         break
       case 'min':
-        this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 60) * _perimeter
+        this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 60) * PERIMETER
         break
       case 'sec':
         start_point =  -(60 - this.countdownNumber)
-        // console.log(start_point)
-        // animation: spin-countdown 60s linear infinite forwards;
+        console.log(start_point)
         this.$refs.outsideCircle.style.animation = `spin-countdown 60s linear ${start_point}s infinite forwards`
         break
-      // }
     }
   },
   watch: {
     countdownNumber: function() {
       switch(this.timeFormat) {
         case 'days':
-          this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 10) * _perimeter
+          this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 10) * PERIMETER
           break
         case 'hrs':
-          this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 24) * _perimeter
+          this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 24) * PERIMETER
           break
         case 'min':
-          this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 60) * _perimeter
+          this.$refs.outsideCircle.style.strokeDashoffset = (1 - this.countdownNumber / 60) * PERIMETER
           break
       }
     },
@@ -61,7 +60,7 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 .countdown {
   &__timer {

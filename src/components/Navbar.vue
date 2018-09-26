@@ -48,7 +48,7 @@ export default {
   methods: {
     scroll(section) {
       window.scrollTo({
-        top: document.getElementsByClassName(section)[0].offsetTop,
+        top: document.getElementsByClassName(section)[0].offsetTop - 70,  // 70 is navbar height.
         behavior: "smooth"
       })
     },

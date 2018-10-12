@@ -59,6 +59,147 @@ export default {
 
 <style lang="scss">
 
+/* Initialize box-model */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+// @import url('https://fonts.googleapis.com/css?family=Asap');
+@import url('https://fonts.googleapis.com/css?family=Asap|Roboto|Open+Sans');
+
+body {
+  background-color: $dark;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  // font-family: 'Asap', Helvetica, Arial, sans-serif;
+  // font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Customize chrome scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+
+  &-track {
+    background: rgb(10, 12, 18);
+  }
+
+  &-thumb {
+    background: rgb(110, 196, 187);
+    border-radius: 5px;
+
+    &:hover {
+      background: rgb(128, 203, 196);
+    }
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $container-max-width;
+  padding: 0 20px;
+}
+ 
+.content-in-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.l-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.l-row--stretch {
+  align-items: stretch;
+}
+
+.l-row--responsive {
+  @media (max-width: $break-middle) {
+    display: block;
+  }
+}
+
+.l-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.l-column--align-left {
+  align-items: flex-start;
+}
+
+.l-column--stretch {
+  align-items: stretch;
+}
+
+.l-row--from-start {
+  justify-content: flex-start;
+}
+
+.social-icon {
+  // 內圈
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 10px;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+
+  box-shadow:
+    0 2px 1px rgba(0, 0, 0, 0.05),
+    0 2px 3px rgba(0, 0, 0, 0.05),
+    0 4px 8px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    cursor: pointer;
+    transition: border-color .2s;
+    // border-color: #fff;
+    border: 3px solid #fff;
+
+    }
+
+  img {
+    width: 45px;
+    height: 45px;
+    filter: invert(1);
+  }
+}
+
 #app {
   width: 100%;
 }
@@ -71,7 +212,7 @@ export default {
 
   height: 100vh;
   width: 100vw;
-  background-color: #111;
+  background-color: #000;
 
   display: flex;
   align-items: center;

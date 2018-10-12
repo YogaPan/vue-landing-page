@@ -16,3 +16,9 @@ $break-small: 768px;
 
 //theme style
 $grey-1 : #27292A; 
+
+%content-in-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

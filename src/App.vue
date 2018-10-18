@@ -16,6 +16,8 @@
     <Detail />
     <Token />
     <Roadmap />
+    <!-- <Team /> -->
+    <Team2 />
     <Footer />
 
   </div>
@@ -28,6 +30,8 @@ import Describe from './components/Describe'
 import Detail from './components/Detail'
 import Token from './components/Token'
 import Roadmap from './components/Roadmap'
+// import Team from './components/Team'
+import Team2 from './components/Team-2'
 import Footer from './components/Footer'
 
 
@@ -40,6 +44,8 @@ export default {
     Detail,
     Token,
     Roadmap,
+    // Team,
+    Team2,
     Footer,
   },
   data() {
@@ -72,6 +78,17 @@ ul li {
 
 a {
   text-decoration: none;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+button {
+  @extend %content-in-center;
+
+  background-color: transparent;
+  cursor: pointer;
 
   &:focus {
     outline: 0;

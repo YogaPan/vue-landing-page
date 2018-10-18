@@ -166,11 +166,11 @@ export default {
       text-align: center;
     }
     
-    &:hover {
-      border-radius: 30px;
-      box-shadow: 2px 2px 20px #ccc;
-      transition: .5s;
-    }
+    // &:hover {
+    //   border-radius: 30px;
+    //   box-shadow: 2px 2px 20px #ccc;
+    //   transition: .5s;
+    // }
   }
 }
 

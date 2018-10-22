@@ -14,12 +14,6 @@
           <p class="member__describe">Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.</p>
           <p class="member__describe">Possimus alias et animi autem minima temporibus laudantium.</p>
 
-          <!-- <ul class="member__list">
-            <li>FJU CSIE Ph.D</li>
-            <li>FJU CSIE Ph.D</li>
-            <li>FJU CSIE Ph.D</li>
-          </ul> -->
-
           <div class="member__social-area">
             <button class="member__linkedin">Linkedin</button>
             <button class="member__bio">Twitter</button>
@@ -58,6 +52,26 @@
           </div>
         </div>
       </div>
+
+      <h1 class="advisor__title">Advisor</h1>
+
+      <div class="team__advisor">
+        <div class="advisor">
+          <div class="advisor__background"></div>
+
+          <img class="advisor__avatar" src="../assets/app_girl.png" />
+
+          <h1 class="advisor__name">Swift Girls</h1>
+          <p class="advisor__describe">Possimus alias et animi autem minima temporibus laudantium.</p>
+          <p class="advisor__describe">Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.</p>
+          <p class="advisor__describe">Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.</p>
+
+          <!-- <div class="advisor__social-area">
+            <button class="advisor__linkedin">Linkedin</button>
+            <button class="advisor__bio">Twitter</button>
+          </div> -->
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -90,7 +104,7 @@ export default {
   align-items: center;
   justify-content: space-between;
 
-  margin-top: 100px;
+  margin-top: 50px;
 
   @media (max-width: $break-big) {
     flex-direction: column;
@@ -145,7 +159,7 @@ export default {
 
   height: 175px;
   width: 175px;
-  background-color: grey;
+  // background-color: grey;
 
   border-radius: 50%;
 }
@@ -222,6 +236,94 @@ export default {
   // border: 2px solid #33CCFF;
   border: 2px solid $blue;
   color: $blue;
+}
+
+.advisor__title {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.team__advisor {
+  @extend %content-in-center;
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: space-between;
+
+  margin-top: 50px;
+
+  @media (max-width: $break-big) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.advisor {
+  min-width: 350px;
+  width: 550px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 20px #ccc;
+
+  position: relative;  // for absolute background
+  padding: 50px 30px 20px 30px;
+
+  overflow: hidden;
+
+  // &:hover {
+  //   transform: scale(1.01);
+  //   transition: transform .1s;
+  // }
+
+  @media (max-width: $break-big) {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+}
+
+.advisor__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  // z-index: -1;
+
+  height: 250px;
+  width: 100%;
+  
+  background-color: $dark;
+
+  // skew effect
+  transform: translateY(-100px) skewY(-10deg);
+}
+
+.advisor__avatar {
+  position: relative;  // for z-index
+  z-index: 1;
+
+  display: block;
+  margin: 0 auto;
+
+  height: 175px;
+  width: 175px;
+  // background-color: grey;
+
+  border-radius: 50%;
+}
+
+.advisor__name {
+  margin-top: 10px;
+
+  font-size: 30px;
+  font-weight: 900;
+  color: $dark;
+  text-align: center;
+}
+
+.advisor__describe {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 15px;
 }
 
 </style>

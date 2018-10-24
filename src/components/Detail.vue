@@ -5,7 +5,7 @@
       <h1 class="detail__title">
         <span>
           <div class="detail__title-left"></div>
-          How it Works?
+          {{ $t("detail.title") }}
           <div class="detail__title-right"></div>
         </span>
       </h1>
@@ -13,20 +13,20 @@
       <div class="l-row l-row--stretch l-row--responsive">
         <div class="detail__column hide-down">
           <img src="../assets/git.svg" alt="">
-          <h2>High Quality</h2>
-          <p>Minima ut aut amet quidem. Non id ea unde magni. A possimus ut porro quis officiis enim et est. Facilis fugit nemo est sed dicta a. Nulla ducimus tempore et dolore aperiam consectetur consequuntur sunt et. Tempora fuga in iste fuga voluptas vitae non.</p>
+          <h2>{{ $t("detail.title-1") }}</h2>
+          <p>{{ $t("detail.content-1") }}</p>
         </div>
 
         <div class="detail__column hide-down">
           <img src="../assets/git.svg" alt="">
-          <h2>Complex trades</h2>
-          <p>Minima ut aut amet quidem. Non id ea unde magni. A possimus ut porro quis officiis enim et est. Facilis fugit nemo est sed dicta a. Nulla ducimus tempore et dolore aperiam consectetur consequuntur sunt et. Tempora fuga in iste fuga voluptas vitae non.</p>
+          <h2>{{ $t("detail.title-2") }}</h2>
+          <p>{{ $t("detail.content-2") }}</p>
         </div>
 
         <div class="detail__column hide-down">
           <img src="../assets/git.svg" alt="">
-          <h2>Cross-chain trading</h2>
-          <p>Minima ut aut amet quidem. Non id ea unde magni. A possimus ut porro quis officiis enim et est. Facilis fugit nemo est sed dicta a. Nulla ducimus tempore et dolore aperiam consectetur consequuntur sunt et. Tempora fuga in iste fuga voluptas vitae non.</p>
+          <h2>{{ $t("detail.title-3") }}</h2>
+          <p>{{ $t("detail.content-3") }}</p>
         </div>
       </div>
       

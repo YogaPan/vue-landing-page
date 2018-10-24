@@ -4,11 +4,11 @@
 
       <div class="navbar__logo l-row">
         <img src="../assets/spirit-logo.png" alt="Spirit">
-        <h1>SPIRIT</h1>
+        <a href="#">SPIRIT</a>
       </div>
 
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="label-toggle">
+      <input id="menu-toggle" type="checkbox">
+      <label class="label-toggle" for="menu-toggle">
         <div class="navbar__hamburger">
           <div class="bar-1"></div>
           <div class="bar-2"></div>
@@ -17,11 +17,11 @@
       </label>
 
       <ul>
-        <li><a @click="scroll('describe')">About Spirit</a></li>
-        <li><a @click="scroll('token')">ICO</a></li>
-        <li><a @click="scroll('roadmap')">Roadmap</a></li>
+        <li><a @click="scroll('describe')">{{ $t("navbar.about-spirit") }}</a></li>
+        <li><a @click="scroll('token')">{{ $t("navbar.ico") }}</a></li>
+        <li><a @click="scroll('roadmap')">{{ $t("navbar.roadmap") }}</a></li>
         <li><a href="#">White Paper</a></li>
-        <li><a class="language">Language</a></li>
+        <li><a class="language">{{ $t("navbar.language") }}</a></li>
       </ul>
 
     </div>
@@ -63,14 +63,21 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 98;  // always above relative elements but under loading scene.
+  z-index: 98;  // Always above relative elements but under loading scene.
 
   width: 100%;
   transition: background-color .3s;
-  background-color: transparent;
+  background-color: transparent;  // Transparent when on top.
+
+  &--add-background {  // Have background color when scroll down.
+    background-color: #111;
+    opacity: 0.97;
+  }
 
   ul {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -78,7 +85,7 @@ export default {
     padding: 20px;
   }
 
-  a {
+  li a {
     position: relative;
     display: block;  // 填滿母元素
 
@@ -119,18 +126,15 @@ export default {
 
   &__logo {
     img {
-      height: 50px;
-      width: 50px;
+      height: 45px;
+      width: 45px;
     }
 
-    h1 {
-      color: $white;
+    a {
       margin-left: 20px;
+      font-size: 25px;
+      color: $white;
     }
-  }
-
-  &--add-background {
-    background-color: #111;
   }
 }
 
@@ -142,7 +146,7 @@ export default {
   display: none;
 }
 
-/* 下拉式選單 */
+/* 變成下拉式選單 */
 @media (max-width: $break-small) {
   .navbar {
     ul {
@@ -155,7 +159,7 @@ export default {
       height: 0;  // 先藏起來，高度為 0 才有動畫效果
       padding-top: 0px;
 
-      background-color: $dark;
+      background-color: #111;
       text-align: center;
       
       opacity: 0;  // 先藏起來
@@ -230,7 +234,7 @@ export default {
     height: 3px;
     background-color: #ddd;
     margin: 6px 0;
-    transition: 0.5s;
+    transition: transform .5s, opacity .5s;
   }
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="team">
     <div class="container">
-      <h1 class="team__title">Meet Our Team</h1>
+      <h1 class="team__title">{{ $t("team.title") }}</h1>
 
       <div class="team__members">
         <div class="member">
@@ -13,10 +13,10 @@
 
           <img class="member__avatar" src="../assets/avatar-1.png" />
 
-          <h1 class="member__name">Monica</h1>
-          <h1 class="member__job">CEO</h1>
-          <p class="member__describe">Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.</p>
-          <p class="member__describe">Possimus alias et animi autem minima temporibus laudantium.</p>
+          <h1 class="member__name">{{ $t("team.member-1-name") }}</h1>
+          <h1 class="member__job">{{ $t("team.member-1-job") }}</h1>
+          <p class="member__describe">{{ $t("team.member-1-introduce-1") }}</p>
+          <p class="member__describe">{{ $t("team.member-1-introduce-2") }}</p>
 
           <!-- <div class="member__social-area">
             <button class="member__linkedin">Linkedin</button>
@@ -33,10 +33,10 @@
 
           <img class="member__avatar" src="../assets/avatar-2.png" />
 
-          <h1 class="member__name">Asian</h1>
-          <h1 class="member__job">Frontend Engineer</h1>
-          <p class="member__describe">Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.</p>
-          <p class="member__describe">Possimus alias et animi autem minima temporibus laudantium.</p>
+          <h1 class="member__name">{{ $t("team.member-2-name") }}</h1>
+          <h1 class="member__job">{{ $t("team.member-2-job") }}</h1>
+          <p class="member__describe">{{ $t("team.member-2-introduce-1") }}</p>
+          <p class="member__describe">{{ $t("team.member-2-introduce-2") }}</p>
 
           <!-- <div class="member__social-area">
             <button class="member__linkedin">Linkedin</button>
@@ -53,10 +53,10 @@
 
           <img class="member__avatar" src="../assets/avatar-3.png" />
 
-          <h1 class="member__name">Bill</h1>
-          <h1 class="member__job">Dick Sucker</h1>
-          <p class="member__describe">Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.</p>
-          <p class="member__describe">Possimus alias et animi autem minima temporibus laudantium.</p>
+          <h1 class="member__name">{{ $t("team.member-3-name") }}</h1>
+          <h1 class="member__job">{{ $t("team.member-3-job") }}</h1>
+          <p class="member__describe">{{ $t("team.member-3-introduce-1") }}</p>
+          <p class="member__describe">{{ $t("team.member-3-introduce-2") }}</p>
 
           <!-- <div class="member__social-area">
             <button class="member__linkedin">Linkedin</button>
@@ -65,7 +65,7 @@
         </div>
       </div>
 
-      <h1 class="advisor__title">Advisor</h1>
+      <h1 class="advisor__title">{{ $t("team.advisor") }}</h1>
 
       <div class="team__advisor">
         <div class="advisor">
@@ -78,10 +78,10 @@
 
           <img class="advisor__avatar" src="../assets/app_girl.png" />
 
-          <h1 class="advisor__name">Swift Girls</h1>
-          <p class="advisor__describe">Possimus alias et animi autem minima temporibus laudantium.</p>
-          <p class="advisor__describe">Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.</p>
-          <p class="advisor__describe">Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.</p>
+          <h1 class="advisor__name">{{ $t("team.advisor-name") }}</h1>
+          <p class="advisor__describe">{{ $t("team.advisor-describe-1") }}</p>
+          <p class="advisor__describe">{{ $t("team.advisor-describe-2") }}</p>
+          <p class="advisor__describe">{{ $t("team.advisor-describe-3") }}</p>
 
           <!-- <div class="advisor__social-area">
             <button class="advisor__linkedin">Linkedin</button>

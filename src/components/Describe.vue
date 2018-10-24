@@ -9,12 +9,8 @@
         </div>
 
         <div class="describe__content hide-down">
-          <h1 class="describe__title">Based on Smart Contract</h1>
-          <p>Deserunt quia vero qui. Et eius vitae minima eos et omnis amet. Ut beatae omnis ullam dignissimos aspernatur.
-
-  Suscipit ab vel qui quasi saepe. Aspernatur eum ut quia sint. Fugiat nisi est quidem est reiciendis vel minus. Ut voluptatem sunt ea maxime rerum occaecati ea molestiae.
-
-  Minima soluta quis a. Doloribus molestiae nulla reiciendis velit nihil corporis accusantium unde. Iure saepe aliquam esse qui repudiandae qui optio. Ab velit tempora reiciendis repudiandae aut voluptas.</p>
+          <h1 class="describe__title">{{ $t("describe.title-1") }}</h1>
+          <p>{{ $t("describe.content-1") }}</p>
         </div>
 
       </div>
@@ -28,12 +24,8 @@
         </div>
 
         <div class="describe__content hide-down">
-          <h1 class="describe__title">Great Gaming Platform</h1>
-          <p>Deserunt quia vero qui. Et eius vitae minima eos et omnis amet. Ut beatae omnis ullam dignissimos aspernatur.
-
-  Suscipit ab vel qui quasi saepe. Aspernatur eum ut quia sint. Fugiat nisi est quidem est reiciendis vel minus. Ut voluptatem sunt ea maxime rerum occaecati ea molestiae.
-
-  Minima soluta quis a. Doloribus molestiae nulla reiciendis velit nihil corporis accusantium unde. Iure saepe aliquam esse qui repudiandae qui optio. Ab velit tempora reiciendis repudiandae aut voluptas.</p>
+          <h1 class="describe__title">{{ $t("describe.title-2") }}</h1>
+          <p>{{ $t("describe.content-2") }}</p>
         </div>
 
       </div>

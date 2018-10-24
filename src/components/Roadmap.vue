@@ -1,7 +1,7 @@
 <template>
   <div class="roadmap">
     <div class="roadmap__title">
-      <h1>ROADMAP</h1>
+      <h1>{{ $t("roadmap.roadmap") }}</h1>
     </div>
 
     <ul>
@@ -9,7 +9,7 @@
         <div id="2018-Q1" class="roadmap__content hide-left">
           <h1>2018 Q1</h1>
           <ul>
-            <li>Spirit Team Founded</li>
+            <li>{{ $t("roadmap.2018-Q1-1") }}</li>
           </ul>
         </div>
       </li>
@@ -22,8 +22,8 @@
         <div id="2018-Q2" class="roadmap__content hide-right">
           <h1>2018 Q2</h1>
           <ul>
-            <li>Dapps Gaming Research</li>
-            <li>Marketing Search</li>
+            <li>{{ $t("roadmap.2018-Q2-1") }}</li>
+            <li>{{ $t("roadmap.2018-Q2-2") }}</li>
           </ul>
         </div>
       </li>
@@ -32,10 +32,10 @@
         <div id="2018-Q3" class="roadmap__content hide-left">
           <h1>2018 Q3</h1>
           <ul>
-            <li>Spirit Platform Development</li>
-            <li>Token sale</li>
-            <li>Team Expansion</li>
-            <li>Community Bounties</li>
+            <li>{{ $t("roadmap.2018-Q3-1") }}</li>
+            <li>{{ $t("roadmap.2018-Q3-2") }}</li>
+            <li>{{ $t("roadmap.2018-Q3-3") }}</li>
+            <li>{{ $t("roadmap.2018-Q3-4") }}</li>
           </ul>
         </div>
       </li>
@@ -44,9 +44,9 @@
         <div id="2018-Q4" class="roadmap__content hide-right">
           <h1>2018 Q4</h1>
           <ul>
-            <li>Sprit Platform Online(beta)</li>
-            <li>Spirit Wallet Development</li>
-            <li>First Spirit Game Online</li>
+            <li>{{ $t("roadmap.2018-Q4-1") }}</li>
+            <li>{{ $t("roadmap.2018-Q4-2") }}</li>
+            <li>{{ $t("roadmap.2018-Q4-3") }}</li>
           </ul>
         </div>
       </li>
@@ -55,9 +55,9 @@
         <div id="2019-Q1" class="roadmap__content hide-left">
           <h1>2019 Q1</h1>
           <ul>
-            <li>Spirit Platform Release</li>
-            <li>Spirit Wallet Online(beta)</li>
-            <li>More Spirit Game Online</li>
+            <li>{{ $t("roadmap.2019-Q1-1") }}</li>
+            <li>{{ $t("roadmap.2019-Q1-2") }}</li>
+            <li>{{ $t("roadmap.2019-Q1-3") }}</li>
           </ul>
         </div>
       </li>
@@ -66,15 +66,15 @@
         <div id="2019-Q2" class="roadmap__content hide-right">
           <h1>2019 Q2</h1>
           <ul>
-            <li>Spirit Wallet Release</li>
-            <li>More Spirit Game Online</li>
+            <li>{{ $t("roadmap.2019-Q2-1") }}</li>
+            <li>{{ $t("roadmap.2019-Q2-2") }}</li>
           </ul>
         </div>
       </li>
     </ul>
 
     <div class="roadmap__future">
-      <h1>FUTURE</h1>
+      <h1>{{ $t("roadmap.future") }}</h1>
     </div>
   </div>
 </template>

@@ -62,7 +62,7 @@
                 v-bind:class="{active: this.activeState.tokenSale}"
                 @mouseover="hover"
               >
-                <span>Token Sale</span>
+                <span>{{ $t("token.token-sale") }}</span>
                 <span>20%</span>
               </div>
             </li>
@@ -73,7 +73,7 @@
                 v-bind:class="{active: this.activeState.communityDevelop}"
                 @mouseover="hover"
               >
-                <span>Community Develop</span>
+                <span>{{ $t("token.community-develop") }}</span>
                 <span>40%</span>
               </div>
             </li>
@@ -84,7 +84,7 @@
                 v-bind:class="{active: this.activeState.marketing}"
                 @mouseover="hover"
               >
-                <span>Marketing</span>
+                <span>{{ $t("token.marketing") }}</span>
                 <span>10%</span>
               </div>
             </li>
@@ -95,7 +95,7 @@
                 v-bind:class="{active: this.activeState.team}"
                 @mouseover="hover"
               >
-                <span>Team</span>
+                <span>{{ $t("token.team") }}</span>
                 <span>10%</span>
               </div>
             </li>
@@ -106,7 +106,7 @@
                 v-bind:class="{active: this.activeState.futurePreserve}"
                 @mouseover="hover"
               >
-                <span>Future Preserve</span>
+                <span>{{ $t("token.future-preserve") }}</span>
                 <span>20%</span>
               </div>
             </li>
@@ -120,24 +120,24 @@
           <table class="token__table">
             <tbody>
               <tr>
-                <td>Token Sale Volume:</td>
-                <td>No cap</td>
+                <td>{{ $t("token.token-sale-volume") }}</td>
+                <td>{{ $t("token.token-sale-volume-value") }}</td>
               </tr>
               <tr>
-                <td>Distribution of Tokens:</td>
-                <td>Foe every 100 ICOS tokens sold through the ICO 20 additional tokens will be issued for distrubtion to partners, advisors, bounty participants, and the team members.</td>
+                <td>{{ $t("token.distribution-of-tokens") }}</td>
+                <td>{{ $t("token.distribution-of-tokens-value") }}</td>
               </tr>
               <tr>
-                <td>Token Price at Issue:</td>
-                <td>0.008-0.012 BTC depending on the time of purchase</td>
+                <td>{{ $t("token.token-price-at-issue") }}</td>
+                <td>{{ $t("token.token-price-at-issue-value") }}</td>
               </tr>
               <tr>
-                <td>Public Presale Start Date:</td>
-                <td>Augus 9, 2017, 12:00PM PDT</td>
+                <td>{{ $t("token.public-presale-start-date") }}</td>
+                <td>{{ $t("token.public-presale-start-date-value") }}</td>
               </tr>
               <tr>
-                <td>Public Presale END Date:</td>
-                <td>August 15, 2017, 12:00 PM PDT</td>
+                <td>{{ $t("token.public-presale-end-date") }}</td>
+                <td>{{ $t("token.public-presale-end-date-value") }}</td>
               </tr>            
             </tbody>
           </table>

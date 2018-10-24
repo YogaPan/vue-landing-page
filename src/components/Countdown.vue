@@ -4,8 +4,8 @@
     <div class="countdown__title l-column l-column--stretch">
       <!-- <h1>ICO start on </h1>
       <h1>September 30, 2018</h1> -->
-      <h1>ICO start on September 30, 2018</h1>
-      <p>{{ countdownTitle }}<span class="blinking-cursor">:</span></p>
+      <h1>{{ $t("hero.ico-date") }}</h1>
+      <p>{{ $t("hero.time-left") }}<span class="blinking-cursor">:</span></p>
     </div>
 
     <div class="countdown__body l-row">
@@ -25,7 +25,6 @@ import CountdownCircle from './CountdownCircle'
 export default {
   name: 'Countdown',
   props: {
-    countdownTitle: String,
     startTime: Object.Date,
     endTime: Object.Date,
   },

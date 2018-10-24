@@ -4,9 +4,8 @@
 
     <div id="main-info" class="container">
       <div class="hero__body">
-        <h1 class="hero__title">{{ $t("title") }}</h1>
-        <!-- <h1 class="hero__title">Next generation blockchain-based betting gaming platform</h1> -->
-        <p class="hero__content">Spirit is a global, community-driven, decentralized, secure and unique PvP gambling gaming platfrom..</p>
+        <h1 class="hero__title">{{ $t("hero.title") }}</h1>
+        <p class="hero__content">{{ $t("hero.sub-title") }}</p>
 
         <button class="whitepaper-button">White Paper</button>
 
@@ -23,7 +22,6 @@
       </div>
 
       <Countdown
-        countdownTitle="Time Left"
         v-bind:startTime="new Date(2018, 6, 14, 12, 12)"
         v-bind:endTime="new Date(2018, 9, 14, 12, 12)"
       />

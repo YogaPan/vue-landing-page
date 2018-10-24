@@ -4,7 +4,8 @@
 
     <div id="main-info" class="container">
       <div class="hero__body">
-        <h1 class="hero__title">Next generation blockchain-based betting gaming platform</h1>
+        <h1 class="hero__title">{{ $t("title") }}</h1>
+        <!-- <h1 class="hero__title">Next generation blockchain-based betting gaming platform</h1> -->
         <p class="hero__content">Spirit is a global, community-driven, decentralized, secure and unique PvP gambling gaming platfrom..</p>
 
         <button class="whitepaper-button">White Paper</button>
@@ -34,6 +35,9 @@
     </div>
     <img style="position: absolute;bottom: 0px;width: 100%;z-index: -1;opacity: 0.8;" src="../assets/background_earth.png" >
     <div src="/img/background_earth.84df4e2d.png" style="position: absolute;top: 0px;width: 100%; z-index: -2; height: 100%; background-color: #010101;"></div>
+    <!-- <span class="scroll-down" @click="scroll('describe')"></span>
+    <img style="position: absolute;bottom: 0px;width: 100%。;z-index: -1;opacity: 0.8;" src="../assets/background_earth.png" >
+    <div src="/img/background_earth.84df4e2d.png" style="position: absolute;top: 0px;width: 100%; z-index: -2; height: 100%; background-color: #010101;"></div> -->
 
   </div>
 </template>
@@ -183,20 +187,13 @@ export default {
 
 .hero {
   min-height: 100vh;
-  padding: 170px 0;  // padding-top 70px is navbar's height.
+  padding: 120px 0 0 0;  // padding-top 70px is navbar's height.
+
   color: $white;
   position: relative;
 
-  &::after {
-    position: absolute;
-    content: '';
-
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background: linear-gradient(to top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  @media (max-width: $break-middle) {
+    padding: 80px 0 0 0;
   }
  
   .scroll-down {
@@ -269,19 +266,9 @@ export default {
     margin-top: 30px;
     width: 500px;
   }
-
-  @media (max-width: $break-small) {
-    padding: 100px 0;  // padding-top 70px is navbar's height.
-  }
 }
 
-// .l-column {
-//   width: 40%;
-// }
-
 .whitepaper-button {
-  @extend %content-in-center;
-
   margin-top: 30px;
 
   height: 75px;
@@ -294,15 +281,12 @@ export default {
   font-weight: 100;
   color: $white;
 
-  box-shadow: 0px 0px 10px 0px $green;
+  // box-shadow: 0px 0px 10px 0px $green;
+  transition: box-shadow .2s;
 
   &:hover {
-    cursor: pointer;
     border: 3px solid $green;
-  }
-
-  &:focus {
-    outline: 0;
+    box-shadow: 0px 0px 15px 0px $green;
   }
 }
 

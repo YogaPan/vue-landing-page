@@ -5,7 +5,11 @@
 
       <div class="team__members">
         <div class="member">
-          <div class="member__background"></div>
+          <div class="member__background">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon class="poly" points="0,100 100,0 100,100"/>
+            </svg>
+          </div>
 
           <img class="member__avatar" src="../assets/avatar-1.png" />
 
@@ -14,14 +18,18 @@
           <p class="member__describe">Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.</p>
           <p class="member__describe">Possimus alias et animi autem minima temporibus laudantium.</p>
 
-          <div class="member__social-area">
+          <!-- <div class="member__social-area">
             <button class="member__linkedin">Linkedin</button>
             <button class="member__bio">Twitter</button>
-          </div>
+          </div> -->
         </div>
 
         <div class="member">
-          <div class="member__background"></div>
+          <div class="member__background">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon class="poly" points="0,100 100,0 100,100"/>
+            </svg>
+          </div>
 
           <img class="member__avatar" src="../assets/avatar-2.png" />
 
@@ -30,14 +38,18 @@
           <p class="member__describe">Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.</p>
           <p class="member__describe">Possimus alias et animi autem minima temporibus laudantium.</p>
 
-          <div class="member__social-area">
+          <!-- <div class="member__social-area">
             <button class="member__linkedin">Linkedin</button>
             <button class="member__bio">Twitter</button>
-          </div>
+          </div> -->
         </div>
 
         <div class="member">
-          <div class="member__background"></div>
+          <div class="member__background">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon class="poly" points="0,100 100,0 100,100"/>
+            </svg>
+          </div>
 
           <img class="member__avatar" src="../assets/avatar-3.png" />
 
@@ -46,10 +58,10 @@
           <p class="member__describe">Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.</p>
           <p class="member__describe">Possimus alias et animi autem minima temporibus laudantium.</p>
 
-          <div class="member__social-area">
+          <!-- <div class="member__social-area">
             <button class="member__linkedin">Linkedin</button>
             <button class="member__bio">Twitter</button>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -58,6 +70,11 @@
       <div class="team__advisor">
         <div class="advisor">
           <div class="advisor__background"></div>
+          <div class="advisor__background">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon class="poly" points="0,100 100,0 100,100"/>
+            </svg>
+          </div>
 
           <img class="advisor__avatar" src="../assets/app_girl.png" />
 
@@ -122,11 +139,6 @@ export default {
 
   overflow: hidden;
 
-  // &:hover {
-  //   transform: scale(1.01);
-  //   transition: transform .1s;
-  // }
-
   @media (max-width: $break-big) {
     &:not(:first-child) {
       margin-top: 30px;
@@ -141,13 +153,23 @@ export default {
 
   // z-index: -1;
 
-  height: 250px;
+  height: 175px;
   width: 100%;
   
-  background-color: $dark;
+  // background-color: $dark;
+  background-image: url("../assets/member-background-3.jpg");
+  background-size: cover;
 
-  // skew effect
-  transform: translateY(-100px) skewY(-10deg);
+  svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+  }
+
+  .poly {
+    fill: #e8e8e8;
+  }
 }
 
 .member__avatar {
@@ -259,8 +281,7 @@ export default {
 }
 
 .advisor {
-  min-width: 350px;
-  width: 550px;
+  max-width: 550px; 
   border-radius: 30px;
   box-shadow: 2px 2px 20px #ccc;
 
@@ -268,11 +289,6 @@ export default {
   padding: 50px 30px 20px 30px;
 
   overflow: hidden;
-
-  // &:hover {
-  //   transform: scale(1.01);
-  //   transition: transform .1s;
-  // }
 
   @media (max-width: $break-big) {
     &:not(:first-child) {
@@ -288,13 +304,22 @@ export default {
 
   // z-index: -1;
 
-  height: 250px;
+  height: 175px;
   width: 100%;
-  
-  background-color: $dark;
 
-  // skew effect
-  transform: translateY(-100px) skewY(-10deg);
+  background-image: url("../assets/member-background-3.jpg");
+  background-size: cover;
+
+  svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+  }
+
+  .poly {
+    fill: #e8e8e8;
+  }
 }
 
 .advisor__avatar {

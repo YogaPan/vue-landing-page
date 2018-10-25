@@ -10,7 +10,7 @@
         <button class="whitepaper-button">White Paper</button>
 
 
-        <!-- <div class="hero__social l-row">
+        <div class="hero__social">
           <div class="social-icon">
             <img src="../assets/discord.svg" alt="">
           </div>
@@ -18,7 +18,7 @@
           <div class="social-icon">
             <img src="../assets/telegram.svg" alt="">
           </div>
-        </div> -->
+        </div>
       </div>
 
       <Countdown
@@ -262,7 +262,11 @@ export default {
 
   &__social {
     margin-top: 30px;
-    width: 500px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 }
 

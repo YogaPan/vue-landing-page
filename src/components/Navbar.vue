@@ -60,12 +60,15 @@ export default {
 <style lang="scss">
 
 .navbar {
+  @extend %content-in-center;
+
   position: fixed;
   top: 0;
   left: 0;
   z-index: 98;  // Always above relative elements but under loading scene.
 
   width: 100%;
+  height: 70px;
   transition: background-color .3s;
   background-color: transparent;  // Transparent when on top.
 
@@ -177,7 +180,7 @@ export default {
       font-size: 1.5em;
     }
 
-    a {
+    li a {
       color: $white;
       font-size: 30px;
 

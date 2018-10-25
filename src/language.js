@@ -99,7 +99,7 @@ const messages = {
       'member-3-introduce-1': 'Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.',
       'member-3-introduce-2': 'Possimus alias et animi autem minima temporibus laudantium.',
 
-      'advisor': 'advisor',
+      'advisor': 'Advisor',
       'advisor-name': 'Swift Girls',
       'advisor-describe-1': 'Possimus alias et animi autem minima temporibus laudantium.',
       'advisor-describe-2': 'Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.',

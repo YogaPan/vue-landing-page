@@ -93,7 +93,6 @@ export default {
     display: block;  // 填滿母元素
 
     font-size: 20px;
-    font-weight: 100;
     color: #aaa;
     text-align: center;
 

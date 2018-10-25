@@ -258,6 +258,7 @@ export default {
 
   &__content {
     margin-top: 30px;
+    font-size: 18px;
   }
 
   &__social {

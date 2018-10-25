@@ -366,7 +366,7 @@ $future-preserve-color: #8881f0;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    font-weight: 100;
+    font-weight: 600;
     font-size: 32px;
   }
 

@@ -190,11 +190,12 @@ export default {
   margin-top: 10px;
 
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 600;
   color: $dark;
 }
 
 .member__job {
+  font-weight: 300;
   font-size: 25px;
   text-align: left;
 }

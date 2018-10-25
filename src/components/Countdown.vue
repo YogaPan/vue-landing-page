@@ -117,6 +117,7 @@ export default {
 
     h1 {
       font-size: 30px;
+      font-weight: 300;
       color: $white;
       text-align: center;
 
@@ -129,7 +130,7 @@ export default {
       text-align: center;
       margin-top: 10px;
       font-size: 20px;
-      font-weight: normal;
+      font-weight: 300;
     }
   }
 

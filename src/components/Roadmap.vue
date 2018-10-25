@@ -174,6 +174,7 @@ export default {
 
     h1 {
       margin-bottom: 10px;
+      font-weight: 300;
     }
 
     li {

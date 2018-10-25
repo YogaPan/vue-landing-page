@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <p class="copyright">© 2018 Spirit. All Rights Reserved.</p>
+      <p class="footer__copyright">© 2018 Spirit. All Rights Reserved.</p>
 
     </div>
   </div>
@@ -28,12 +28,13 @@ export default {
 <style lang="scss">
 
 .footer {
-  background-color: $dark;
+  background-color: #202328;
   padding: 50px 0 20px 0;
   text-align: center;
 
   h1 {
     color: $white;
+    font-weight: 300;
   }
 
   &__social {
@@ -52,7 +53,8 @@ export default {
 
   &__copyright {
     // margin-top: 50px;
-    font-size: 13px;
+    // font-size: 13px;
+    color: #666;
   }
 }
 

@@ -95,8 +95,7 @@ button {
   }
 }
 
-// @import url('https://fonts.googleapis.com/css?family=Asap');
-@import url('https://fonts.googleapis.com/css?family=Asap|Roboto|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
 body {
   background-color: $dark;
@@ -108,7 +107,7 @@ body {
 
 h1 {
   font-size: 40px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 p, li {

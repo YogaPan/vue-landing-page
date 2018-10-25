@@ -112,7 +112,7 @@ export default {
 
     h1 {
       font-size: 40px;
-      font-weight: 100;
+      // font-weight: 100;
       text-align: left;
       color: $dark;
     }

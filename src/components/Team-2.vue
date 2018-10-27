@@ -4,7 +4,7 @@
       <h1 class="team__title">{{ $t("team.title") }}</h1>
 
       <div class="team__members">
-        <div class="member">
+        <div class="member hide-down pop-order-1">
           <div class="member__background">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
               <polygon class="poly" points="0,100 100,0 100,100"/>
@@ -24,7 +24,7 @@
           </div> -->
         </div>
 
-        <div class="member">
+        <div class="member hide-down pop-order-2">
           <div class="member__background">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
               <polygon class="poly" points="0,100 100,0 100,100"/>
@@ -44,7 +44,7 @@
           </div> -->
         </div>
 
-        <div class="member">
+        <div class="member hide-down pop-order-3">
           <div class="member__background">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
               <polygon class="poly" points="0,100 100,0 100,100"/>
@@ -68,7 +68,7 @@
       <h1 class="advisor__title">{{ $t("team.advisor") }}</h1>
 
       <div class="team__advisor">
-        <div class="advisor">
+        <div class="advisor hide-down">
           <div class="advisor__background"></div>
           <div class="advisor__background">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -96,7 +96,33 @@
 <script>
 
 export default {
-  name: 'Team'
+  name: 'Team',
+  mounted() {
+    var items = document.querySelectorAll(".hide-down")
+ 
+    const callbackFunc = () => {
+      for (let i = 0; i < items.length; i++) {
+        if (this.isElementInViewport(items[i])) {
+          items[i].classList.add("is-in-view")
+        }
+      }
+    }
+    
+    window.addEventListener("load", callbackFunc)
+    window.addEventListener("scroll", callbackFunc)
+  },
+  methods: {
+    isElementInViewport: function(el) {
+      const rect = el.getBoundingClientRect()
+
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      )
+    }
+  }
 }
 
 </script>
@@ -350,6 +376,54 @@ export default {
   margin-top: 20px;
   text-align: left;
   font-size: 15px;
+}
+
+.member.hide-down {
+  transform: translateY(50px);
+  opacity: 0.1;
+}
+
+.advisor.hide-down {
+  transform: translateY(50px);
+  opacity: 0.1;
+}
+
+.member.is-in-view {
+  transition: opacity .5s, transform .5s;
+  transform: none;
+  opacity: 1;
+}
+
+.advisor.is-in-view {
+  transition: opacity .5s .3s, transform .5s .3s;
+  transform: none;
+  opacity: 1;
+}
+
+.member.pop-order-1 {
+  transition-delay: .3s;
+}
+
+.member.pop-order-2 {
+  transition-delay: .4s;
+}
+
+.member.pop-order-3 {
+  transition-delay: .5s;
+}
+
+@media (max-width: $break-middle) {
+  .member.pop-order-1 {
+    transition-delay: .1s;
+  }
+
+  .member.pop-order-2 {
+    transition-delay: .1s;
+  }
+
+  .member.pop-order-3 {
+    transition-delay: .1s;
+  }
 }
 
 </style>

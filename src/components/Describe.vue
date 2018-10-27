@@ -145,13 +145,13 @@ export default {
   }
 }
 
-.hide-down {
+.describe__content.hide-down {
   transform: translateY(50px);
   opacity: 0.1;
 }
 
-.is-in-view {
-  transition: .5s .3s;
+.describe__content.is-in-view {
+  transition: .5s .1s;
   transform: none;
   opacity: 1;
 }

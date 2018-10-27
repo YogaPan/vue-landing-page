@@ -227,7 +227,7 @@ export default {
   }
 }
 
-.hide-left {
+.roadmap__content.hide-left {
   transform: translateX(-100px);
   opacity: 0.1;
 
@@ -236,7 +236,7 @@ export default {
   }
 }
 
-.hide-right {
+.roadmap__content.hide-right {
   transform: translateX(100px);
   opacity: 0.1;
 
@@ -246,7 +246,7 @@ export default {
   }
 }
 
-.is-in-view {
+.roadmap__content.is-in-view {
   transition: .5s;
   transform: none;
   opacity: 1;

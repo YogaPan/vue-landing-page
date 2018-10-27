@@ -11,19 +11,19 @@
       </h1>
 
       <div class="l-row l-row--stretch l-row--responsive">
-        <div class="detail__column hide-down">
+        <div class="detail__column hide-down pop-order-1">
           <img src="../assets/git.svg" alt="">
           <h2>{{ $t("detail.title-1") }}</h2>
           <p>{{ $t("detail.content-1") }}</p>
         </div>
 
-        <div class="detail__column hide-down">
+        <div class="detail__column hide-down pop-order-2">
           <img src="../assets/git.svg" alt="">
           <h2>{{ $t("detail.title-2") }}</h2>
           <p>{{ $t("detail.content-2") }}</p>
         </div>
 
-        <div class="detail__column hide-down">
+        <div class="detail__column hide-down pop-order-3">
           <img src="../assets/git.svg" alt="">
           <h2>{{ $t("detail.title-3") }}</h2>
           <p>{{ $t("detail.content-3") }}</p>
@@ -174,15 +174,42 @@ export default {
   }
 }
 
-.hide-down {
+.detail__column.hide-down {
   transform: translateY(50px);
   opacity: 0.1;
 }
 
-.is-in-view {
-  transition: opacity .5s .3s, transform .5s .3s;
+.detail__column.is-in-view {
+  transition: opacity .5s, transform .5s;
+  // transition: opacity .5s linear 10s, transform .5s  linear 10s;
   transform: none;
   opacity: 1;
+}
+
+.detail__column.pop-order-1 {
+  transition-delay: .1s;
+}
+
+.detail__column.pop-order-2 {
+  transition-delay: .3s;
+}
+
+.detail__column.pop-order-3 {
+  transition-delay: .5s;
+}
+
+@media (max-width: $break-middle) {
+  .detail__column.pop-order-1 {
+    transition-delay: .1s;
+  }
+
+  .detail__column.pop-order-2 {
+    transition-delay: .1s;
+  }
+
+  .detail__column.pop-order-3 {
+    transition-delay: .1s;
+  }
 }
 
 </style>

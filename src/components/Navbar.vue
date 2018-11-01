@@ -16,12 +16,21 @@
         </div>
       </label>
 
-      <ul>
-        <li><a @click="scroll('describe')">{{ $t("navbar.about-spirit") }}</a></li>
-        <li><a @click="scroll('token')">{{ $t("navbar.ico") }}</a></li>
-        <li><a @click="scroll('roadmap')">{{ $t("navbar.roadmap") }}</a></li>
-        <li><a href="#">White Paper</a></li>
-        <li><a class="language">{{ $t("navbar.language") }}</a></li>
+      <ul class="navbar__right">
+        <li class="navbar__item"><a @click="scroll('describe')">{{ $t("navbar.about-spirit") }}</a></li>
+        <li class="navbar__item"><a @click="scroll('token')">{{ $t("navbar.ico") }}</a></li>
+        <li class="navbar__item"><a @click="scroll('roadmap')">{{ $t("navbar.roadmap") }}</a></li>
+        <li class="navbar__item"><a href="#">White Paper</a></li>
+        <li class="navbar__item language">
+          <a class="dropdown-toggle" @click="dropdown">{{ $t("navbar.language") }}</a>
+          <div class="language__dropdown" :class="{ 'language__dropdown--drop': isDropdown }">
+            <ul>
+              <li @click="changeLocale('en')">English</li>
+              <li @click="changeLocale('tw')">中文(繁體)</li>
+              <li @click="changeLocale('zh')">中文(簡體)</li>
+            </ul>
+          </div>
+        </li>
       </ul>
 
     </div>
@@ -35,6 +44,7 @@ export default {
   data() {
     return {
       isOnTop: true,
+      isDropdown: false,
     }
   },
   mounted() {
@@ -44,6 +54,20 @@ export default {
       else
         this.isOnTop = true
     })
+
+    window.addEventListener('click', e => {
+
+      if (!e.target.classList.contains('dropdown-toggle')) {
+        this.dropdownClose()
+      }
+
+      // console.log(e.target.parentNode.classList)
+
+      // if (!e.target.parentNode.classList.contains('language')) {
+      //   console.log(e.target.parentNode.classList)
+      //   this.dropdownClose()
+      // }
+    }, false)
   },
   methods: {
     scroll(section) {
@@ -52,6 +76,16 @@ export default {
         behavior: "smooth"
       })
     },
+    dropdown() {
+      this.isDropdown = !this.isDropdown
+      // console.log(this.$i18n.locale)
+    },
+    dropdownClose() {
+      this.isDropdown = false
+    },
+    changeLocale(lang) {
+      this.$i18n.locale = lang
+    }
   },
 }
 
@@ -73,22 +107,35 @@ export default {
   background-color: transparent;  // Transparent when on top.
 
   &--add-background {  // Have background color when scroll down.
-    background-color: #111;
+    background-color: #202328;
     opacity: 0.97;
   }
 
-  ul {
+  &__logo {
+    img {
+      height: 45px;
+      width: 45px;
+    }
+
+    a {
+      margin-left: 20px;
+      font-size: 25px;
+      color: $white;
+    }
+  }
+
+  &__right {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
-  li {
+  &__right > li {
     padding: 20px;
   }
 
-  li a {
+  &__right > li a {
     position: relative;
     display: block;  // 填滿母元素
 
@@ -125,18 +172,66 @@ export default {
       }
     }
   }
+}
 
-  &__logo {
-    img {
-      height: 45px;
-      width: 45px;
+.language {
+  position: relative;
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+
+  //   left: 1000000px;
+  //   top: 50%;
+  //   transform: trasnlateY(-50%);
+
+  //   height: 5px;
+  //   width: 5px;
+    
+  //   border-top: 5px solid red;
+  //   border-left: 5px solid red;
+  //   border-right: 5px solid red;
+
+  //   background-color: $white;
+  // }
+
+  &__dropdown {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    
+    width: 200px;
+    // height: 0;
+
+    padding: 5px 20px;
+
+    // transition: .2s;
+
+    visibility: hidden;
+
+    border-radius: 10px;
+    background-color: #202328;
+
+    ul {
+      // TODO
     }
 
-    a {
-      margin-left: 20px;
-      font-size: 25px;
-      color: $white;
+    ul li {
+      padding: 5px 0px;
+      color: #888;
+
+      &:hover {
+        color: #fff;
+        cursor: pointer;
+      }
     }
+  }
+
+  &__dropdown.language__dropdown--drop {
+    width: 200px;
+    // height: 300px;
+
+    visibility: visible;
   }
 }
 
@@ -189,28 +284,6 @@ export default {
         transition: .5s;
       }
     }
-  }
-
-  .language {
-    position: relative;
-
-    // &::after {
-    //   position: absolute;
-    //   content: "";
-
-    //   left: 1000000px;
-    //   top: 50%;
-    //   transform: trasnlateY(-50%);
-
-    //   height: 5px;
-    //   width: 5px;
-      
-    //   border-top: 5px solid red;
-    //   border-left: 5px solid red;
-    //   border-right: 5px solid red;
-
-    //   background-color: $white;
-    // }
   }
 
   .label-toggle {

@@ -380,12 +380,12 @@ export default {
 
 .member.hide-down {
   transform: translateY(50px);
-  opacity: 0.1;
+  opacity: 0;
 }
 
 .advisor.hide-down {
   transform: translateY(50px);
-  opacity: 0.1;
+  opacity: 0;
 }
 
 .member.is-in-view {
@@ -395,7 +395,7 @@ export default {
 }
 
 .advisor.is-in-view {
-  transition: opacity .5s .3s, transform .5s .3s;
+  transition: opacity .5s .1s, transform .5s .1s;
   transform: none;
   opacity: 1;
 }

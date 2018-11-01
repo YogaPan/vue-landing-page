@@ -238,7 +238,7 @@ export default {
 
 .roadmap__content.hide-right {
   transform: translateX(100px);
-  opacity: 0.1;
+  opacity: 0;
 
   // 當在手機上時，都從左邊滑入
   @media (max-width: $break-small) {

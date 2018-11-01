@@ -147,7 +147,7 @@ export default {
 
 .describe__content.hide-down {
   transform: translateY(50px);
-  opacity: 0.1;
+  opacity: 0;
 }
 
 .describe__content.is-in-view {

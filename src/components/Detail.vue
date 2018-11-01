@@ -176,7 +176,7 @@ export default {
 
 .detail__column.hide-down {
   transform: translateY(50px);
-  opacity: 0.1;
+  opacity: 0;
 }
 
 .detail__column.is-in-view {

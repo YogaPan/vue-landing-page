@@ -49,6 +49,8 @@ export default {
   },
   mounted() {
     window.addEventListener('scroll', () => {
+      this.dropdownClose()
+
       if (window.pageYOffset || document.documentElement.scrollTop != 0)
         this.isOnTop = false
       else
@@ -56,17 +58,8 @@ export default {
     })
 
     window.addEventListener('click', e => {
-
-      if (!e.target.classList.contains('dropdown-toggle')) {
+      if (!e.target.classList.contains('dropdown-toggle'))
         this.dropdownClose()
-      }
-
-      // console.log(e.target.parentNode.classList)
-
-      // if (!e.target.parentNode.classList.contains('language')) {
-      //   console.log(e.target.parentNode.classList)
-      //   this.dropdownClose()
-      // }
     }, false)
   },
   methods: {
@@ -197,17 +190,15 @@ export default {
 
   &__dropdown {
     position: absolute;
-    top: 70px;
+    top: 90px;  // transition: scroll up from below.
     left: 20px;
     
     width: 200px;
-    // height: 0;
 
     padding: 5px 20px;
 
-    // transition: .2s;
-
     visibility: hidden;
+    opacity: 0;  // for transition.
 
     border-radius: 10px;
     background-color: #202328;
@@ -228,10 +219,11 @@ export default {
   }
 
   &__dropdown.language__dropdown--drop {
-    width: 200px;
-    // height: 300px;
-
+    transition: top cubic-bezier(0.25, 0.46, 0.45, 0.94) .2s,
+      opacity cubic-bezier(0.25, 0.46, 0.45, 0.94) .2s;
     visibility: visible;
+    top: 70px;
+    opacity: 1;
   }
 }
 

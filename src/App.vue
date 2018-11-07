@@ -96,10 +96,11 @@ button {
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
 
 body {
   background-color: $dark;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Noto Sans TC', Helvetica, Arial, sans-serif;
   // font-family: 'Asap', Helvetica, Arial, sans-serif;
   // font-family: 'Roboto', Helvetica, Arial, sans-serif;
   color: #2c3e50;

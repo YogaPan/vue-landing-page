@@ -22,8 +22,8 @@
       </div>
 
       <Countdown
-        v-bind:startTime="new Date(2018, 6, 14, 12, 12)"
-        v-bind:endTime="new Date(2018, 9, 14, 12, 12)"
+        v-bind:startTime="new Date(2018, 8, 14, 12, 12)"
+        v-bind:endTime="new Date(2018, 11, 14, 12, 12)"
       />
       
     </div>

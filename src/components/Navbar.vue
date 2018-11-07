@@ -22,7 +22,8 @@
         <li class="navbar__item"><a @click="scroll('roadmap')">{{ $t("navbar.roadmap") }}</a></li>
         <li class="navbar__item"><a href="#">White Paper</a></li>
         <li class="navbar__item language">
-          <a class="dropdown-toggle" @click="dropdown">{{ $t("navbar.language") }}</a>
+          <a class="dropdown-toggle" @click="dropdown">{{ $t("navbar.language") }} <div></div></a>
+          <!-- <a class="dropdown-toggle" @click="dropdown">{{ $i18n.locale }}</a> -->
           <div class="language__dropdown" :class="{ 'language__dropdown--drop': isDropdown }">
             <!-- <ul>
               <li @click="changeLocale('en')">English</li>
@@ -178,7 +179,7 @@ export default {
       &:after {
         width: 100%;
         background: $white;
-        transition: .5s;
+        transition: width .5s;
       }
     }
   }
@@ -186,24 +187,6 @@ export default {
 
 .language {
   position: relative;
-
-  // &::after {
-  //   position: absolute;
-  //   content: "";
-
-  //   left: 1000000px;
-  //   top: 50%;
-  //   transform: trasnlateY(-50%);
-
-  //   height: 5px;
-  //   width: 5px;
-    
-  //   border-top: 5px solid red;
-  //   border-left: 5px solid red;
-  //   border-right: 5px solid red;
-
-  //   background-color: $white;
-  // }
 
   &__dropdown {
     position: absolute;
@@ -227,6 +210,31 @@ export default {
     visibility: visible;
     top: 70px;
     opacity: 1;
+  }
+
+  &:hover {
+    .dropdown-toggle div {
+      border-color: #fff;
+      transition: border-color .5s;
+    }
+  }
+}
+
+.dropdown-toggle {
+  div {
+    position: relative;
+    display: inline-block;
+
+    left: 3px;
+    bottom: 2px;
+
+    height: 12px;
+    width: 12px;
+
+    transform: rotate(-45deg);
+    
+    border-left: 2px solid #888;
+    border-bottom: 2px solid #888;
   }
 }
 

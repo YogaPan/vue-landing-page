@@ -24,11 +24,28 @@
         <li class="navbar__item language">
           <a class="dropdown-toggle" @click="dropdown">{{ $t("navbar.language") }}</a>
           <div class="language__dropdown" :class="{ 'language__dropdown--drop': isDropdown }">
-            <ul>
+            <!-- <ul>
               <li @click="changeLocale('en')">English</li>
               <li @click="changeLocale('tw')">中文(繁體)</li>
               <li @click="changeLocale('zh')">中文(簡體)</li>
-            </ul>
+            </ul> -->
+
+            <label class="language__option">
+              <span>English</span>
+              <input type="radio" name="language-selector" v-model="$i18n.locale" value="en">
+              <div class="option__checkmark"></div>
+            </label>
+            <label class="language__option">
+              <span>中文(繁體)</span>
+              <input type="radio" name="language-selector" v-model="$i18n.locale" value="tw">
+              <div class="option__checkmark"></div>
+            </label>
+            <label class="language__option">
+              <span>中文(簡體)</span>
+              <input type="radio" name="language-selector" v-model="$i18n.locale" value="zh">
+              <div class="option__checkmark"></div>
+            </label>
+
           </div>
         </li>
       </ul>
@@ -202,20 +219,6 @@ export default {
 
     border-radius: 10px;
     background-color: #202328;
-
-    ul {
-      // TODO
-    }
-
-    ul li {
-      padding: 5px 0px;
-      color: #888;
-
-      &:hover {
-        color: #fff;
-        cursor: pointer;
-      }
-    }
   }
 
   &__dropdown.language__dropdown--drop {
@@ -224,6 +227,37 @@ export default {
     visibility: visible;
     top: 70px;
     opacity: 1;
+  }
+}
+
+.language__option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 18px;
+  padding: 5px 0;
+  color: #888;
+
+  &:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  input {
+    visibility: hidden;
+    // opacity: 0;
+  }
+
+  div {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+  }
+
+  input:checked ~ div {
+    background-color: $green;
   }
 }
 

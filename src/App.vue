@@ -186,7 +186,7 @@ p, li {
 
 .social-icon {
   // 內圈
-  position: relative;
+  position: relative;  // for absolute content
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,6 +214,30 @@ p, li {
     width: 45px;
     height: 45px;
     filter: invert(1);
+  }
+
+  svg {
+    position: absolute;
+
+    circle {
+      stroke: #ddd;
+      stroke-width: 3;
+      stroke-dasharray: 300;
+      stroke-dashoffset: 300;
+      fill: none;
+    }
+  }
+
+  svg:hover {
+    circle {
+      // stroke-width: 10;
+      transition: stroke-dashoffset ease .75s;
+      stroke-dashoffset: 0;
+    }
+  }
+
+  svg.in-view {
+    
   }
 }
 

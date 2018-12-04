@@ -84,18 +84,18 @@ const messages = {
     team: {
       'title': 'Meet Our Team',
 
-      'member-1-name': 'Monica',
-      'member-1-job': 'CEO',
+      'member-1-name': 'Peter Pan',
+      'member-1-job': 'Founder',
       'member-1-introduce-1': 'Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.',
       'member-1-introduce-2': 'Possimus alias et animi autem minima temporibus laudantium.',
 
-      'member-2-name': 'Asian',
-      'member-2-job': 'Frontend Engineer',
-      'member-2-introduce-1': 'Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.',
-      'member-2-introduce-2': 'Possimus alias et animi autem minima temporibus laudantium.',
+      'member-2-name': 'Blacker Wu',
+      'member-2-job': 'Co-Founder',
+      'member-2-introduce-1': '碩士，現為全端工程師。',
+      'member-2-introduce-2': '研究領域包括仿生演算法、機器學習、大數據分析，擁有多年豐富的FinTech軟體開發經驗。曾參與橘子支付GAMA PAY軟體開發，對區塊鏈行業發展和應用有獨到見解。',
 
-      'member-3-name': 'Bill',
-      'member-3-job': 'Dick Sucker',
+      'member-3-name': 'Yoga Pan',
+      'member-3-job': 'Front End Developer & UI/UX Designer',
       'member-3-introduce-1': 'Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.',
       'member-3-introduce-2': 'Possimus alias et animi autem minima temporibus laudantium.',
 

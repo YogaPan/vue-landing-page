@@ -276,7 +276,7 @@ export default {
 
   height: 75px;
   width: 225px;
-  border: 0px solid $green;
+  border: none;
   border-radius: 40px;
 
   background-color: rgb(108, 183, 176);
@@ -285,11 +285,10 @@ export default {
   color: $white;
 
   // box-shadow: 0px 0px 10px 0px $green;
-  transition: box-shadow .2s;
+  transition: box-shadow .2s, background-color .2s;
 
   &:hover {
     background-color: $green;
-    border: 3px solid $green;
     box-shadow: 0px 0px 15px 0px $green;
   }
 }

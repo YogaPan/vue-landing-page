@@ -8,9 +8,9 @@ const messages = {
       'language': 'Language'
     },
     hero: {
-      'title': 'Next generation blockchain-based betting gaming platform',
+      'title': 'Spirit Network - fuel of the mobile\'s DApps Ecosystem',
 
-      'sub-title': 'Spirit is a global, community-driven, decentralized, secure and unique PvP gambling gaming platfrom.',
+      'sub-title': 'Spirit is a framework that allows you to easily develop and deploy Decentralized Applications (DApps). Tapping on the protocol, developers can build payment flows and financial apps, including instant token swap services, erc20 payments, and innovative financial dapps - helping to build a world where any token is usable anywhere.',
       'ico-date': 'ICO start on September 30, 2018',
       'time-left': 'Time Left'
     },
@@ -100,7 +100,7 @@ const messages = {
       'member-3-introduce-2': 'Possimus alias et animi autem minima temporibus laudantium.',
 
       'advisor': 'Advisor',
-      'advisor-name': 'Swift Girls',
+      'advisor-name': 'App Girls',
       'advisor-describe-1': 'Possimus alias et animi autem minima temporibus laudantium.',
       'advisor-describe-2': 'Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.',
       'advisor-describe-3': 'Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.',

@@ -7,7 +7,7 @@
         <h1 class="hero__title">{{ $t("hero.title") }}</h1>
         <p class="hero__content">{{ $t("hero.sub-title") }}</p>
 
-        <button class="whitepaper-button">White Paper</button>
+        <button onclick="location.href='http://www.example.com'" type="button" class="whitepaper-button">White Paper</button>
 
 
         <div class="hero__social">
@@ -288,6 +288,7 @@ export default {
   transition: box-shadow .2s;
 
   &:hover {
+    background-color: $green;
     border: 3px solid $green;
     box-shadow: 0px 0px 15px 0px $green;
   }

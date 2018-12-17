@@ -33,7 +33,7 @@ const messages = {
       'title-3': 'Cross-chain trading',
       'content-3': 'Minima ut aut amet quidem. Non id ea unde magni. A possimus ut porro quis officiis enim et est. Facilis fugit nemo est sed dicta a. Nulla ducimus tempore et dolore aperiam consectetur consequuntur sunt et. Tempora fuga in iste fuga voluptas vitae non.',
     },
-    token: {
+    ico: {
       'token-sale': 'Token Sale',
       'community-develop': 'Community Deleveop',
       'marketing': 'Marketing',

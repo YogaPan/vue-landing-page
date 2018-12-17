@@ -1,19 +1,19 @@
 <template>
-  <div class="token">
+  <div class="ico">
     <div class="container">
-      <h1 class="token__title">
+      <h1 class="ico__title">
         <span>
-          <div class="token__title-left"></div>
+          <div class="ico__title-left"></div>
           ICO
-          <div class="token__title-right"></div>
+          <div class="ico__title-right"></div>
         </span>
       </h1>
 
       <div class="l-row l-row--responsive">
-        <div class="token__left">
+        <div class="ico__left">
           <div class="token__svg-wrapper">
 
-            <p class=token__number>{{percentage}}%</p>
+            <p class="token__number">{{percentage}}%</p>
             <svg class="token__svg" ref="svg">
               <circle
                 id="token-sale-circle"
@@ -62,7 +62,7 @@
                 v-bind:class="{active: this.activeState.tokenSale}"
                 @mouseover="hover"
               >
-                <span>{{ $t("token.token-sale") }}</span>
+                <span>{{ $t("ico.token-sale") }}</span>
                 <span>20%</span>
               </div>
             </li>
@@ -73,7 +73,7 @@
                 v-bind:class="{active: this.activeState.communityDevelop}"
                 @mouseover="hover"
               >
-                <span>{{ $t("token.community-develop") }}</span>
+                <span>{{ $t("ico.community-develop") }}</span>
                 <span>40%</span>
               </div>
             </li>
@@ -84,7 +84,7 @@
                 v-bind:class="{active: this.activeState.marketing}"
                 @mouseover="hover"
               >
-                <span>{{ $t("token.marketing") }}</span>
+                <span>{{ $t("ico.marketing") }}</span>
                 <span>10%</span>
               </div>
             </li>
@@ -95,7 +95,7 @@
                 v-bind:class="{active: this.activeState.team}"
                 @mouseover="hover"
               >
-                <span>{{ $t("token.team") }}</span>
+                <span>{{ $t("ico.team") }}</span>
                 <span>10%</span>
               </div>
             </li>
@@ -106,7 +106,7 @@
                 v-bind:class="{active: this.activeState.futurePreserve}"
                 @mouseover="hover"
               >
-                <span>{{ $t("token.future-preserve") }}</span>
+                <span>{{ $t("ico.future-preserve") }}</span>
                 <span>20%</span>
               </div>
             </li>
@@ -115,29 +115,29 @@
 
         </div>
 
-        <div class="token__right">
+        <div class="ico__right">
           
-          <table class="token__table">
+          <table class="ico__table">
             <tbody>
               <tr>
-                <td>{{ $t("token.token-sale-volume") }}</td>
-                <td>{{ $t("token.token-sale-volume-value") }}</td>
+                <td>{{ $t("ico.token-sale-volume") }}</td>
+                <td>{{ $t("ico.token-sale-volume-value") }}</td>
               </tr>
               <tr>
-                <td>{{ $t("token.distribution-of-tokens") }}</td>
-                <td>{{ $t("token.distribution-of-tokens-value") }}</td>
+                <td>{{ $t("ico.distribution-of-tokens") }}</td>
+                <td>{{ $t("ico.distribution-of-tokens-value") }}</td>
               </tr>
               <tr>
-                <td>{{ $t("token.token-price-at-issue") }}</td>
-                <td>{{ $t("token.token-price-at-issue-value") }}</td>
+                <td>{{ $t("ico.token-price-at-issue") }}</td>
+                <td>{{ $t("ico.token-price-at-issue-value") }}</td>
               </tr>
               <tr>
-                <td>{{ $t("token.public-presale-start-date") }}</td>
-                <td>{{ $t("token.public-presale-start-date-value") }}</td>
+                <td>{{ $t("ico.public-presale-start-date") }}</td>
+                <td>{{ $t("ico.public-presale-start-date-value") }}</td>
               </tr>
               <tr>
-                <td>{{ $t("token.public-presale-end-date") }}</td>
-                <td>{{ $t("token.public-presale-end-date-value") }}</td>
+                <td>{{ $t("ico.public-presale-end-date") }}</td>
+                <td>{{ $t("ico.public-presale-end-date-value") }}</td>
               </tr>            
             </tbody>
           </table>
@@ -152,7 +152,7 @@
 <script>
 
 export default {
-  name: 'Token',
+  name: 'Ico',
   data() {
     return {
       activeState: {
@@ -268,7 +268,7 @@ $future-preserve-color: #8881f0;
   }
 }
 
-.token {
+.ico {
   padding: 100px 0;
   background-color: #e8e8e8;
 
@@ -356,6 +356,34 @@ $future-preserve-color: #8881f0;
     }
   }
 
+  &__table {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 16px;
+
+    tr:hover {
+      background-color: #dfdfdf;
+      transition: .2s;
+    }
+
+    td, th {
+      border-bottom: 1px solid #ccc;
+      padding: 15px 0 10px ;
+    }
+
+    // left
+    td:first-child {
+      width: 100px;
+    }
+
+    // right
+    td:nth-child(2) {
+      padding-left: 20px;
+    }
+  }
+}
+
+.token {
   &__svg-wrapper {
     position: relative;
   }
@@ -497,32 +525,6 @@ $future-preserve-color: #8881f0;
       // background-color: #aaa;
       opacity: 0.8;
       transition: .4s;
-    }
-  }
-
-  &__table {
-    border-collapse: collapse;
-    text-align: left;
-    font-size: 16px;
-
-    tr:hover {
-      background-color: #dfdfdf;
-      transition: .2s;
-    }
-
-    td, th {
-      border-bottom: 1px solid #ccc;
-      padding: 15px 0 10px ;
-    }
-
-    // left
-    td:first-child {
-      width: 100px;
-    }
-
-    // right
-    td:nth-child(2) {
-      padding-left: 20px;
     }
   }
 }

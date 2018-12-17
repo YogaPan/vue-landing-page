@@ -14,7 +14,7 @@
     <Hero />
     <Describe />
     <Detail />
-    <Token />
+    <Ico />
     <Roadmap />
     <!-- <Team /> -->
     <Team2 />
@@ -28,7 +28,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Describe from './components/Describe'
 import Detail from './components/Detail'
-import Token from './components/Token'
+import Ico from './components/Ico'
 import Roadmap from './components/Roadmap'
 // import Team from './components/Team'
 import Team2 from './components/Team-2'
@@ -42,7 +42,7 @@ export default {
     Hero,
     Describe,
     Detail,
-    Token,
+    Ico,
     Roadmap,
     // Team,
     Team2,

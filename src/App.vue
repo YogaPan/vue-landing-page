@@ -14,7 +14,7 @@
     <Hero />
     <Describe />
     <Detail />
-    <Ico />
+    <!-- <Ico /> -->
     <Roadmap />
     <!-- <Team /> -->
     <Team2 />

@@ -106,9 +106,9 @@ const messages = {
 
       'advisor': 'Advisor',
       'advisor-name': 'App Girls',
-      'advisor-describe-1': 'Possimus alias et animi autem minima temporibus laudantium.',
-      'advisor-describe-2': 'Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.',
-      'advisor-describe-3': 'Eum itaque deleniti voluptatem ut quibusdam voluptatem repudiandae et. Quo fugiat labore odio esse qui sequi sit. Esse ipsa dicta autem reiciendis.',
+      'advisor-describe-1': 'APP Girls (Application Girls) ',
+      'advisor-describe-2': '(pre-existence is Swift Girls) aims to give tools for girls and women to build their ideas.',
+      'advisor-describe-3': 'APP 為 Application 的縮寫，泛指各種程式應用，包含網頁(Web), APP(iOS和Android), 後端, 區塊鏈等技術。',
     },
     footer: {
       community: 'Join Our Community',

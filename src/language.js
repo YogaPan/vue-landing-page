@@ -86,18 +86,23 @@ const messages = {
 
       'member-1-name': 'Peter Pan',
       'member-1-job': 'Founder & CEO, Lead Developer',
-      'member-1-introduce-1': '全端工程師，現任綠界科技CryptoDT數位代幣平台之區塊鏈工程師。從事技術開發工作七年，曾參與宏碁、NEC、台灣之星、橘子支付等大型企業之專案開發。熟悉前端及後端多種開發語言及框架，擁有資訊安全、雲端建置等經驗。',
-      'member-1-introduce-2': '同時也為區塊鏈技術信仰者，已投入區塊鏈領域研究1年以上，現致力於打造區塊鏈基礎建設以迎合未來趨勢。主要負責建構Spirit開發框架、SDK及資訊安全的實現。',
+      'member-1-introduce-1': '現任綠界科技CryptoDT數位代幣平台區塊鏈工程師，區塊鏈技術信仰者，已投入區塊鏈領域研究1年以上。從事技術開發工作七年，曾參與宏碁、NEC、台灣之星、橘子支付等大型企業之專案開發。熟悉前端及後端多種開發語言及框架，擁有資訊安全、雲端建置等豐富經驗。',
+      'member-1-introduce-2': '現致力於打造區塊鏈基礎建設以迎合未來趨勢。主要負責建構Spirit開發框架、SDK及資訊安全的實現。',
 
       'member-2-name': 'Blacker Wu',
-      'member-2-job': 'Co-Founder',
-      'member-2-introduce-1': '碩士，現為全端工程師。',
+      'member-2-job': 'Co-Founder & COO',
+      'member-2-introduce-1': '資管碩士，現為全端工程師。',
       'member-2-introduce-2': '研究領域包括仿生演算法、機器學習、大數據分析，擁有多年豐富的FinTech軟體開發經驗。曾參與橘子支付GAMA PAY軟體開發，對區塊鏈行業發展和應用有獨到見解。',
 
-      'member-3-name': 'Yoga Pan',
-      'member-3-job': 'Front-End Developer & UI/UX Designer',
-      'member-3-introduce-1': '前端工程師，擅長主流前端技術及開發框架，熱衷於UI/UX設計。',
-      'member-3-introduce-2': '於團隊中主要負責使用者界面設計及網站開發。',
+      'member-3-name': 'Seven Lu',
+      'member-3-job': 'Full-Stack Developer & App Leader',
+      'member-3-introduce-1': '全端工程師，現任職於遊戲公司開發DevOps系統及整合系統開發流程，對於分散式系統與微服務架構有深入的了解。擁有3年以上Mobile App開發經驗，熟悉前端與後端架構並且擅長多種開發語言，擁有多種平台開發經驗。',
+      'member-3-introduce-2': '對科技懷抱著極大的熱忱，且希望能夠幫助他人更深入了解區塊鏈領域。',
+
+      'member-4-name': 'Yoga Pan',
+      'member-4-job': 'Front-End Developer & UI/UX Designer',
+      'member-4-introduce-1': '前端工程師，擅長主流前端技術及開發框架，熱衷於UI/UX設計。',
+      'member-4-introduce-2': '於團隊中主要負責使用者界面設計及網站開發。',
 
       'advisor': 'Advisor',
       'advisor-name': 'App Girls',

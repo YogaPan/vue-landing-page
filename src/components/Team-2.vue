@@ -63,6 +63,26 @@
             <button class="member__bio">Twitter</button>
           </div> -->
         </div>
+
+        <div class="member hide-down pop-order-4">
+          <div class="member__background">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon class="poly" points="0,100 100,0 100,100"/>
+            </svg>
+          </div>
+
+          <img class="member__avatar" src="../assets/avatar-4.png" />
+
+          <h1 class="member__name">{{ $t("team.member-4-name") }}</h1>
+          <h1 class="member__job">{{ $t("team.member-4-job") }}</h1>
+          <p class="member__describe">{{ $t("team.member-4-introduce-1") }}</p>
+          <p class="member__describe">{{ $t("team.member-4-introduce-2") }}</p>
+
+          <!-- <div class="member__social-area">
+            <button class="member__linkedin">Linkedin</button>
+            <button class="member__bio">Twitter</button>
+          </div> -->
+        </div>
       </div>
 
       <h1 class="advisor__title">{{ $t("team.advisor") }}</h1>
@@ -144,10 +164,11 @@ export default {
 .team__members {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
+  flex-wrap: wrap;
 
-  margin-top: 50px;
+  margin-top: 20px;
 
   @media (max-width: $break-big) {
     flex-direction: column;
@@ -165,11 +186,14 @@ export default {
 
   overflow: hidden;
 
-  @media (max-width: $break-big) {
-    &:not(:first-child) {
-      margin-top: 30px;
-    }
-  }
+  margin-top: 30px;
+  min-height: 583px;
+
+  // @media (max-width: $break-big) {
+  //   &:not(:first-child) {
+  //     margin-top: 30px;
+  //   }
+  // }
 }
 
 .member__background {
@@ -222,7 +246,7 @@ export default {
 
 .member__job {
   font-weight: 300;
-  font-size: 25px;
+  font-size: 20px;
   text-align: left;
 }
 
@@ -412,6 +436,10 @@ export default {
   transition-delay: .5s;
 }
 
+.member.pop-order-4 {
+  transition-delay: .6s;
+}
+
 @media (max-width: $break-middle) {
   .member.pop-order-1 {
     transition-delay: .1s;
@@ -422,6 +450,10 @@ export default {
   }
 
   .member.pop-order-3 {
+    transition-delay: .1s;
+  }
+
+  .member.pop-order-4 {
     transition-delay: .1s;
   }
 }

@@ -53,7 +53,7 @@ const messages = {
       'public-presale-start-date-value': 'Augus 9, 2017, 12:00PM PDT',
 
       'public-presale-end-date': 'Public Presale END Date:',
-      'public-preslae-end-date-value': 'August 15, 2017, 12:00 PM PDT',
+      'public-presale-end-date-value': 'August 15, 2017, 12:00 PM PDT',
     },
     roadmap: {
       roadmap: 'ROADMAP',

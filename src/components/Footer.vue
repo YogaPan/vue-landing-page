@@ -3,12 +3,12 @@
     <div class="container">
       <h1>Join Our Community</h1>
 
-      <div class="footer__social">
+      <div class="footer__social" onclick="window.open('https://discordapp.com/');">
         <div class="social-icon">
           <img src="../assets/discord.svg" alt="">
         </div>
 
-        <div class="social-icon">
+        <div class="social-icon" onclick="window.open('https://telegram.org/');">
           <img src="../assets/telegram.svg" alt="">
         </div>
       </div>

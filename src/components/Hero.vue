@@ -4,19 +4,21 @@
 
     <div id="main-info" class="container">
       <div class="hero__body">
+        <img class="hero__logo" src="../assets/spirit-logo.png"></img>
         <h1 class="hero__title">{{ $t("hero.title") }}</h1>
         <p class="hero__content">{{ $t("hero.sub-title") }}</p>
 
-        <button onclick="location.href='http://www.example.com'" type="button" class="whitepaper-button">White Paper</button>
+        <div class="hero__bottom">
+          <button onclick="window.open('https://www.example.com');" type="button" class="whitepaper-button">White Paper</button>
 
+          <div class="hero__social" onclick="window.open('https://discordapp.com/');">
+            <div class="social-icon">
+              <img src="../assets/discord.svg" alt="">
+            </div>
 
-        <div class="hero__social">
-          <div class="social-icon">
-            <img src="../assets/discord.svg" alt="">
-          </div>
-
-          <div class="social-icon">
-            <img src="../assets/telegram.svg" alt="">
+            <div class="social-icon" onclick="window.open('https://telegram.org/');">
+              <img src="../assets/telegram.svg" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -180,10 +182,11 @@ export default {
 <style lang="scss">
 
 .hero {
-  min-height: 100vh;
+  height: 100vh;
+  // min-height: 400px;
   padding: 120px 0 0 0;  // padding-top 70px is navbar's height.
 
-  background-color: #000;
+  background-color: #000;  // For earth background
   color: $white-text-color;
   position: relative;
 
@@ -247,10 +250,22 @@ export default {
     align-items: center;
   }
 
-  // &__title {
-    // margin-top: 30px;
-    // font-size: 75px;
-  // }
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 100px;
+  }
+
+  &__logo {
+    height: 200px;
+  }
+
+  &__title {
+    margin-top: 30px;
+  }
 
   &__content {
     margin-top: 30px;

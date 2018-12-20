@@ -20,7 +20,7 @@
         <li class="navbar__item"><a @click="scroll('describe')">{{ $t("navbar.about-spirit") }}</a></li>
         <li class="navbar__item"><a @click="scroll('ico')">{{ $t("navbar.ico") }}</a></li>
         <li class="navbar__item"><a @click="scroll('roadmap')">{{ $t("navbar.roadmap") }}</a></li>
-        <li class="navbar__item"><a href="#">White Paper</a></li>
+        <li class="navbar__item"><a href="https://www.example.com">White Paper</a></li>
         <li class="navbar__item language">
           <a class="dropdown-toggle" @click="dropdown">{{ $t("navbar.language") }} <div></div></a>
           <!-- <a class="dropdown-toggle" @click="dropdown">{{ $i18n.locale }}</a> -->

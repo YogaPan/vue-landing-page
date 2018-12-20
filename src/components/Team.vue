@@ -69,7 +69,7 @@ export default {
 .team {
   padding: 100px 0;
   background-color: #000;
-  color: $white;
+  color: -background-color;
   text-align: center;
 
   &__members {
@@ -180,7 +180,7 @@ export default {
     h1 {
       font-size: 25px;
       font-weight: 900;
-      color: $white;
+      color: $white-text-color;
     }
 
     img {

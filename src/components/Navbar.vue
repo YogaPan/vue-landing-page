@@ -18,7 +18,7 @@
 
       <ul class="navbar__right">
         <li class="navbar__item"><a @click="scroll('describe')">{{ $t("navbar.about-spirit") }}</a></li>
-        <li class="navbar__item"><a @click="scroll('token')">{{ $t("navbar.ico") }}</a></li>
+        <li class="navbar__item"><a @click="scroll('ico')">{{ $t("navbar.ico") }}</a></li>
         <li class="navbar__item"><a @click="scroll('roadmap')">{{ $t("navbar.roadmap") }}</a></li>
         <li class="navbar__item"><a href="#">White Paper</a></li>
         <li class="navbar__item language">
@@ -118,7 +118,7 @@ export default {
   background-color: transparent;  // Transparent when on top.
 
   &--add-background {  // Have background color when scroll down.
-    background-color: #202328;
+    background-color: $background-black;
     opacity: 0.97;
   }
 
@@ -130,8 +130,8 @@ export default {
 
     a {
       margin-left: 20px;
-      font-size: 25px;
-      color: $white;
+      font-size: 32px;
+      color: $white-text-color;
     }
   }
 
@@ -151,7 +151,7 @@ export default {
     display: block;  // 填滿母元素
 
     font-size: 20px;
-    color: #aaa;
+    color: $grey-text-color;
     text-align: center;
 
     // 下畫線
@@ -167,18 +167,18 @@ export default {
       right: 0;
 
       width: 0;
-      background: #aaa;
+      background: $background-grey;
     }
 
     &:hover {
-      color: $white;
+      color: $white-text-color;
       cursor: pointer;
       transition: .5s;
 
       // 下滑線
       &:after {
         width: 100%;
-        background: $white;
+        background: $white-text-color;
         transition: width .5s;
       }
     }
@@ -201,7 +201,7 @@ export default {
     opacity: 0;  // for transition.
 
     border-radius: 10px;
-    background-color: #202328;
+    background-color: $background-black;
   }
 
   &__dropdown.language__dropdown--drop {
@@ -214,7 +214,7 @@ export default {
 
   &:hover {
     .dropdown-toggle div {
-      border-color: #fff;
+      border-color: $background-white;
       transition: border-color .5s;
     }
   }
@@ -233,8 +233,8 @@ export default {
 
     transform: rotate(-45deg);
     
-    border-left: 2px solid #888;
-    border-bottom: 2px solid #888;
+    border-left: 2px solid $background-grey;
+    border-bottom: 2px solid $background-grey;
   }
 }
 
@@ -244,12 +244,12 @@ export default {
   align-items: center;
   justify-content: space-between;
 
-  font-size: 18px;
+  font-size: 20px;
   padding: 5px 0;
-  color: #888;
+  color: $grey-text-color;
 
   &:hover {
-    color: #fff;
+    color: $white-text-color;
     cursor: pointer;
   }
 
@@ -290,7 +290,7 @@ export default {
       height: 0;  // 先藏起來，高度為 0 才有動畫效果
       padding-top: 0px;
 
-      background-color: #111;
+      background-color: $background-black;
       text-align: center;
       
       opacity: 0;  // 先藏起來
@@ -304,17 +304,17 @@ export default {
 
       padding: 25px 0;
 
-      color: $white;
+      color: $white-text-color;
       font-size: 1.5em;
     }
 
     li a {
-      color: $white;
+      color: $white-text-color;
       font-size: 30px;
 
       &:after {
         width: 100%;
-        background: $white;
+        background: $white-text-color;
         transition: .5s;
       }
     }
@@ -341,7 +341,7 @@ export default {
   .bar-1, .bar-2, .bar-3 {
     width: 30px;
     height: 3px;
-    background-color: #ddd;
+    background-color: $background-white;
     margin: 6px 0;
     transition: transform .5s, opacity .5s;
   }

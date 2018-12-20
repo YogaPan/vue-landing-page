@@ -1,21 +1,41 @@
-$dark: rgb(15, 17, 26);
-$white: #eee;
-$green: rgb(128, 203, 196);
-$blue: rgb(60, 60 , 255);
-$light-blue: rgb(220, 220, 255);
-$orange: rgb(240, 40, 40);
-$spirit-color: rgb(130, 230, 240);
+// Background colors
+$background-white: #eee;
+$background-grey: #e8e8e8;
+$background-black: #202328;
 
-// Define width breakpoint
-$container-max-width: 1240px;
+// Text color in light background
+$black-title-color: #202328;
+$black-content-color: #2c3e50;
+
+// Text color in dark background
+$white-text-color: #eee;
+$grey-text-color: #bbb;
+
+$corporation-color: #666;
+
+// White paper button & scrollbar's color
+$green: #6ec4bb;
+$green-hover: #80cbc4;
+
+// Roadmap area color
+$blue: #3c3cff;
+$light-blue: #dcdcff;
+
+// $spirit-color: #82e6f0;
+
+// Font size
+$title-size: 40px;
+$button-text-size: 32px;
+$subtitle-size: 24px;
+$menu-text-size: 20px;
+$big-content-size: 18px;
+$small-content-size: 16px;
 
 // RWD breakpoints
+$container-max-width: 1240px;
 $break-big: 1200px;
 $break-middle: 900px;
 $break-small: 768px;
-
-//theme style
-$grey-1 : #27292A; 
 
 %content-in-center {
   display: flex;

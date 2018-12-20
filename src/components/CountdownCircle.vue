@@ -78,7 +78,7 @@ export default {
   }
 
   &__number {
-    color: $white;
+    color: $white-text-color;
     font-size: 40px;
   }
 

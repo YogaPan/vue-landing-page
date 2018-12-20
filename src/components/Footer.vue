@@ -31,17 +31,16 @@ export default {
 <style lang="scss">
 
 .footer {
-  background-color: #202328;
+  background-color: $background-black;
   padding: 50px 0 20px 0;
   text-align: center;
 
   h1 {
-    color: $white;
+    color: $white-text-color;
     font-weight: 300;
   }
 
   &__social {
-    // margin-top: 50px;
     padding: 20px 0;
 
     display: flex;
@@ -55,9 +54,7 @@ export default {
   }
 
   &__copyright {
-    // margin-top: 50px;
-    // font-size: 13px;
-    color: #666;
+    color: $corporation-color;
   }
 }
 

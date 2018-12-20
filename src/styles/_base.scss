@@ -21,37 +21,35 @@ a {
 @import url('https://fonts.googleapis.com/css?family=Asap|Roboto|Open+Sans');
 
 body {
-  background-color: $dark;
+  background-color: $background-black;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  // font-family: 'Asap', Helvetica, Arial, sans-serif;
-  // font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  color: #2c3e50;
+  color: $black-content-color;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: $title-size;
   font-weight: 100;
 }
 
 p, li {
-  font-size: 16px;
+  font-size: $small-content-size;
   line-height: 1.5;
 }
 
 /* Customize chrome scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
+// ::-webkit-scrollbar {
+//   width: 10px;
 
-  &-track {
-    background: rgb(10, 12, 18);
-  }
+//   &-track {
+//     background: rgb(10, 12, 18);
+//   }
 
-  &-thumb {
-    background: rgb(110, 196, 187);
-    border-radius: 5px;
+//   &-thumb {
+//     background: rgb(110, 196, 187);
+//     border-radius: 5px;
 
-    &:hover {
-      background: rgb(128, 203, 196);
-    }
-  }
-}
+//     &:hover {
+//       background: rgb(128, 203, 196);
+//     }
+//   }
+// }

@@ -120,7 +120,7 @@ export default {
   padding: 50px 0;
   overflow: hidden;
 
-  background-color: $white;
+  background-color: $background-white;
 
   &__line {
     position: relative;
@@ -144,7 +144,7 @@ export default {
 
       border: 3px $light-blue solid;
       border-radius: 50%;
-      background: $white;
+      background: $background-white;
     }
 
     &:nth-child(odd) div {
@@ -197,7 +197,7 @@ export default {
 
     h1 {
       color: $blue;
-      font-size: 32px;
+      font-size: $button-text-size;
     }
   }
 }

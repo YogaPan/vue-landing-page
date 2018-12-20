@@ -14,7 +14,7 @@
     <Hero />
     <Describe />
     <Detail />
-    <!-- <Ico /> -->
+    <Ico />
     <Roadmap />
     <!-- <Team /> -->
     <Team2 />
@@ -99,20 +99,18 @@ button {
 @import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
 
 body {
-  background-color: $dark;
+  background-color: $background-black;
   font-family: 'Open Sans', 'Noto Sans TC', Helvetica, Arial, sans-serif;
-  // font-family: 'Asap', Helvetica, Arial, sans-serif;
-  // font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  color: #2c3e50;
+  color: $black-content-color;  // All text inherit this color
 }
 
 h1 {
-  font-size: 40px;
+  font-size: $title-size;
   font-weight: 400;
 }
 
 p, li {
-  font-size: 16px;
+  font-size: $small-content-size;
   line-height: 1.5;
 }
 
@@ -121,15 +119,15 @@ p, li {
   width: 10px;
 
   &-track {
-    background: rgb(10, 12, 18);
+    background: $background-black;
   }
 
   &-thumb {
-    background: rgb(110, 196, 187);
+    background: $green;
     border-radius: 5px;
 
     &:hover {
-      background: rgb(128, 203, 196);
+      background: $green-hover;
     }
   }
 }
@@ -205,8 +203,7 @@ p, li {
   &:hover {
     cursor: pointer;
     transition: border-color .2s;
-    // border-color: #fff;
-    border: 3px solid #fff;
+    border: 3px solid $background-white;
 
     }
 
@@ -253,7 +250,7 @@ p, li {
 
   height: 100vh;
   width: 100vw;
-  background-color: #000;
+  background-color: $background-black;
 
   display: flex;
   align-items: center;

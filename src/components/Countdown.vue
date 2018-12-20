@@ -118,7 +118,7 @@ export default {
     h1 {
       font-size: 30px;
       font-weight: 300;
-      color: $white;
+      color: $white-text-color;
       text-align: center;
 
       @media (max-width: $break-middle) {
@@ -150,7 +150,7 @@ export default {
   }
 
   50% {
-    color: $white;
+    color: $white-text-color;
   }
 }
 

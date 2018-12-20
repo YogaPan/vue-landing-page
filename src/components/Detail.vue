@@ -71,13 +71,13 @@ export default {
 <style lang="scss">
 
 .detail {
-  background-color: $white;
+  background-color: $background-white;
   padding: 100px 0;
 
   &__title {
     margin-bottom: 30px;
 
-    color: $dark;
+    color: $black-title-color;
     text-align: center;
 
     span {
@@ -92,7 +92,7 @@ export default {
 
       height: 2px;
       width: 100px;
-      background-color: $dark;
+      background-color: $black-title-color;
 
       &::after {
         content: "";
@@ -105,7 +105,7 @@ export default {
         height: 10px;
         width: 10px;
         border-radius: 50%;
-        background-color: $dark;
+        background-color: $black-title-color;
       }
 
       @media (max-width: $break-middle) {
@@ -121,7 +121,7 @@ export default {
 
       height: 2px;
       width: 100px;
-      background-color: $dark;
+      background-color: $black-title-color;
 
       &::after {
         content: "";
@@ -134,7 +134,7 @@ export default {
         height: 10px;
         width: 10px;
         border-radius: 50%;
-        background-color: $dark;
+        background-color: $black-title-color;
       }
 
       @media (max-width: $break-middle) {
@@ -155,8 +155,8 @@ export default {
     }
 
     h2 {
-      font-size: 18px;
-      color: $dark;
+      font-size: $subtitle-size;
+      color: $black-title-color;
       text-align: center;
       margin-top: 30px;
     }

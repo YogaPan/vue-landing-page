@@ -187,7 +187,7 @@ export default {
   min-height: 100vh;
   padding: 120px 0 0 0;  // padding-top 70px is navbar's height.
 
-  color: $white;
+  color: $white-text-color;
   position: relative;
 
   @media (max-width: $break-middle) {
@@ -203,7 +203,7 @@ export default {
     height: 46px;
     margin-left: -23px;
 
-    border: 1px solid #fff;
+    border: 1px solid $background-white;
     border-radius: 50%;
 
     &:hover {
@@ -238,8 +238,8 @@ export default {
       height: 16px;
       margin: -12px 0 0 -8px;
 
-      border-left: 1px solid #fff;
-      border-bottom: 1px solid #fff;
+      border-left: 1px solid $background-white;
+      border-bottom: 1px solid $background-white;
       transform: rotate(-45deg);
     }
   }
@@ -279,17 +279,17 @@ export default {
   border: none;
   border-radius: 40px;
 
-  background-color: rgb(108, 183, 176);
+  background-color: $green;
   font-size: 30px;
   font-weight: 100;
-  color: $white;
+  color: $white-text-color;
 
   // box-shadow: 0px 0px 10px 0px $green;
   transition: box-shadow .2s, background-color .2s;
 
   &:hover {
     background-color: $green;
-    box-shadow: 0px 0px 15px 0px $green;
+    box-shadow: 0px 0px 15px 0px $green-hover;
   }
 }
 

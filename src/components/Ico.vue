@@ -270,7 +270,7 @@ $future-preserve-color: #8881f0;
 
 .ico {
   padding: 100px 0;
-  background-color: #e8e8e8;
+  background-color: $background-grey;
 
   &__left {
     @extend %token-column;
@@ -290,7 +290,7 @@ $future-preserve-color: #8881f0;
 
   &__title {
     margin-bottom: 30px;
-    color: $dark;
+    color: $black-title-color;
     text-align: center;
 
     span {
@@ -305,7 +305,7 @@ $future-preserve-color: #8881f0;
 
       height: 2px;
       width: 100px;
-      background-color: $dark;
+      background-color: $black-title-color;
 
       &::after {
         content: "";
@@ -318,7 +318,7 @@ $future-preserve-color: #8881f0;
         height: 10px;
         width: 10px;
         border-radius: 50%;
-        background-color: $dark;
+        background-color: $black-title-color;
       }
 
       @media (max-width: $break-middle) {
@@ -334,7 +334,7 @@ $future-preserve-color: #8881f0;
 
       height: 2px;
       width: 100px;
-      background-color: $dark;
+      background-color: $black-title-color;
 
       &::after {
         content: "";
@@ -347,7 +347,7 @@ $future-preserve-color: #8881f0;
         height: 10px;
         width: 10px;
         border-radius: 50%;
-        background-color: $dark;
+        background-color: $black-title-color;
       }
 
       @media (max-width: $break-middle) {
@@ -359,7 +359,7 @@ $future-preserve-color: #8881f0;
   &__table {
     border-collapse: collapse;
     text-align: left;
-    font-size: 16px;
+    font-size: $small-content-size;
 
     tr:hover {
       background-color: #dfdfdf;
@@ -395,7 +395,7 @@ $future-preserve-color: #8881f0;
     transform: translateX(-50%) translateY(-50%);
 
     font-weight: 600;
-    font-size: 32px;
+    font-size: $button-text-size;
   }
 
   &__svg {
@@ -474,9 +474,9 @@ $future-preserve-color: #8881f0;
     div {
       position: relative;
       padding: 7px 16px 7px 54px;
-      background-color: #002846;;
+      background-color: #002846;
       overflow: hidden;
-      color: $white;
+      color: $background-white;
       cursor: pointer;
 
       border-radius: 20px;

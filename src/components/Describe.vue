@@ -73,7 +73,7 @@ export default {
   &__part-1 {
     width: 100%;
     padding: 100px 0;
-    background-color: $white;
+    background-color: $background-white;
 
     @media (max-width: $break-middle) {
       padding: 50px 0;
@@ -83,7 +83,7 @@ export default {
   &__part-2 {
     width: 100%;
     padding: 100px 0;
-    background-color: #e8e8e8;
+    background-color: $background-grey;
 
     @media (max-width: $break-middle) {
       padding: 50px 0;
@@ -111,16 +111,16 @@ export default {
     }
 
     h1 {
-      font-size: 40px;
+      font-size: $title-size;
       // font-weight: 100;
       text-align: left;
-      color: $dark;
+      color: $black-title-color;
     }
 
     p {
       margin-top: 30px;
       text-align: start;
-      color: $dark;
+      color: $black-content-color;
     }
   }
 }

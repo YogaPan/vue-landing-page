@@ -150,14 +150,14 @@ export default {
 <style lang="scss">
 
 .team {
-  background-color: #e8e8e8;
+  background-color: $background-grey;
   
   padding-top: 100px;
   padding-bottom: 100px;
 
   &__title {
     text-align: center;
-    color: black;
+    color: $black-title-color;
   }
 }
 
@@ -206,7 +206,6 @@ export default {
   height: 175px;
   width: 100%;
   
-  // background-color: $dark;
   background-image: url("../assets/member-background-3.jpg");
   background-size: cover;
 
@@ -218,7 +217,7 @@ export default {
   }
 
   .poly {
-    fill: #e8e8e8;
+    fill: $background-grey;
   }
 }
 
@@ -231,7 +230,6 @@ export default {
 
   height: 175px;
   width: 175px;
-  // background-color: grey;
 
   border-radius: 50%;
 }
@@ -239,27 +237,27 @@ export default {
 .member__name {
   margin-top: 10px;
 
-  font-size: 30px;
-  font-weight: 600;
-  color: $dark;
+  font-size: $button-text-size;
+  font-weight: bold;
+  color: $black-title-color;
 }
 
 .member__job {
   font-weight: 300;
-  font-size: 20px;
+  font-size: $menu-text-size;
   text-align: left;
 }
 
 .member__describe {
   margin-top: 20px;
   text-align: left;
-  font-size: 15px;
+  font-size: $small-content-size;
 }
 
 // .member__list {
 //   li {
 //     list-style-type: disc;
-//     font-size: 16px;
+//     font-size: $small-content-size;
 //     line-height: 1.5;
 //   }
 // }
@@ -280,7 +278,7 @@ export default {
 
   border-radius: 15px;
 
-  font-size: 20px;
+  font-size: $menu-text-size;
   // font-weight: bold;
 
   // transition: border-width .5s;
@@ -369,7 +367,7 @@ export default {
   }
 
   .poly {
-    fill: #e8e8e8;
+    fill: $background-grey;
   }
 }
 
@@ -382,7 +380,6 @@ export default {
 
   height: 175px;
   width: 175px;
-  // background-color: grey;
 
   border-radius: 50%;
 }
@@ -390,16 +387,16 @@ export default {
 .advisor__name {
   margin-top: 10px;
 
-  font-size: 30px;
-  font-weight: 900;
-  color: $dark;
+  font-size: $button-text-size;
+  font-weight: bold;
+  color: $black-title-color;
   text-align: center;
 }
 
 .advisor__describe {
   margin-top: 20px;
   text-align: left;
-  font-size: 15px;
+  font-size: $small-content-size;
 }
 
 .member.hide-down {

@@ -14,10 +14,9 @@
     <Hero />
     <Describe />
     <Detail />
-    <Ico />
+    <!-- <Ico /> -->
     <Roadmap />
-    <!-- <Team /> -->
-    <Team2 />
+    <Team />
     <Footer />
 
   </div>
@@ -30,8 +29,7 @@ import Describe from './components/Describe'
 import Detail from './components/Detail'
 import Ico from './components/Ico'
 import Roadmap from './components/Roadmap'
-// import Team from './components/Team'
-import Team2 from './components/Team-2'
+import Team from './components/Team'
 import Footer from './components/Footer'
 
 
@@ -44,8 +42,7 @@ export default {
     Detail,
     Ico,
     Roadmap,
-    // Team,
-    Team2,
+    Team,
     Footer,
   },
   data() {
@@ -65,6 +62,7 @@ export default {
 
 <style lang="scss">
 
+/* =============================== Initialize ===================================== */
 /* Initialize box-model */
 *, *::before, *::after {
   margin: 0;
@@ -95,8 +93,13 @@ button {
   }
 }
 
+/* ================================== Basic Style ======================================= */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 @import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
+
+#app {
+  width: 100%;
+}
 
 body {
   background-color: $background-black;
@@ -132,6 +135,7 @@ p, li {
   }
 }
 
+/* ======================================= Layout ===================================== */
 .container {
   margin: 0 auto;
   width: 100%;
@@ -182,6 +186,7 @@ p, li {
   justify-content: flex-start;
 }
 
+/* ===================================  Reuseable Components ==================================== */
 .social-icon {
   // 內圈
   position: relative;  // for absolute content
@@ -238,10 +243,7 @@ p, li {
   }
 }
 
-#app {
-  width: 100%;
-}
-
+/* ================================ loading scene =================================== */
 .loading-scene {
   position: fixed;
   top: 0;

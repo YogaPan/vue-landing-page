@@ -31,11 +31,7 @@
     <div class="scroll-down" @click="scroll('describe')">
       <span></span>
     </div>
-    <img style="position: absolute;bottom: 0px;width: 100%;z-index: -1;opacity: 0.8;" src="../assets/background_earth.png" >
-    <div src="/img/background_earth.84df4e2d.png" style="position: absolute;top: 0px;width: 100%; z-index: -2; height: 100%; background-color: #010101;"></div>
-    <!-- <span class="scroll-down" @click="scroll('describe')"></span>
-    <img style="position: absolute;bottom: 0px;width: 100%。;z-index: -1;opacity: 0.8;" src="../assets/background_earth.png" >
-    <div src="/img/background_earth.84df4e2d.png" style="position: absolute;top: 0px;width: 100%; z-index: -2; height: 100%; background-color: #010101;"></div> -->
+    <img class="hero__background" src="../assets/background_earth.png" >
 
   </div>
 </template>
@@ -187,6 +183,7 @@ export default {
   min-height: 100vh;
   padding: 120px 0 0 0;  // padding-top 70px is navbar's height.
 
+  background-color: #000;
   color: $white-text-color;
   position: relative;
 
@@ -196,7 +193,7 @@ export default {
  
   .scroll-down {
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     bottom: 50px;
     left: 50%;
     width: 46px;
@@ -218,7 +215,6 @@ export default {
 
       top: 0;
       left: 0;
-      // z-index: -1;
       width: 44px;
       height: 44px;
 
@@ -269,6 +265,13 @@ export default {
     align-items: center;
     justify-content: center;
   }
+
+  &__background {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    opacity: 0.8;
+  }
 }
 
 .whitepaper-button {
@@ -300,12 +303,12 @@ export default {
   height: 95%;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1;
   opacity: 0.5;
 }
 
 #main-info {
-  z-index: 10;
+  z-index: 1;
   position: relative;
 }
 

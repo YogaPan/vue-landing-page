@@ -224,7 +224,7 @@ p, li {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 99;  // alwayus on top
 
   height: 100vh;
   width: 100vw;

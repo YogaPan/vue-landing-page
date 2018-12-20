@@ -217,30 +217,6 @@ p, li {
     height: 45px;
     filter: invert(1);
   }
-
-  svg {
-    position: absolute;
-
-    circle {
-      stroke: #ddd;
-      stroke-width: 3;
-      stroke-dasharray: 300;
-      stroke-dashoffset: 300;
-      fill: none;
-    }
-  }
-
-  svg:hover {
-    circle {
-      // stroke-width: 10;
-      transition: stroke-dashoffset ease .75s;
-      stroke-dashoffset: 0;
-    }
-  }
-
-  svg.in-view {
-    
-  }
 }
 
 /* ================================ loading scene =================================== */

@@ -6,9 +6,6 @@
       <div class="footer__social">
         <div class="social-icon">
           <img src="../assets/discord.svg" alt="">
-          <svg height="100" width="100">
-            <circle cx="50" cy="50" r="40" ></circle>
-          </svg>
         </div>
 
         <div class="social-icon">

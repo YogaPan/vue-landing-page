@@ -164,13 +164,7 @@ export default {
     p {
       margin-top: 30px;
       text-align: center;
-    }
-    
-    // &:hover {
-    //   border-radius: 30px;
-    //   box-shadow: 2px 2px 20px #ccc;
-    //   transition: .5s;
-    // }
+    } 
   }
 }
 
@@ -181,11 +175,11 @@ export default {
 
 .detail__column.is-in-view {
   transition: opacity .5s, transform .5s;
-  // transition: opacity .5s linear 10s, transform .5s  linear 10s;
   transform: none;
   opacity: 1;
 }
 
+// 由左至右漸層效果
 .detail__column.pop-order-1 {
   transition-delay: .1s;
 }
@@ -198,6 +192,7 @@ export default {
   transition-delay: .5s;
 }
 
+// 在手機上沒有漸層動畫效果
 @media (max-width: $break-middle) {
   .detail__column.pop-order-1 {
     transition-delay: .1s;

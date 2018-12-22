@@ -522,9 +522,8 @@ $future-preserve-color: #8881f0;
     }
 
     div.active {
-      // background-color: #aaa;
       opacity: 0.8;
-      transition: .4s;
+      transition: .5s;
     }
   }
 }

@@ -200,7 +200,7 @@ export default {
     &:hover {
       color: $white-text-color;
       cursor: pointer;
-      transition: .5s;
+      transition: color .5s;
 
       // 下滑線
       &:after {
@@ -238,13 +238,6 @@ export default {
     top: 70px;
     opacity: 1;
   }
-
-  // &:hover {
-  //   .dropdown-toggle div {
-  //     border-color: $white-text-color;
-  //     transition: border-color .5s;
-  //   }
-  // }
 }
 
 // Drop down arrow
@@ -272,7 +265,13 @@ export default {
     cursor: pointer;
 
     a {
-      // TODO
+      color: $white-text-color;
+
+      &:after {
+        width: 100%;
+        background: $white-text-color;
+        transition: width .5s;
+      }
     }
 
     div {

@@ -51,11 +51,38 @@ export default {
     }
   },
   mounted() {
+    var items = document.querySelectorAll(".roadmap__content, .hide-down")
+
+    const callbackFunc = () => {
+      for (let i = 0; i < items.length; i++) {
+        if (this.isElementInView(items[i]))
+          items[i].classList.add('is-in-view')
+        else
+          items[i].classList.remove('is-in-view')
+      }
+    }
+
+    window.addEventListener('scroll', callbackFunc)
+    window.addEventListener('load', callbackFunc)
+
+    // Exit loading scene after all image loaded.
     window.addEventListener('load', () => {
       setTimeout(() => {
         this.loadComplete = true
       }, 2000)
     })
+  },
+  methods: {
+    isElementInView(el) {
+      const rect = el.getBoundingClientRect()
+
+      return (
+        // rect.bottom >= 0 &&
+        // rect.left >= 0 &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+        // && rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      )
+    }
   }
 }
 </script>

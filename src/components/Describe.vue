@@ -38,31 +38,8 @@
 export default {
   name: 'Describe',
   mounted() {
-    var items = document.querySelectorAll(".hide-down")
- 
-    const callbackFunc = () => {
-      for (let i = 0; i < items.length; i++) {
-        if (this.isElementInViewport(items[i])) {
-          items[i].classList.add("is-in-view")
-        }
-      }
-    }
-    
-    window.addEventListener("load", callbackFunc)
-    window.addEventListener("scroll", callbackFunc)
+    // TODO
   },
-  methods: {
-    isElementInViewport: function(el) {
-      const rect = el.getBoundingClientRect()
-
-      return (
-        rect.bottom >= 0 &&
-        rect.left >= 0 &&
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      )
-    }
-  }
 }
 
 </script>

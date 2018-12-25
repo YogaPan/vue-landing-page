@@ -9,7 +9,7 @@
         <p class="hero__content">{{ $t("hero.sub-title") }}</p>
 
         <div class="hero__bottom">
-          <button onclick="window.open('https://www.example.com');" type="button" class="whitepaper-button">{{ $t("hero.whitepaper-download") }}</button>
+          <button onclick="window.open('whitepaper_zh-TW.pdf');" type="button" class="whitepaper-button">{{ $t("hero.whitepaper-download") }}</button>
 
           <div class="hero__social" onclick="window.open('https://discordapp.com/');">
             <div class="social-icon">

@@ -9,16 +9,22 @@
         <p class="hero__content">{{ $t("hero.sub-title") }}</p>
 
         <div class="hero__bottom">
-          <button onclick="window.open('whitepaper_zh-TW.pdf');" type="button" class="whitepaper-button">{{ $t("hero.whitepaper-download") }}</button>
+          <a href="whitepaper_zh-TW.pdf">
+            <button class="whitepaper-button">{{ $t("hero.whitepaper-download") }}</button>
+          </a>
 
-          <div class="hero__social" onclick="window.open('https://discordapp.com/');">
-            <div class="social-icon">
-              <img src="../assets/discord.svg" alt="">
-            </div>
+          <div class="hero__social">
+            <a href="https://discordapp.com/">
+              <div class="social-icon">
+                <img src="../assets/discord.svg" alt="">
+              </div>
+            </a>
 
-            <div class="social-icon" onclick="window.open('https://telegram.org/');">
-              <img src="../assets/telegram.svg" alt="">
-            </div>
+            <a href="https://telegram.org/">
+              <div class="social-icon">
+                <img src="../assets/telegram.svg" alt="">
+              </div>
+            </a>
           </div>
         </div>
       </div>

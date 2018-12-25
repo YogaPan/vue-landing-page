@@ -4,13 +4,17 @@
       <h1>{{ $t("footer.community") }}</h1>
 
       <div class="footer__social" onclick="window.open('https://discordapp.com/');">
-        <div class="social-icon">
-          <img src="../assets/discord.svg" alt="">
-        </div>
+        <a href="https://discordapp.com/">
+          <div class="social-icon">
+            <img src="../assets/discord.svg" alt="">
+          </div>
+        </a>
 
-        <div class="social-icon" onclick="window.open('https://telegram.org/');">
-          <img src="../assets/telegram.svg" alt="">
-        </div>
+        <a href="https://telegram.org/">
+          <div class="social-icon">
+            <img src="../assets/telegram.svg" alt="">
+          </div>
+        </a>
       </div>
 
       <p class="footer__copyright">© 2018 Spirit. All Rights Reserved.</p>

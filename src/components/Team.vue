@@ -10,17 +10,18 @@
               <polygon class="poly" points="0,100 100,0 100,100"/>
             </svg>
           </div>
-
           <img class="member__avatar" src="../assets/avatar-1.png" />
-
           <h1 class="member__name">
             {{ $t("team.member-1-name") }}
-            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/peter-pan-85081292/')" alt="">
+            <a href="https://www.linkedin.com/in/peter-pan-85081292/">
+              <img class="member__linkedin" src="../assets/linkedin.svg" alt="">
+            </a>
           </h1>
           <h1 class="member__job">{{ $t("team.member-1-job") }}</h1>
           <p class="member__describe">{{ $t("team.member-1-introduce-1") }}</p>
           <p class="member__describe">{{ $t("team.member-1-introduce-2") }}</p>
         </div>
+
 
         <div class="member hide-down pop-order-2">
           <div class="member__background">
@@ -28,17 +29,18 @@
               <polygon class="poly" points="0,100 100,0 100,100"/>
             </svg>
           </div>
-
           <img class="member__avatar" src="../assets/avatar-2.png" />
-
           <h1 class="member__name">
             {{ $t("team.member-2-name") }}
-            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/%E5%86%A0%E5%AE%87-%E5%90%B3-09296ba3/')" alt="">
+            <a href="https://www.linkedin.com/in/%E5%86%A0%E5%AE%87-%E5%90%B3-09296ba3/">
+              <img class="member__linkedin" src="../assets/linkedin.svg" alt="">
+            </a>
           </h1>
           <h1 class="member__job">{{ $t("team.member-2-job") }}</h1>
           <p class="member__describe">{{ $t("team.member-2-introduce-1") }}</p>
           <p class="member__describe">{{ $t("team.member-2-introduce-2") }}</p>
         </div>
+
 
         <div class="member hide-down pop-order-3">
           <div class="member__background">
@@ -46,17 +48,18 @@
               <polygon class="poly" points="0,100 100,0 100,100"/>
             </svg>
           </div>
-
           <img class="member__avatar" src="../assets/avatar-3.png" />
-
           <h1 class="member__name">
             {{ $t("team.member-3-name") }}
-            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/seven-lu-b9bb37177/')" alt="">
+            </a href="https://www.linkedin.com/in/seven-lu-b9bb37177/">
+              <img class="member__linkedin" src="../assets/linkedin.svg" alt="">
+            </a>
           </h1>
           <h1 class="member__job">{{ $t("team.member-3-job") }}</h1>
           <p class="member__describe">{{ $t("team.member-3-introduce-1") }}</p>
           <p class="member__describe">{{ $t("team.member-3-introduce-2") }}</p>
         </div>
+
 
         <div class="member hide-down pop-order-4">
           <div class="member__background">
@@ -64,18 +67,19 @@
               <polygon class="poly" points="0,100 100,0 100,100"/>
             </svg>
           </div>
-
           <img class="member__avatar" src="../assets/avatar-4.png" />
-
           <h1 class="member__name">
             {{ $t("team.member-4-name") }}
-            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/%E6%98%B1%E5%98%89-%E6%BD%98-5a7927ab/')" alt="">
+            <a href="https://www.linkedin.com/in/%E6%98%B1%E5%98%89-%E6%BD%98-5a7927ab/">
+              <img class="member__linkedin" src="../assets/linkedin.svg" alt="">
+            </a>
           </h1>
           <h1 class="member__job">{{ $t("team.member-4-job") }}</h1>
           <p class="member__describe">{{ $t("team.member-4-introduce-1") }}</p>
           <p class="member__describe">{{ $t("team.member-4-introduce-2") }}</p>
         </div>
       </div>
+
 
       <h1 class="advisor__title">{{ $t("team.advisor") }}</h1>
 
@@ -87,12 +91,12 @@
               <polygon class="poly" points="0,100 100,0 100,100"/>
             </svg>
           </div>
-
           <img class="advisor__avatar" src="../assets/app_girl.png" />
-
           <h1 class="advisor__name">
             {{ $t("team.advisor-name") }}
-            <img class="advisor__facebook" src="../assets/facebook.svg" onclick="window.open('https://www.facebook.com/groups/1260405513988915/')" alt="">
+            <a href="https://www.facebook.com/groups/1260405513988915/">
+              <img class="advisor__facebook" src="../assets/facebook.svg" alt="">
+            </a>
           </h1>
           <p class="advisor__describe">{{ $t("team.advisor-describe-1") }}</p>
           <p class="advisor__describe">{{ $t("team.advisor-describe-2") }}</p>

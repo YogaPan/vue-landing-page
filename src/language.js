@@ -179,30 +179,22 @@ const messages = {
     //   'public-presale-end-date-value': 'August 15, 2017, 12:00 PM PDT',
     // },
     roadmap: {
-      roadmap: '發展計畫',
-      future: '未來',
+      'roadmap': '發展計畫',
+      'future': '未來',
 
-      '2018-Q1-1': 'Spirit Team Founded',
+      '2018-Q4-1': 'Spirit團隊成立',
+      '2018-Q4-2': '計畫啟動',
 
-      '2018-Q2-1': 'Dapps Gaming Research',
-      '2018-Q2-2': 'Marketing research',
+      '2019-Q1-1': '發布Spirit開發框架 beta版本',
 
-      '2018-Q3-1': 'Spirit Platform Development',
-      '2018-Q3-2': 'Token sale',
-      '2018-Q3-3': 'Team Expansion',
-      '2018-Q3-4': 'Community Bounties',
+      '2019-Q2-1': '推出Spirit Wallet 產品原型',
+      '2019-Q2-2': '建構開發者社群',
 
-      '2018-Q4-1': 'Sprit Platform Online(beta)',
-      '2018-Q4-2': 'Spirit Wallet Development',
-      '2018-Q4-3': 'First Spirit Game Online',
+      '2019-Q3-1': '正式發布Spirit開發框架',
+      '2019-Q3-2': '正式發布Spirit Wallet',
+      '2019-Q3-3': '賞金計劃',
 
-      '2019-Q1-1': 'Spirit Platform Release',
-      '2019-Q1-2': 'Spirit Wallet Online(beta)',
-      '2019-Q1-3': 'More Spirit Game Online',
-
-      '2019-Q2-1': 'Spirit Wallet Release',
-      '2019-Q2-2': 'More Spirit Game Online',
-
+      '2019-Q4-1': '推出Spirit DApps Store',
     },
     team: {
       'title': '核心團隊',

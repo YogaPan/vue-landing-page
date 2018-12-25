@@ -6,10 +6,11 @@
 
     <ul>
       <li class="roadmap__line roadmap__line--pass">
-        <div id="2018-Q1" class="roadmap__content hide-left">
-          <h1>2018 Q1</h1>
+        <div id="2018-Q4" class="roadmap__content hide-left">
+          <h1>2018 Q4</h1>
           <ul>
-            <li>{{ $t("roadmap.2018-Q1-1") }}</li>
+            <li>{{ $t("roadmap.2018-Q4-1") }}</li>
+            <li>{{ $t("roadmap.2018-Q4-2") }}</li>
           </ul>
         </div>
       </li>
@@ -19,55 +20,40 @@
       </div> -->
 
       <li class="roadmap__line">
-        <div id="2018-Q2" class="roadmap__content hide-right">
-          <h1>2018 Q2</h1>
-          <ul>
-            <li>{{ $t("roadmap.2018-Q2-1") }}</li>
-            <li>{{ $t("roadmap.2018-Q2-2") }}</li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="roadmap__line">
-        <div id="2018-Q3" class="roadmap__content hide-left">
-          <h1>2018 Q3</h1>
-          <ul>
-            <li>{{ $t("roadmap.2018-Q3-1") }}</li>
-            <li>{{ $t("roadmap.2018-Q3-2") }}</li>
-            <li>{{ $t("roadmap.2018-Q3-3") }}</li>
-            <li>{{ $t("roadmap.2018-Q3-4") }}</li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="roadmap__line">
-        <div id="2018-Q4" class="roadmap__content hide-right">
-          <h1>2018 Q4</h1>
-          <ul>
-            <li>{{ $t("roadmap.2018-Q4-1") }}</li>
-            <li>{{ $t("roadmap.2018-Q4-2") }}</li>
-            <li>{{ $t("roadmap.2018-Q4-3") }}</li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="roadmap__line">
-        <div id="2019-Q1" class="roadmap__content hide-left">
+        <div id="2019-Q1" class="roadmap__content hide-right">
           <h1>2019 Q1</h1>
           <ul>
             <li>{{ $t("roadmap.2019-Q1-1") }}</li>
-            <li>{{ $t("roadmap.2019-Q1-2") }}</li>
-            <li>{{ $t("roadmap.2019-Q1-3") }}</li>
           </ul>
         </div>
       </li>
 
       <li class="roadmap__line">
-        <div id="2019-Q2" class="roadmap__content hide-right">
+        <div id="2019-Q2" class="roadmap__content hide-left">
           <h1>2019 Q2</h1>
           <ul>
             <li>{{ $t("roadmap.2019-Q2-1") }}</li>
             <li>{{ $t("roadmap.2019-Q2-2") }}</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="roadmap__line">
+        <div id="2019-Q3" class="roadmap__content hide-left">
+          <h1>2019 Q3</h1>
+          <ul>
+            <li>{{ $t("roadmap.2019-Q3-1") }}</li>
+            <li>{{ $t("roadmap.2019-Q3-2") }}</li>
+            <li>{{ $t("roadmap.2019-Q3-3") }}</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="roadmap__line">
+        <div id="2019-Q4" class="roadmap__content hide-left">
+          <h1>2019 Q4</h1>
+          <ul>
+            <li>{{ $t("roadmap.2019-Q4-1") }}</li>
           </ul>
         </div>
       </li>

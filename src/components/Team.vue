@@ -381,7 +381,7 @@ export default {
 }
 
 .member.pop-order-4 {
-  transition-delay: .6s;
+  transition-delay: .3s;
 }
 
 @media (max-width: $break-middle) {

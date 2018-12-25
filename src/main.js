@@ -9,7 +9,7 @@ Vue.config.productionTip = false
 
 // Create VueI18n instance with options
 const i18n = new VueI18n({
-  locale: 'en',  // set locale
+  locale: 'zh_TW',  // set locale
   messages,  // set locale messages
 })
 

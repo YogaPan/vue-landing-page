@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="561px" height="561px" viewBox="0 0 561 561" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <circle id="path-1" cx="200.5" cy="200.5" r="200.5"></circle>
+        <filter x="-30.3%" y="-30.3%" width="160.6%" height="160.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="20.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.492088899   0 0 0 0 0.986474277   0 0 0 0 0.962040489  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="201" cy="201" r="179"></circle>
+        <filter x="-7.3%" y="-7.3%" width="114.6%" height="114.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="4.029018 0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-9.2%" y="-9.2%" width="118.5%" height="118.5%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="4" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0380718415   0 0 0 0 0.922459609   0 0 0 0 0.92080739  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-6" cx="201" cy="201" r="102"></circle>
+        <filter x="-9.4%" y="-8.4%" width="118.8%" height="118.8%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="1.71875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-13.3%" y="-12.3%" width="126.6%" height="126.6%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.266682891   0 0 0 0 0.844571518   0 0 0 0 0.869021046  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-14.3%" y="-13.3%" width="128.6%" height="128.6%" filterUnits="objectBoundingBox" id="filter-9">
+            <feMorphology radius="10" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="5" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.550323247   0 0 0 0 0.904740386   0 0 0 0 0.980415604  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="whitepaper" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-7" transform="translate(-594.000000, -103.000000)">
+            <g id="spirit-logo" transform="translate(674.000000, 183.000000)">
+                <g id="Oval-3">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#D2FFF8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Oval" filter="url(#filter-4)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-3"></use>
+                    <use fill="#7EE4F9" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <g id="Oval-2" filter="url(#filter-7)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-6"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-6"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

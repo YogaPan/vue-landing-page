@@ -21,8 +21,12 @@
           <a @click="scroll('describe')">{{ $t("navbar.about-spirit") }}</a>
         </li>
 
-        <li class="navbar__item">
+        <!-- <li class="navbar__item">
           <a @click="scroll('ico')">{{ $t("navbar.ico") }}</a>
+        </li> -->
+
+        <li class="navbar__item">
+          <a @click="scroll('detail')">{{ $t("navbar.detail") }}</a>
         </li>
 
         <li class="navbar__item">
@@ -30,7 +34,7 @@
         </li>
 
         <li class="navbar__item">
-          <a href="https://www.example.com">White Paper</a>
+          <a href="https://www.example.com">{{ $t("navbar.white-paper") }}</a>
         </li>
 
         <li class="navbar__item language">
@@ -46,26 +50,26 @@
           <!-- <a class="dropdown-toggle" @click="dropdown">{{ $i18n.locale }}</a> -->
           <div class="language__dropdown" :class="{ 'language__dropdown--drop': isDropdown }">
             <!-- <ul>
-              <li @click="changeLocale('en')">English</li>
-              <li @click="changeLocale('tw')">中文(繁體)</li>
-              <li @click="changeLocale('zh')">中文(簡體)</li>
+              <li @click="changeLocale('en_US')">English</li>
+              <li @click="changeLocale('zh_TW')">中文(繁體)</li>
+              <li @click="changeLocale('zh_CN')">中文(簡體)</li>
             </ul> -->
 
-            <label class="language__option">
+            <!-- <label class="language__option">
               <span>English</span>
-              <input type="radio" name="language-selector" v-model="$i18n.locale" value="en">
+              <input type="radio" name="language-selector" v-model="$i18n.locale" value="en_US">
               <div class="option__checkmark"></div>
-            </label>
+            </label> -->
             <label class="language__option">
               <span>中文(繁體)</span>
-              <input type="radio" name="language-selector" v-model="$i18n.locale" value="tw">
+              <input type="radio" name="language-selector" v-model="$i18n.locale" value="zh_TW">
               <div class="option__checkmark"></div>
             </label>
-            <label class="language__option">
+            <!-- <label class="language__option">
               <span>中文(簡體)</span>
-              <input type="radio" name="language-selector" v-model="$i18n.locale" value="zh">
+              <input type="radio" name="language-selector" v-model="$i18n.locale" value="zh_CN">
               <div class="option__checkmark"></div>
-            </label>
+            </label> -->
 
           </div>
         </li>

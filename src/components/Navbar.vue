@@ -26,6 +26,10 @@
         </li> -->
 
         <li class="navbar__item">
+          <a @click="scroll('detail')">{{ $t("navbar.detail") }}</a>
+        </li>
+
+        <li class="navbar__item">
           <a @click="scroll('roadmap')">{{ $t("navbar.roadmap") }}</a>
         </li>
 

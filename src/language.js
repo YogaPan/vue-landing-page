@@ -118,6 +118,7 @@ const messages = {
     navbar: {
       'about-spirit': '關於 Spirit',
       'ico': 'ICO',
+      'detail': '特色',
       'roadmap': '發展計畫',
       'white-paper': '白皮書',
       'language': '語言'
@@ -137,16 +138,23 @@ const messages = {
       'content-2': 'Deserunt quia vero qui. Et eius vitae minima eos et omnis amet. Ut beatae omnis ullam dignissimos aspernatur. Suscipit ab vel qui quasi saepe. Aspernatur eum ut quia sint. Fugiat nisi est quidem est reiciendis vel minus. Ut voluptatem sunt ea maxime rerum occaecati ea molestiae. Minima soluta quis a. Doloribus molestiae nulla reiciendis velit nihil corporis accusantium unde. Iure saepe aliquam esse qui repudiandae qui optio. Ab velit tempora reiciendis repudiandae aut voluptas.',
     },
     detail: {
-      'title': 'How it Works?',
+      'title': '特色',
 
-      'title-1': 'High Quality',
-      'content-1': 'Minima ut aut amet quidem. Non id ea unde magni. A possimus ut porro quis officiis enim et est. Facilis fugit nemo est sed dicta a. Nulla ducimus tempore et dolore aperiam consectetur consequuntur sunt et. Tempora fuga in iste fuga voluptas vitae non.',
+      'title-1': '降低技術人才成本',
+      'content-1-1': 'Spirit手機DApp開發框架，集成了手機DApp的開發、測試及部署，同時保留了最大的自由性與彈性，讓開發人員盡可能舒適的將創意直接導入DApp中。',
+      'content-1-2': '透過Spirit開發框架，使得開發人員較易於開發區塊鏈DApps應用，不用疲於持續追蹤底層技術的變動，可以專注在開發自己的應用上面，有效的降低技術人力成本。',
 
-      'title-2': 'Complex trades',
-      'content-2': 'Minima ut aut amet quidem. Non id ea unde magni. A possimus ut porro quis officiis enim et est. Facilis fugit nemo est sed dicta a. Nulla ducimus tempore et dolore aperiam consectetur consequuntur sunt et. Tempora fuga in iste fuga voluptas vitae non.',
+      'title-2': '提供設計彈性及流程簡化',
+      'content-2-1': '用戶體驗是阻止區塊鏈大範圍擴散的最大問題，如果用戶沒有良好的體驗，他們甚至不會嘗試去使用它。如果負責與DApps互動的加密貨幣錢包受控於第三方，就無法簡化流程複雜度，同時也無法自行設計友善的使用者體驗。',
+      'content-2-2': 'Spirit框架中內建錢包SDK接口，開發團隊可基於該SDK設計出自己的錢包樣式，在自己的應用程式中無須打開第三方錢包才能與DApps互動，如此的設計彈性及流程簡化，可望有效提升用戶體驗並降低使用者門檻。',
 
-      'title-3': 'Cross-chain trading',
-      'content-3': 'Minima ut aut amet quidem. Non id ea unde magni. A possimus ut porro quis officiis enim et est. Facilis fugit nemo est sed dicta a. Nulla ducimus tempore et dolore aperiam consectetur consequuntur sunt et. Tempora fuga in iste fuga voluptas vitae non.',
+      'title-3': 'D2B架構及兩步驟驗證',
+      'content-3-1': '使用Spirit開發框架開發出之手機DApp是D2B(Device-To-Blockchain)架構，該手機DApp擁有自己的虛擬貨幣錢包功能，可直接與區塊鏈上的智能合約進行互動，中間並沒有任何中心化的Server或是服務可給駭客攻擊。',
+      'content-3-2': '除此之外，手機DApp可與手機日益強大的生體辨識技術做結合提供兩步驟驗證，比起一般的虛擬貨幣錢包使用私鑰或是交易密碼存取，安全性更加來的高上許多。',
+
+      'title-4': '生態系統',
+      'content-4-1': 'Spirit生態系統包含了開發者、社群平台及使用者的生態圈。',
+      'content-4-2': '區塊鏈有如剛出生的嬰兒，DApp的興起必將伴隨着技術的進一步成熟而到來。在此之前，我們作為一個生態系統將構建更好的工具和社群，以利未來DApps廣泛地落地使用。',
     },
     // ico: {
     //   'token-sale': 'Token Sale',

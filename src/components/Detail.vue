@@ -14,20 +14,30 @@
         <div class="detail__column hide-down pop-order-1">
           <img src="../assets/git.svg" alt="">
           <h2>{{ $t("detail.title-1") }}</h2>
-          <p>{{ $t("detail.content-1") }}</p>
+          <p>{{ $t("detail.content-1-1") }}</p>
+          <p>{{ $t("detail.content-1-2") }}</p>
         </div>
 
         <div class="detail__column hide-down pop-order-2">
           <img src="../assets/git.svg" alt="">
           <h2>{{ $t("detail.title-2") }}</h2>
-          <p>{{ $t("detail.content-2") }}</p>
+          <p>{{ $t("detail.content-2-1") }}</p>
+          <p>{{ $t("detail.content-2-2") }}</p>
         </div>
 
         <div class="detail__column hide-down pop-order-3">
           <img src="../assets/git.svg" alt="">
           <h2>{{ $t("detail.title-3") }}</h2>
-          <p>{{ $t("detail.content-3") }}</p>
+          <p>{{ $t("detail.content-3-1") }}</p>
+          <p>{{ $t("detail.content-3-2") }}</p>
         </div>
+
+        <!-- <div class="detail__column hide-down pop-order-4">
+          <img src="../assets/git.svg" alt="">
+          <h2>{{ $t("detail.title-4") }}</h2>
+          <p>{{ $t("detail.content-4-1") }}</p>
+          <p>{{ $t("detail.content-4-2") }}</p>
+        </div> -->
       </div>
       
     </div>
@@ -163,7 +173,8 @@ export default {
 
     p {
       margin-top: 30px;
-      text-align: center;
+      text-align: start;
+      word-break: break-all;
     } 
   }
 }
@@ -192,6 +203,10 @@ export default {
   transition-delay: .5s;
 }
 
+.detail__column.pop-order-4 {
+  transition-delay: .7s;
+}
+
 // 在手機上沒有漸層動畫效果
 @media (max-width: $break-middle) {
   .detail__column.pop-order-1 {
@@ -203,6 +218,10 @@ export default {
   }
 
   .detail__column.pop-order-3 {
+    transition-delay: .1s;
+  }
+
+  .detail__column.pop-order-4 {
     transition-delay: .1s;
   }
 }

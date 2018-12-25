@@ -106,9 +106,9 @@ const messages = {
 
       'advisor': 'Advisor',
       'advisor-name': 'App Girls',
-      'advisor-describe-1': 'APP Girls (Application Girls) ',
-      'advisor-describe-2': '(pre-existence is Swift Girls) aims to give tools for girls and women to build their ideas.',
-      'advisor-describe-3': 'APP 為 Application 的縮寫，泛指各種程式應用，包含網頁(Web), APP(iOS和Android), 後端, 區塊鏈等技術。',
+      'advisor-describe-1': 'APP Girls (Application Girls) aims to give tools for girls and women to build their ideas.',
+      'advisor-describe-2': 'APP 為 Application 的縮寫，泛指各種程式應用，包含網頁(Web), APP(iOS和Android), 後端, 區塊鏈等技術。',
+      'advisor-describe-3': '不定期辦講座(一系列基礎課程&進階課程)，以及一起來 free coding討論等聚會，希望不斷推廣而有更多人一同透過交流學習，一起了解程式開發並能互相切磋。',
     },
     footer: {
       community: 'Join Our Community',

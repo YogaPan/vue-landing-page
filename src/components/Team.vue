@@ -15,7 +15,7 @@
 
           <h1 class="member__name">
             {{ $t("team.member-1-name") }}
-            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com')" alt="">
+            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/peter-pan-85081292/')" alt="">
           </h1>
           <h1 class="member__job">{{ $t("team.member-1-job") }}</h1>
           <p class="member__describe">{{ $t("team.member-1-introduce-1") }}</p>
@@ -33,7 +33,7 @@
 
           <h1 class="member__name">
             {{ $t("team.member-2-name") }}
-            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com')" alt="">
+            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/%E5%86%A0%E5%AE%87-%E5%90%B3-09296ba3/')" alt="">
           </h1>
           <h1 class="member__job">{{ $t("team.member-2-job") }}</h1>
           <p class="member__describe">{{ $t("team.member-2-introduce-1") }}</p>
@@ -51,7 +51,7 @@
 
           <h1 class="member__name">
             {{ $t("team.member-3-name") }}
-            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com')" alt="">
+            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/seven-lu-b9bb37177/')" alt="">
           </h1>
           <h1 class="member__job">{{ $t("team.member-3-job") }}</h1>
           <p class="member__describe">{{ $t("team.member-3-introduce-1") }}</p>
@@ -69,7 +69,7 @@
 
           <h1 class="member__name">
             {{ $t("team.member-4-name") }}
-            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com')" alt="">
+            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/%E6%98%B1%E5%98%89-%E6%BD%98-5a7927ab/')" alt="">
           </h1>
           <h1 class="member__job">{{ $t("team.member-4-job") }}</h1>
           <p class="member__describe">{{ $t("team.member-4-introduce-1") }}</p>
@@ -90,7 +90,10 @@
 
           <img class="advisor__avatar" src="../assets/app_girl.png" />
 
-          <h1 class="advisor__name">{{ $t("team.advisor-name") }}</h1>
+          <h1 class="advisor__name">
+            {{ $t("team.advisor-name") }}
+            <img class="advisor__facebook" src="../assets/facebook.svg" onclick="window.open('https://www.facebook.com/groups/1260405513988915/')" alt="">
+          </h1>
           <p class="advisor__describe">{{ $t("team.advisor-describe-1") }}</p>
           <p class="advisor__describe">{{ $t("team.advisor-describe-2") }}</p>
           <p class="advisor__describe">{{ $t("team.advisor-describe-3") }}</p>
@@ -344,6 +347,22 @@ export default {
   margin-top: 20px;
   text-align: left;
   font-size: $small-content-size;
+}
+
+.advisor__facebook
+{
+  height: 25px;
+  margin-left: 5px;
+  border-radius: 20%;
+
+  vertical-align: baseline;
+  cursor: pointer;
+
+  &:hover {
+    // color: red;
+    transition: opacity .2s;
+    opacity: .7;
+  }
 }
 
 .member.hide-down {

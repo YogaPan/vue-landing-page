@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="container">
-      <h1>Join Our Community</h1>
+      <h1>{{ $t("footer.community") }}</h1>
 
       <div class="footer__social" onclick="window.open('https://discordapp.com/');">
         <div class="social-icon">

@@ -4,7 +4,7 @@
 
     <div id="main-info" class="container">
       <div class="hero__body">
-        <img class="hero__logo" src="../assets/spirit-logo.png"></img>
+        <img class="hero__logo" src="../assets/spirit-logo.svg"></img>
         <h1 class="hero__title">{{ $t("hero.title") }}</h1>
         <p class="hero__content">{{ $t("hero.sub-title") }}</p>
 
@@ -260,7 +260,9 @@ export default {
   }
 
   &__logo {
-    height: 200px;
+    height: 300px;
+    opacity: 0.95;
+    margin: -40px;
   }
 
   &__title {

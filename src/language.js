@@ -124,7 +124,7 @@ const messages = {
       'language': '語言'
     },
     hero: {
-      'title': 'SPIRIT - 手機 DApp 開發加速器',
+      'title': 'SPIRIT - Mobile\'s DApp 開發加速器',
       'sub-title': 'Spirit之DApp開發框架，集成了手機DApp的開發、測試及部署，同時保留了最大的自由性與彈性，讓開發人員盡可能舒適的將創意直接導入DApp中。除了最基本的交易轉帳功能以外，整合APP應用程式或是與智能合約互動等附加功能是個趨勢。Spirit開發框架內含虛擬貨幣錢包功能，目前支援ETH和ERC20 Token。',
       'whitepaper-download': 'White Paper',
 

@@ -17,12 +17,32 @@
       </label>
 
       <ul class="navbar__right">
-        <li class="navbar__item"><a @click="scroll('describe')">{{ $t("navbar.about-spirit") }}</a></li>
-        <li class="navbar__item"><a @click="scroll('ico')">{{ $t("navbar.ico") }}</a></li>
-        <li class="navbar__item"><a @click="scroll('roadmap')">{{ $t("navbar.roadmap") }}</a></li>
-        <li class="navbar__item"><a href="https://www.example.com">White Paper</a></li>
+        <li class="navbar__item">
+          <a @click="scroll('describe')">{{ $t("navbar.about-spirit") }}</a>
+        </li>
+
+        <li class="navbar__item">
+          <a @click="scroll('ico')">{{ $t("navbar.ico") }}</a>
+        </li>
+
+        <li class="navbar__item">
+          <a @click="scroll('roadmap')">{{ $t("navbar.roadmap") }}</a>
+        </li>
+
+        <li class="navbar__item">
+          <a href="https://www.example.com">White Paper</a>
+        </li>
+
         <li class="navbar__item language">
-          <a class="dropdown-toggle" @click="dropdown">{{ $t("navbar.language") }} <div></div></a>
+          <!-- <div class="dropdown-toggle" @click="dropdown" ref="dropdown-toggle"> -->
+          <div class="dropdown-toggle" ref="dropdown-toggle">
+            <a>{{ $t("navbar.language") }}</a>
+            <div></div>  <!-- Drop down arrow -->
+          </div>
+          <!-- <a class="dropdown-toggle" @click="dropdown">{{ $t("navbar.language") }}
+            <span></span>
+          </a> -->
+        
           <!-- <a class="dropdown-toggle" @click="dropdown">{{ $i18n.locale }}</a> -->
           <div class="language__dropdown" :class="{ 'language__dropdown--drop': isDropdown }">
             <!-- <ul>
@@ -66,6 +86,12 @@ export default {
     }
   },
   mounted() {
+    this.$refs['dropdown-toggle'].addEventListener('click', e => {
+      this.dropdownToggle()  // toggle dropdown menu.
+      e.stopPropagation()  // Stop propagation to child element.
+    }, true)
+
+    // Close dropdown menu if scroll.
     window.addEventListener('scroll', () => {
       this.dropdownClose()
 
@@ -75,6 +101,7 @@ export default {
         this.isOnTop = true
     })
 
+    // Close dropdown menu if click other places.
     window.addEventListener('click', e => {
       if (!e.target.classList.contains('dropdown-toggle'))
         this.dropdownClose()
@@ -87,7 +114,7 @@ export default {
         behavior: "smooth"
       })
     },
-    dropdown() {
+    dropdownToggle() {
       this.isDropdown = !this.isDropdown
       // console.log(this.$i18n.locale)
     },
@@ -148,7 +175,7 @@ export default {
 
   &__right > li a {
     position: relative;
-    display: block;  // 填滿母元素
+    // display: block;  // 填滿母元素
 
     font-size: 20px;
     color: $grey-text-color;
@@ -173,7 +200,7 @@ export default {
     &:hover {
       color: $white-text-color;
       cursor: pointer;
-      transition: .5s;
+      transition: color .5s;
 
       // 下滑線
       &:after {
@@ -211,30 +238,46 @@ export default {
     top: 70px;
     opacity: 1;
   }
-
-  &:hover {
-    .dropdown-toggle div {
-      border-color: $background-white;
-      transition: border-color .5s;
-    }
-  }
 }
 
+// Drop down arrow
 .dropdown-toggle {
+  // display: flex;
+
   div {
-    position: relative;
+    // position: relative;
     display: inline-block;
 
-    left: 3px;
-    bottom: 2px;
+    // left: 3px;
+    // bottom: 3px;
+    margin: 0 0 3px 10px;
 
-    height: 12px;
-    width: 12px;
+    height: 8px;
+    width: 8px;
 
     transform: rotate(-45deg);
     
-    border-left: 2px solid $background-grey;
-    border-bottom: 2px solid $background-grey;
+    border-left: 2px solid $grey-text-color;
+    border-bottom: 2px solid $grey-text-color;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    a {
+      color: $white-text-color;
+
+      &:after {
+        width: 100%;
+        background: $white-text-color;
+        transition: width .5s;
+      }
+    }
+
+    div {
+      border-color: $white-text-color;
+      transition: border-color .5s;
+    }
   }
 }
 

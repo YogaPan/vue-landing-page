@@ -209,7 +209,7 @@ export default {
     &:hover {
       opacity: .5;
       cursor: pointer;
-      transition: opacity .3s;
+      transition: opacity .2s;
     }
 
     &::before {

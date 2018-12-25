@@ -13,15 +13,13 @@
 
           <img class="member__avatar" src="../assets/avatar-1.png" />
 
-          <h1 class="member__name">{{ $t("team.member-1-name") }}</h1>
+          <h1 class="member__name">
+            {{ $t("team.member-1-name") }}
+            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com')" alt="">
+          </h1>
           <h1 class="member__job">{{ $t("team.member-1-job") }}</h1>
           <p class="member__describe">{{ $t("team.member-1-introduce-1") }}</p>
           <p class="member__describe">{{ $t("team.member-1-introduce-2") }}</p>
-
-          <!-- <div class="member__social-area">
-            <button class="member__linkedin">Linkedin</button>
-            <button class="member__bio">Twitter</button>
-          </div> -->
         </div>
 
         <div class="member hide-down pop-order-2">
@@ -33,15 +31,13 @@
 
           <img class="member__avatar" src="../assets/avatar-2.png" />
 
-          <h1 class="member__name">{{ $t("team.member-2-name") }}</h1>
+          <h1 class="member__name">
+            {{ $t("team.member-2-name") }}
+            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com')" alt="">
+          </h1>
           <h1 class="member__job">{{ $t("team.member-2-job") }}</h1>
           <p class="member__describe">{{ $t("team.member-2-introduce-1") }}</p>
           <p class="member__describe">{{ $t("team.member-2-introduce-2") }}</p>
-
-          <!-- <div class="member__social-area">
-            <button class="member__linkedin">Linkedin</button>
-            <button class="member__bio">Twitter</button>
-          </div> -->
         </div>
 
         <div class="member hide-down pop-order-3">
@@ -53,15 +49,13 @@
 
           <img class="member__avatar" src="../assets/avatar-3.png" />
 
-          <h1 class="member__name">{{ $t("team.member-3-name") }}</h1>
+          <h1 class="member__name">
+            {{ $t("team.member-3-name") }}
+            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com')" alt="">
+          </h1>
           <h1 class="member__job">{{ $t("team.member-3-job") }}</h1>
           <p class="member__describe">{{ $t("team.member-3-introduce-1") }}</p>
           <p class="member__describe">{{ $t("team.member-3-introduce-2") }}</p>
-
-          <!-- <div class="member__social-area">
-            <button class="member__linkedin">Linkedin</button>
-            <button class="member__bio">Twitter</button>
-          </div> -->
         </div>
 
         <div class="member hide-down pop-order-4">
@@ -73,15 +67,13 @@
 
           <img class="member__avatar" src="../assets/avatar-4.png" />
 
-          <h1 class="member__name">{{ $t("team.member-4-name") }}</h1>
+          <h1 class="member__name">
+            {{ $t("team.member-4-name") }}
+            <img class="member__linkedin" src="../assets/linkedin.svg" onclick="window.open('https://www.linkedin.com')" alt="">
+          </h1>
           <h1 class="member__job">{{ $t("team.member-4-job") }}</h1>
           <p class="member__describe">{{ $t("team.member-4-introduce-1") }}</p>
           <p class="member__describe">{{ $t("team.member-4-introduce-2") }}</p>
-
-          <!-- <div class="member__social-area">
-            <button class="member__linkedin">Linkedin</button>
-            <button class="member__bio">Twitter</button>
-          </div> -->
         </div>
       </div>
 
@@ -102,11 +94,6 @@
           <p class="advisor__describe">{{ $t("team.advisor-describe-1") }}</p>
           <p class="advisor__describe">{{ $t("team.advisor-describe-2") }}</p>
           <p class="advisor__describe">{{ $t("team.advisor-describe-3") }}</p>
-
-          <!-- <div class="advisor__social-area">
-            <button class="advisor__linkedin">Linkedin</button>
-            <button class="advisor__bio">Twitter</button>
-          </div> -->
         </div>
       </div>
     </div>
@@ -240,6 +227,21 @@ export default {
   color: $black-title-color;
 }
 
+.member__linkedin {
+  height: 25px;
+  margin-left: 5px;
+  border-radius: 20%;
+
+  vertical-align: baseline;
+  cursor: pointer;
+
+  &:hover {
+    // color: red;
+    transition: opacity .2s;
+    opacity: .7;
+  }
+}
+
 .member__job {
   font-weight: 300;
   font-size: $menu-text-size;
@@ -252,59 +254,12 @@ export default {
   font-size: $small-content-size;
 }
 
-// .member__list {
-//   li {
-//     list-style-type: disc;
-//     font-size: $small-content-size;
-//     line-height: 1.5;
-//   }
-// }
-
 .member__social-area {
   margin-top: 30px;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-%member__button {
-  @extend %content-in-center;
-
-  height: 50px;
-  width: 140px;
-
-  border-radius: 15px;
-
-  font-size: $menu-text-size;
-  // font-weight: bold;
-
-  // transition: border-width .5s;
-
-  &:hover {
-    // border-width: 3px;
-    // box-shadow: #4875B4 0 0 1px 1px;
-    // transition: border-width .5s;
-  }
-}
-
-.member__linkedin {
-  @extend %member__button;
-  // border: 2px solid $blue;
-  // color: $blue;
-
-  border: 2px solid #4875B4;
-  color: #4875B4;
-}
-
-.member__bio {
-  @extend %member__button;
-  // border: 2px solid $green;
-  // color: $green;
-
-  // border: 2px solid #33CCFF;
-  border: 2px solid $blue;
-  color: $blue;
 }
 
 .advisor__title {
@@ -314,10 +269,6 @@ export default {
 
 .team__advisor {
   @extend %content-in-center;
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // justify-content: space-between;
 
   margin-top: 50px;
 
@@ -348,8 +299,6 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-
-  // z-index: -1;
 
   height: 175px;
   width: 100%;

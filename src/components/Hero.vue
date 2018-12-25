@@ -8,25 +8,24 @@
         <h1 class="hero__title">{{ $t("hero.title") }}</h1>
         <p class="hero__content">{{ $t("hero.sub-title") }}</p>
 
-        <div class="hero__bottom">
-          <a href="whitepaper_zh-TW.pdf">
-            <button class="whitepaper-button">{{ $t("hero.whitepaper-download") }}</button>
+        <a href="whitepaper_zh-TW.pdf">
+          <button class="whitepaper-button">{{ $t("hero.whitepaper-download") }}</button>
+        </a>
+
+        <!-- <div class="hero__social">
+          <a href="https://discordapp.com/">
+            <div class="social-icon">
+              <img src="../assets/discord.svg" alt="">
+            </div>
           </a>
 
-          <div class="hero__social">
-            <a href="https://discordapp.com/">
-              <div class="social-icon">
-                <img src="../assets/discord.svg" alt="">
-              </div>
-            </a>
+          <a href="https://telegram.org/">
+            <div class="social-icon">
+              <img src="../assets/telegram.svg" alt="">
+            </div>
+          </a>
+        </div> -->
 
-            <a href="https://telegram.org/">
-              <div class="social-icon">
-                <img src="../assets/telegram.svg" alt="">
-              </div>
-            </a>
-          </div>
-        </div>
       </div>
 
       <!-- <Countdown
@@ -189,7 +188,7 @@ export default {
 
 .hero {
   height: 100vh;
-  // min-height: 400px;
+  min-height: 900px;
   padding: 120px 0 0 0;  // padding-top 70px is navbar's height.
 
   background-color: #000;  // For earth background
@@ -197,6 +196,7 @@ export default {
   position: relative;
 
   @media (max-width: $break-middle) {
+    min-height: 950px;
     padding: 80px 0 0 0;
   }
  
@@ -250,20 +250,19 @@ export default {
   }
 
   &__body {
-    // text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  &__bottom {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  // &__bottom {
+  //   // display: flex;
+  //   // flex-direction: row;
+  //   // align-items: center;
+  //   // justify-content: center;
 
-    margin-top: 100px;
-  }
+  //   margin-top: 50px;
+  // }
 
   &__logo {
     height: 300px;
@@ -298,7 +297,7 @@ export default {
 }
 
 .whitepaper-button {
-  margin-top: 30px;
+  margin-top: 75px;
 
   height: 75px;
   width: 225px;
@@ -333,6 +332,7 @@ export default {
 #main-info {
   z-index: 1;
   position: relative;
+  height: 100%;
 }
 
 @keyframes shine {

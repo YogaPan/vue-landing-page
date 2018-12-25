@@ -12,28 +12,28 @@
 
       <div class="l-row l-row--stretch l-row--responsive">
         <div class="detail__column hide-down pop-order-1">
-          <img src="../assets/git.svg" alt="">
+          <img src="../assets/detail-1.svg" alt="">
           <h2>{{ $t("detail.title-1") }}</h2>
           <p>{{ $t("detail.content-1-1") }}</p>
           <p>{{ $t("detail.content-1-2") }}</p>
         </div>
 
         <div class="detail__column hide-down pop-order-2">
-          <img src="../assets/git.svg" alt="">
+          <img src="../assets/detail-2.svg" alt="">
           <h2>{{ $t("detail.title-2") }}</h2>
           <p>{{ $t("detail.content-2-1") }}</p>
           <p>{{ $t("detail.content-2-2") }}</p>
         </div>
 
         <div class="detail__column hide-down pop-order-3">
-          <img src="../assets/git.svg" alt="">
+          <img src="../assets/detail-3.svg" alt="">
           <h2>{{ $t("detail.title-3") }}</h2>
           <p>{{ $t("detail.content-3-1") }}</p>
           <p>{{ $t("detail.content-3-2") }}</p>
         </div>
 
         <!-- <div class="detail__column hide-down pop-order-4">
-          <img src="../assets/git.svg" alt="">
+          <img src="../assets/detail-4.svg" alt="">
           <h2>{{ $t("detail.title-4") }}</h2>
           <p>{{ $t("detail.content-4-1") }}</p>
           <p>{{ $t("detail.content-4-2") }}</p>
@@ -82,7 +82,7 @@ export default {
 
 .detail {
   background-color: $background-white;
-  padding: 100px 0;
+  padding: 60px 0;
 
   &__title {
     margin-bottom: 30px;
@@ -162,6 +162,7 @@ export default {
     img {
       display: block;
       margin: 0 auto;
+      height: 100px;
     }
 
     h2 {

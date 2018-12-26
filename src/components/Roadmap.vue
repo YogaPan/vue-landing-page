@@ -39,7 +39,7 @@
       </li>
 
       <li class="roadmap__line">
-        <div id="2019-Q3" class="roadmap__content hide-left">
+        <div id="2019-Q3" class="roadmap__content hide-right">
           <h1>2019 Q3</h1>
           <ul>
             <li>{{ $t("roadmap.2019-Q3-1") }}</li>

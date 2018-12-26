@@ -201,12 +201,12 @@ const messages = {
       'title': '核心團隊',
 
       'member-1-name': 'Peter Pan',
-      'member-1-job': 'Founder & CEO, Lead Developer',
+      'member-1-job': 'Founder & Lead Developer',
       'member-1-introduce-1': '現任綠界科技CryptoDT數位代幣平台區塊鏈工程師，區塊鏈技術信仰者，已投入區塊鏈領域研究1年以上。從事技術開發工作七年，曾參與宏碁、NEC、台灣之星、橘子支付等大型企業之專案開發。熟悉前端及後端多種開發語言及框架，擁有資訊安全、雲端建置等豐富經驗。',
       'member-1-introduce-2': '現致力於打造區塊鏈基礎建設以迎合未來趨勢。主要負責建構Spirit開發框架、SDK及資訊安全的實現。',
 
       'member-2-name': 'Blacker Wu',
-      'member-2-job': 'Co-Founder & COO',
+      'member-2-job': 'Co-Founder',
       'member-2-introduce-1': '資管碩士，現為全端工程師。',
       'member-2-introduce-2': '研究領域包括仿生演算法、機器學習、大數據分析，擁有多年豐富的FinTech軟體開發經驗。曾參與橘子支付GAMA PAY軟體開發，對區塊鏈行業發展和應用有獨到見解。',
 

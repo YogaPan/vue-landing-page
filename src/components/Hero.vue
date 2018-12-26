@@ -8,7 +8,7 @@
         <h1 class="hero__title">{{ $t("hero.title") }}</h1>
         <p class="hero__content">{{ $t("hero.sub-title") }}</p>
 
-        <a href="whitepaper_zh-TW.pdf">
+        <a href="whitepaper_zh-TW.pdf" target="_blank">
           <button class="whitepaper-button">{{ $t("hero.whitepaper-download") }}</button>
         </a>
 

@@ -327,6 +327,18 @@ export default {
   left: 0;
   z-index: 1;
   opacity: 0.5;
+
+  &::after {
+    position: absolute;
+    content: '';
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0) 30%, rgba(0,0,0,.8) 100%);
+  }
 }
 
 #main-info {

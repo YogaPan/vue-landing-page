@@ -10,7 +10,7 @@
               <polygon class="poly" points="0,100 100,0 100,100"/>
             </svg>
           </div>
-          <img class="member__avatar" src="../assets/avatar-1.png" />
+          <img class="member__avatar" src="../assets/avatar-1.jpg" />
           <h1 class="member__name">
             {{ $t("team.member-1-name") }}
             <a href="https://www.linkedin.com/in/peter-pan-85081292/">
@@ -29,7 +29,7 @@
               <polygon class="poly" points="0,100 100,0 100,100"/>
             </svg>
           </div>
-          <img class="member__avatar" src="../assets/avatar-2.png" />
+          <img class="member__avatar" src="../assets/avatar-2.jpg" />
           <h1 class="member__name">
             {{ $t("team.member-2-name") }}
             <a href="https://www.linkedin.com/in/%E5%86%A0%E5%AE%87-%E5%90%B3-09296ba3/">
@@ -48,10 +48,10 @@
               <polygon class="poly" points="0,100 100,0 100,100"/>
             </svg>
           </div>
-          <img class="member__avatar" src="../assets/avatar-3.png" />
+          <img class="member__avatar" src="../assets/avatar-3.jpg" />
           <h1 class="member__name">
             {{ $t("team.member-3-name") }}
-            </a href="https://www.linkedin.com/in/seven-lu-b9bb37177/">
+            <a href="https://www.linkedin.com/in/seven-lu-b9bb37177/">
               <img class="member__linkedin" src="../assets/linkedin.svg" alt="">
             </a>
           </h1>
@@ -67,7 +67,7 @@
               <polygon class="poly" points="0,100 100,0 100,100"/>
             </svg>
           </div>
-          <img class="member__avatar" src="../assets/avatar-4.png" />
+          <img class="member__avatar" src="../assets/avatar-4.jpg" />
           <h1 class="member__name">
             {{ $t("team.member-4-name") }}
             <a href="https://www.linkedin.com/in/%E6%98%B1%E5%98%89-%E6%BD%98-5a7927ab/">

@@ -69,7 +69,7 @@ export default {
     window.addEventListener('load', () => {
       setTimeout(() => {
         this.loadComplete = true
-      }, 2000)
+      }, 0)
     })
   },
   methods: {

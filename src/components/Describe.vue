@@ -51,6 +51,21 @@
 
       </div>
     </div>
+
+    <div class="describe__part-4 l-describe-reverse">
+      <div class="container l-row l-row--responsive">
+
+        <div class="describe__image">
+          <img src="../assets/describe-4.png" alt="game">
+        </div>
+
+        <div class="describe__content hide-down">
+          <h1 class="describe__title">{{ $t("describe.title-4") }}</h1>
+          <p>{{ $t("describe.content-4-1") }}</p>
+        </div>
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -96,7 +111,7 @@ export default {
     }
   }
 
-   &__part-3 {
+  &__part-3 {
     width: 100%;
     padding: 100px 0;
     background-color: $background-white;
@@ -108,6 +123,20 @@ export default {
     img {
       width: 180px;
       padding: 10px;
+    }
+  }
+
+  &__part-4 {
+    width: 100%;
+    padding: 100px 0;
+    background-color: $background-white;
+
+    @media (max-width: $break-middle) {
+      padding: 50px 0;
+    }
+
+    img {
+      width: 230px;
     }
   }
 

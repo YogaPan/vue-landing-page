@@ -34,7 +34,7 @@
         </li>
 
         <li class="navbar__item">
-          <a href="whitepaper_zh-TW.pdf">{{ $t("navbar.white-paper") }}</a>
+          <a href="whitepaper_zh-TW.pdf" target="_blank">{{ $t("navbar.white-paper") }}</a>
         </li>
 
         <li class="navbar__item language">

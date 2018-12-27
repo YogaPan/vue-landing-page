@@ -132,11 +132,26 @@ const messages = {
       'time-left': 'Time Left',
     },
     describe: {
-      'title-1': 'Based on Smart Contract',
-      'content-1': 'Deserunt quia vero qui. Et eius vitae minima eos et omnis amet. Ut beatae omnis ullam dignissimos aspernatur. Suscipit ab vel qui quasi saepe. Aspernatur eum ut quia sint. Fugiat nisi est quidem est reiciendis vel minus. Ut voluptatem sunt ea maxime rerum occaecati ea molestiae. Minima soluta quis a. Doloribus molestiae nulla reiciendis velit nihil corporis accusantium unde. Iure saepe aliquam esse qui repudiandae qui optio. Ab velit tempora reiciendis repudiandae aut voluptas.',
+      'title-1': 'Mobile\'s DApp開發框架',
+      'content-1-1': 'Spirit Framework是一套手機DApp開發框架，集成了手機DApp的開發、及智能合約的測試及部署，同時保留了最大的自由性與彈性，讓開發人員盡可能舒適的將創意直接導入DApp中。',
+      'content-1-2': '使用Spirit開發框架開發出之手機DApp是D2B(Device-To-Blockchain)架構，由於該手機DApp擁有自己的虛擬貨幣錢包功能，可直接與區塊鏈上的智能合約進行互動，中間並沒有任何中心化的Server或是服務，也無需依賴任何第三方錢包APP或是處理DAppBrowser的相容問題。若是開發者或是企業需要用到Hybrid架構，該Framework也保留了其彈性可自行做設計。',
 
-      'title-2': 'Great Gaming Platform',
-      'content-2': 'Deserunt quia vero qui. Et eius vitae minima eos et omnis amet. Ut beatae omnis ullam dignissimos aspernatur. Suscipit ab vel qui quasi saepe. Aspernatur eum ut quia sint. Fugiat nisi est quidem est reiciendis vel minus. Ut voluptatem sunt ea maxime rerum occaecati ea molestiae. Minima soluta quis a. Doloribus molestiae nulla reiciendis velit nihil corporis accusantium unde. Iure saepe aliquam esse qui repudiandae qui optio. Ab velit tempora reiciendis repudiandae aut voluptas.',
+      'title-2': 'Spirit 錢包',
+      'content-2-1': 'Spirit Wallet是第一款基於Spirit Framework而開發出的產品。初期支援ETH以及ERC-20代幣，未來會將陸續新增其他幣種。',
+      'content-2-2': '每位使用者將能夠輕而易舉地透過Spirit錢包管理虛擬貨幣資產，使用者資料自主管理，無需依賴協力廠商服務商，避免隱私資料洩漏。',
+      'content-2-3': '除此之外，Spirit錢包將會提供收益評估工具，讓使用者能夠隨時隨地確認對Spirit社群的貢獻及資產增長狀況。',
+
+      'title-3': 'Spirit DApp Store',
+      'content-3-1': 'Spirit DApp Store，是Spirit團隊為其產品建立和維護的行動DApp發行平台，用戶可從平台瀏覽和下載基於Spirit Framework開發的DApp應用程式。',
+      'content-3-2': '上架新DApp需經過社群投票決定，每款新推出的DApp能夠符合當時的市場需求及社群浪潮。',
+      'content-3-3': '我們也提出了貢獻及賞金獎勵計畫，Spirit 生態系的社群成員將會根據其對平台的貢獻得到相對應的獎勵，加速DApp Store平台的成長。',
+
+      'title-4': 'Spirit Community',
+      'content-4-1': '社群驅動符合區塊鏈去中心化的精神，我們相信社群將是未來的主流型態。Spirit團隊將運用區塊鏈技術與社群驅動力打造DApp新型態。達成開發者、用戶、代幣持有者互惠互利的生態系統。',
+      // 'content-4-2': '這一目標將通過三個關鍵戰略實現：',
+      // 'content-4-3': '社群驅動開發',
+      // 'content-4-4': '貢獻計畫',
+      // 'content-4-5': '賞金計畫',
     },
     detail: {
       'title': '特色',
@@ -201,12 +216,12 @@ const messages = {
       'title': '核心團隊',
 
       'member-1-name': 'Peter Pan',
-      'member-1-job': 'Founder & CEO, Lead Developer',
+      'member-1-job': 'Founder & Lead Developer',
       'member-1-introduce-1': '現任綠界科技CryptoDT數位代幣平台區塊鏈工程師，區塊鏈技術信仰者，已投入區塊鏈領域研究1年以上。從事技術開發工作七年，曾參與宏碁、NEC、台灣之星、橘子支付等大型企業之專案開發。熟悉前端及後端多種開發語言及框架，擁有資訊安全、雲端建置等豐富經驗。',
       'member-1-introduce-2': '現致力於打造區塊鏈基礎建設以迎合未來趨勢。主要負責建構Spirit開發框架、SDK及資訊安全的實現。',
 
       'member-2-name': 'Blacker Wu',
-      'member-2-job': 'Co-Founder & COO',
+      'member-2-job': 'Co-Founder',
       'member-2-introduce-1': '資管碩士，現為全端工程師。',
       'member-2-introduce-2': '研究領域包括仿生演算法、機器學習、大數據分析，擁有多年豐富的FinTech軟體開發經驗。曾參與橘子支付GAMA PAY軟體開發，對區塊鏈行業發展和應用有獨到見解。',
 

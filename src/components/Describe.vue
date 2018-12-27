@@ -85,7 +85,7 @@ export default {
 .describe {
   &__part-1 {
     width: 100%;
-    padding: 100px 0;
+    padding: 120px 0 60px 0;
     background-color: $background-white;
 
     @media (max-width: $break-middle) {
@@ -99,7 +99,7 @@ export default {
 
   &__part-2 {
     width: 100%;
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: $background-grey;
 
     @media (max-width: $break-middle) {
@@ -113,7 +113,7 @@ export default {
 
   &__part-3 {
     width: 100%;
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: $background-white;
 
     @media (max-width: $break-middle) {
@@ -128,7 +128,7 @@ export default {
 
   &__part-4 {
     width: 100%;
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: $background-white;
 
     @media (max-width: $break-middle) {

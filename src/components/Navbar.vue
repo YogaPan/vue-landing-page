@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar" :class="{ 'navbar--add-background': !isOnTop }">
+  <div class="navbar" :class="{ 'navbar--add-background': !isOnTop || isMenuToggle, 'navbar--menu-toggle': isMenuToggle }">
     <div class="container l-row">
 
       <div class="navbar__logo l-row">
@@ -7,30 +7,29 @@
         <a href="#">SPIRIT</a>
       </div>
 
-      <input id="menu-toggle" type="checkbox">
-      <label class="label-toggle" for="menu-toggle">
+      <div @click="menuToggle()" class="label-toggle" for="menu-toggle">
         <div class="navbar__hamburger">
           <div class="bar-1"></div>
           <div class="bar-2"></div>
           <div class="bar-3"></div>
         </div>
-      </label>
+      </div>
 
       <ul class="navbar__right">
         <li class="navbar__item">
-          <a @click="scroll('describe')">{{ $t("navbar.about-spirit") }}</a>
-        </li>
-
-        <!-- <li class="navbar__item">
-          <a @click="scroll('ico')">{{ $t("navbar.ico") }}</a>
-        </li> -->
-
-        <li class="navbar__item">
-          <a @click="scroll('detail')">{{ $t("navbar.detail") }}</a>
+          <a @click="menuToggle(); scroll('describe')">{{ $t("navbar.about-spirit") }}</a>
         </li>
 
         <li class="navbar__item">
-          <a @click="scroll('roadmap')">{{ $t("navbar.roadmap") }}</a>
+          <a @click="menuToggle(); scroll('detail')">{{ $t("navbar.detail") }}</a>
+        </li>
+
+        <li class="navbar__item">
+          <a @click="menuToggle(); scroll('roadmap')">{{ $t("navbar.roadmap") }}</a>
+        </li>
+
+        <li class="navbar__item">
+          <a @click="menuToggle(); scroll('team')">{{ $t("navbar.team") }}</a>
         </li>
 
         <li class="navbar__item">
@@ -38,38 +37,18 @@
         </li>
 
         <li class="navbar__item language">
-          <!-- <div class="dropdown-toggle" @click="dropdown" ref="dropdown-toggle"> -->
           <div class="dropdown-toggle" ref="dropdown-toggle">
             <a>{{ $t("navbar.language") }}</a>
             <div></div>  <!-- Drop down arrow -->
           </div>
-          <!-- <a class="dropdown-toggle" @click="dropdown">{{ $t("navbar.language") }}
-            <span></span>
-          </a> -->
         
-          <!-- <a class="dropdown-toggle" @click="dropdown">{{ $i18n.locale }}</a> -->
-          <div class="language__dropdown" :class="{ 'language__dropdown--drop': isDropdown }">
-            <!-- <ul>
-              <li @click="changeLocale('en_US')">English</li>
-              <li @click="changeLocale('zh_TW')">中文(繁體)</li>
-              <li @click="changeLocale('zh_CN')">中文(簡體)</li>
-            </ul> -->
+          <div class="language__dropdown" :class="{ 'language__dropdown--drop': isDropdownToggle }">
 
-            <!-- <label class="language__option">
-              <span>English</span>
-              <input type="radio" name="language-selector" v-model="$i18n.locale" value="en_US">
-              <div class="option__checkmark"></div>
-            </label> -->
             <label class="language__option">
               <span>中文(繁體)</span>
               <input type="radio" name="language-selector" v-model="$i18n.locale" value="zh_TW">
               <div class="option__checkmark"></div>
             </label>
-            <!-- <label class="language__option">
-              <span>中文(簡體)</span>
-              <input type="radio" name="language-selector" v-model="$i18n.locale" value="zh_CN">
-              <div class="option__checkmark"></div>
-            </label> -->
 
           </div>
         </li>
@@ -86,7 +65,8 @@ export default {
   data() {
     return {
       isOnTop: true,
-      isDropdown: false,
+      isDropdownToggle: false,
+      isMenuToggle: false,
     }
   },
   mounted() {
@@ -119,11 +99,16 @@ export default {
       })
     },
     dropdownToggle() {
-      this.isDropdown = !this.isDropdown
+      this.isDropdownToggle = !this.isDropdownToggle
       // console.log(this.$i18n.locale)
     },
     dropdownClose() {
-      this.isDropdown = false
+      this.isDropdownToggle = false
+    },
+    menuToggle() {
+      this.isMenuToggle = !this.isMenuToggle
+      // this.isMenuToggle = true
+      console.log('test!')
     },
     changeLocale(lang) {
       this.$i18n.locale = lang
@@ -150,7 +135,7 @@ export default {
 
   &--add-background {  // Have background color when scroll down.
     background-color: $background-black;
-    opacity: 0.97;
+    // opacity: 0.97;
   }
 
   &__logo {
@@ -222,7 +207,7 @@ export default {
   &__dropdown {
     position: absolute;
     top: 90px;  // transition: scroll up from below.
-    left: 20px;
+    right: 0;
     
     width: 200px;
 
@@ -233,14 +218,14 @@ export default {
 
     border-radius: 10px;
     background-color: $background-black;
-  }
 
-  &__dropdown.language__dropdown--drop {
-    transition: top cubic-bezier(0.25, 0.46, 0.45, 0.94) .2s,
-      opacity cubic-bezier(0.25, 0.46, 0.45, 0.94) .2s;
-    visibility: visible;
-    top: 70px;
-    opacity: 1;
+    &.language__dropdown--drop {
+      transition: top cubic-bezier(0.25, 0.46, 0.45, 0.94) .2s,
+        opacity cubic-bezier(0.25, 0.46, 0.45, 0.94) .2s;
+      visibility: visible;
+      top: 70px;  // menu's height.
+      opacity: 1;
+    }
   }
 }
 
@@ -328,15 +313,19 @@ export default {
 @media (max-width: $break-small) {
   .navbar {
     ul {
+      position: fixed;
+      top: 70px;  // menu's height
+      left: 0;
+
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
 
-      flex-basis: 100%;
       height: 0;  // 先藏起來，高度為 0 才有動畫效果
-      padding-top: 0px;
+      width: 100vw;
 
+      padding-top: 0px;
       background-color: $background-black;
       text-align: center;
       
@@ -349,7 +338,7 @@ export default {
       display: block;
       flex: 0 0 auto;
 
-      padding: 25px 0;
+      padding: 15px 0;
 
       color: $white-text-color;
       font-size: 1.5em;
@@ -357,7 +346,7 @@ export default {
 
     li a {
       color: $white-text-color;
-      font-size: 30px;
+      font-size: 20px;
 
       &:after {
         width: 100%;
@@ -367,15 +356,38 @@ export default {
     }
   }
 
+  .language__dropdown {
+    position: absolute;
+    top: 90px;  // transition: scroll up from below.
+    left: -25px;  // align center
+    
+    width: 125px;
+    padding: 5px 0;
+
+    visibility: hidden;  // for transition.
+    opacity: 0;  // for transition.
+
+    background-color: $background-black;
+
+    &.language__dropdown--drop {
+      transition: top cubic-bezier(0.25, 0.46, 0.45, 0.94) .2s,
+        opacity cubic-bezier(0.25, 0.46, 0.45, 0.94) .2s;
+      visibility: visible;
+      top: 70px;  // menu's height.
+      opacity: 1;
+    }
+  }
+
   .label-toggle {
     display: block;
     cursor: pointer;
   }
 
-  #menu-toggle:checked ~ ul {
+.navbar--menu-toggle ul {
     opacity: 1;
     height: 100vh;
-    padding-top: 50px;
+    width: 100vw;
+    // padding-top: 50px;
     visibility: visible;
   }
 }
@@ -395,17 +407,15 @@ export default {
 }
 
 /* Rotate first bar */
-#menu-toggle:checked ~ label .bar-1 {
-  transform: rotate(-45deg) translate(-7px, 3px) ;
+.navbar--menu-toggle .label-toggle .bar-1 {
+  transform: rotate(-45deg) translate(-6px, 3px) ;
 }
-
 /* Fade out the second bar */
-#menu-toggle:checked ~ label .bar-2 {
+.navbar--menu-toggle .label-toggle .bar-2 {
   opacity: 0;
 }
-
 /* Rotate last bar */
-#menu-toggle:checked ~ label .bar-3 {
+.navbar--menu-toggle .label-toggle .bar-3 {
   transform: rotate(45deg) translate(-9px, -7px) ;
 }
 

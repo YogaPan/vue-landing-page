@@ -120,6 +120,7 @@ const messages = {
       'ico': 'ICO',
       'detail': '特色',
       'roadmap': '發展計畫',
+      'team': '團隊',
       'white-paper': '白皮書',
       'language': '語言'
     },

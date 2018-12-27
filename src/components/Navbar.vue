@@ -133,6 +133,9 @@ export default {
   transition: background-color .3s;
   background-color: transparent;  // Transparent when on top.
 
+  // Fix navbar blinking
+  -webkit-transform: translate3d(0,0,0);
+
   &--add-background {  // Have background color when scroll down.
     background-color: $background-black;
     // opacity: 0.97;

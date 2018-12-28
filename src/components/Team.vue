@@ -158,7 +158,7 @@ export default {
   overflow: hidden;
 
   margin-top: 30px;
-  min-height: 583px;
+  min-height: 629px;
 
   // @media (max-width: $break-big) {
   //   &:not(:first-child) {

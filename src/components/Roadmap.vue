@@ -34,6 +34,7 @@
           <ul>
             <li>{{ $t("roadmap.2019-Q2-1") }}</li>
             <li>{{ $t("roadmap.2019-Q2-2") }}</li>
+            <li>{{ $t("roadmap.2019-Q2-3") }}</li>
           </ul>
         </div>
       </li>

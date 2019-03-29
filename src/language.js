@@ -142,17 +142,24 @@ const messages = {
       'content-2-2': '每位使用者將能夠輕而易舉地透過Spirit錢包管理虛擬貨幣資產，使用者資料自主管理，無需依賴協力廠商服務商，避免隱私資料洩漏。',
       'content-2-3': '除此之外，Spirit錢包將會提供收益評估工具，讓使用者能夠隨時隨地確認對Spirit社群的貢獻及資產增長狀況。',
 
-      'title-3': 'Spirit DApp Store',
-      'content-3-1': 'Spirit DApp Store，是Spirit團隊為其產品建立和維護的行動DApp發行平台，用戶可從平台瀏覽和下載基於Spirit Framework開發的DApp應用程式。',
-      'content-3-2': '上架新DApp需經過社群投票決定，每款新推出的DApp能夠符合當時的市場需求及社群浪潮。',
-      'content-3-3': '我們也提出了貢獻及賞金獎勵計畫，Spirit 生態系的社群成員將會根據其對平台的貢獻得到相對應的獎勵，加速DApp Store平台的成長。',
+      'title-3': 'Spirit DApp Template',
+      'content-3-1': 'Spirit DApp Template，是Spirit團隊基於Spirit Framework技術所提供的DApp應用程式樣板。',
+      'content-3-2': '開發者可基於該樣板開發出屬於自己的DApp應用程式，建立個人DApp品牌。',
+      'content-3-3': '其樣板內建虛擬貨幣錢包可直接與DApp進行互動以及擁有轉帳功能，手機無需另外安裝至其他第三方錢包例如：ImToken、Trust，優化使用者體驗。',
 
-      'title-4': 'Spirit Community',
-      'content-4-1': '社群驅動符合區塊鏈去中心化的精神，我們相信社群將是未來的主流型態。Spirit團隊將運用區塊鏈技術與社群驅動力打造DApp新型態。達成開發者、用戶、代幣持有者互惠互利的生態系統。',
+      'title-4': 'Spirit DApp Store',
+      'content-4-1': 'Spirit DApp Store，是Spirit團隊為其產品建立和維護的行動DApp發行平台，用戶可從平台瀏覽和下載基於Spirit Framework開發的DApp應用程式。',
+      'content-4-2': '上架新DApp需經過社群投票決定，每款新推出的DApp能夠符合當時的市場需求及社群浪潮。',
+      'content-4-3': '我們也提出了貢獻及賞金獎勵計畫，Spirit 生態系的社群成員將會根據其對平台的貢獻得到相對應的獎勵，加速DApp Store平台的成長。',
+
+      'title-5': 'Spirit Community',
+      'content-5-1': '社群驅動符合區塊鏈去中心化的精神，我們相信社群將是未來的主流型態。Spirit團隊將運用區塊鏈技術與社群驅動力打造DApp新型態。達成開發者、用戶、代幣持有者互惠互利的生態系統。',
       // 'content-4-2': '這一目標將通過三個關鍵戰略實現：',
       // 'content-4-3': '社群驅動開發',
       // 'content-4-4': '貢獻計畫',
       // 'content-4-5': '賞金計畫',
+
+      
     },
     detail: {
       'title': '特色',
@@ -212,7 +219,7 @@ const messages = {
       '2019-Q3-2': '正式發布Spirit Wallet',
       '2019-Q3-3': '賞金計劃',
 
-      '2019-Q4-1': '推出Spirit DApps Store',
+      '2019-Q4-1': '推出Spirit DApps Template',
     },
     team: {
       'title': '核心團隊',

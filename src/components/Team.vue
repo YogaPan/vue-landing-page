@@ -41,8 +41,7 @@
           <p class="member__describe">{{ $t("team.member-2-introduce-2") }}</p>
         </div>
 
-
-        <div class="member hide-down pop-order-3">
+        <!-- <div class="member hide-down pop-order-3">
           <div class="member__background">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
               <polygon class="poly" points="0,100 100,0 100,100"/>
@@ -77,7 +76,7 @@
           <h1 class="member__job">{{ $t("team.member-4-job") }}</h1>
           <p class="member__describe">{{ $t("team.member-4-introduce-1") }}</p>
           <p class="member__describe">{{ $t("team.member-4-introduce-2") }}</p>
-        </div>
+        </div> -->
       </div>
 
 

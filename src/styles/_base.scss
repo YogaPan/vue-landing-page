@@ -1,0 +1,50 @@
+/* =============================== Initialize ===================================== */
+/* Initialize box-model */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+button {
+  @extend %content-in-center;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+/* ================================== Basic Style ======================================= */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
+
+body {
+  background-color: $background-black;
+  font-family: 'Open Sans', 'Noto Sans TC', Helvetica, Arial, sans-serif;
+  color: $black-content-color;  // All text inherit this color
+}
+
+h1 {
+  font-size: $title-size;
+  font-weight: 400;
+}
+
+p, li {
+  font-size: $small-content-size;
+  line-height: 1.5;
+}

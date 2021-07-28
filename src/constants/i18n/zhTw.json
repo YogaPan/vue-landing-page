@@ -1,0 +1,159 @@
+{
+  "navigation": {
+    "aboutSpirit": "關於 Spirit",
+    "ico": "ICO",
+    "detail": "特色",
+    "roadmap": "發展計畫",
+    "team": "團隊",
+    "whitePaper": "白皮書",
+    "language": "語言"
+  },
+  "hero": {
+    "title": "SPIRIT - Mobile's DApp 開發加速器",
+    "subTitle": "Spirit之DApp開發框架，集成了手機DApp的開發、測試及部署，同時保留了最大的自由性與彈性，讓開發人員盡可能舒適的將創意直接導入DApp中。除了最基本的交易轉帳功能以外，整合APP應用程式或是與智能合約互動等附加功能是個趨勢。Spirit開發框架內含虛擬貨幣錢包功能，目前支援ETH和ERC20 Token。",
+    "whitepaperDownload": "White Paper",
+    "icoDate": "ICO start on September 30, 2018",
+    "timeLeft": "Time Left"
+  },
+  "describe": {
+    "1": {
+      "title": "Mobile's DApp開發框架",
+      "content1": "Spirit Framework是一套手機DApp開發框架，集成了手機DApp的開發、及智能合約的測試及部署，同時保留了最大的自由性與彈性，讓開發人員盡可能舒適的將創意直接導入DApp中。",
+      "content2": "使用Spirit開發框架開發出之手機DApp是D2B(Device_To_Blockchain)架構，由於該手機DApp擁有自己的虛擬貨幣錢包功能，可直接與區塊鏈上的智能合約進行互動，中間並沒有任何中心化的Server或是服務，也無需依賴任何第三方錢包APP或是處理DAppBrowser的相容問題。若是開發者或是企業需要用到Hybrid架構，該Framework也保留了其彈性可自行做設計。"
+    },
+    "2": {
+      "title": "Spirit 錢包",
+      "content1": "Spirit Wallet是第一款基於Spirit Framework而開發出的產品。初期支援ETH以及ERC_20代幣，未來會將陸續新增其他幣種。",
+      "content2": "每位使用者將能夠輕而易舉地透過Spirit錢包管理虛擬貨幣資產，使用者資料自主管理，無需依賴協力廠商服務商，避免隱私資料洩漏。",
+      "content3": "除此之外，Spirit錢包將會提供收益評估工具，讓使用者能夠隨時隨地確認對Spirit社群的貢獻及資產增長狀況。"
+    },
+    "3": {
+      "title": "Spirit DApp Template",
+      "content1": "Spirit DApp Template，是Spirit團隊基於Spirit Framework技術所提供的DApp應用程式樣板。",
+      "content2": "開發者可基於該樣板開發出屬於自己的DApp應用程式，建立個人DApp品牌。",
+      "content3": "其樣板內建虛擬貨幣錢包可直接與DApp進行互動以及擁有轉帳功能，手機無需另外安裝至其他第三方錢包例如：ImToken、Trust，優化使用者體驗。"
+    },
+    "4": {
+      "title": "Spirit DApp Store",
+      "content1": "Spirit DApp Store，是Spirit團隊為其產品建立和維護的行動DApp發行平台，用戶可從平台瀏覽和下載基於Spirit Framework開發的DApp應用程式。",
+      "content2": "上架新DApp需經過社群投票決定，每款新推出的DApp能夠符合當時的市場需求及社群浪潮。",
+      "content3": "我們也提出了貢獻及賞金獎勵計畫，Spirit 生態系的社群成員將會根據其對平台的貢獻得到相對應的獎勵，加速DApp Store平台的成長。"
+    },
+    "5": {
+      "title": "Spirit Community",
+      "content1": "社群驅動符合區塊鏈去中心化的精神，我們相信社群將是未來的主流型態。Spirit團隊將運用區塊鏈技術與社群驅動力打造DApp新型態。達成開發者、用戶、代幣持有者互惠互利的生態系統。"
+    }
+  },
+  "detail": {
+    "title": "特色",
+    "1": {
+      "title": "降低技術人才成本",
+      "content1": "Spirit手機DApp開發框架，集成了手機DApp的開發、測試及部署，同時保留了最大的自由性與彈性，讓開發人員盡可能舒適的將創意直接導入DApp中。",
+      "content2": "透過Spirit開發框架，使得開發人員較易於開發區塊鏈DApps應用，不用疲於持續追蹤底層技術的變動，可以專注在開發自己的應用上面，有效的降低技術人力成本。"
+    },
+    "2": {
+      "title": "提供設計彈性及流程簡化",
+      "content1": "用戶體驗是阻止區塊鏈大範圍擴散的最大問題，如果用戶沒有良好的體驗，他們甚至不會嘗試去使用它。如果負責與DApps互動的加密貨幣錢包受控於第三方，就無法簡化流程複雜度，同時也無法自行設計友善的使用者體驗。",
+      "content2": "Spirit框架中內建錢包SDK接口，開發團隊可基於該SDK設計出自己的錢包樣式，在自己的應用程式中無須打開第三方錢包才能與DApps互動，如此的設計彈性及流程簡化，可望有效提升用戶體驗並降低使用者門檻。"
+    },
+    "3": {
+      "title": "D2B架構及兩步驟驗證",
+      "content1": "使用Spirit開發框架開發出之手機DApp是D2B(Device_To_Blockchain)架構，該手機DApp擁有自己的虛擬貨幣錢包功能，可直接與區塊鏈上的智能合約進行互動，中間並沒有任何中心化的Server或是服務可給駭客攻擊。",
+      "content2": "除此之外，手機DApp可與手機日益強大的生體辨識技術做結合提供兩步驟驗證，比起一般的虛擬貨幣錢包使用私鑰或是交易密碼存取，安全性更加來的高上許多。"
+    },
+    "4": {
+      "title": "生態系統",
+      "content1": "Spirit生態系統包含了開發者、社群平台及使用者的生態圈。",
+      "content2": "區塊鏈有如剛出生的嬰兒，DApp的興起必將伴隨着技術的進一步成熟而到來。在此之前，我們作為一個生態系統將構建更好的工具和社群，以利未來DApps廣泛地落地使用。"
+    }
+  },
+  "ico": {
+    "tokenSale": "Token Sale",
+    "communityDevelop": "Community Develop",
+    "marketing": "Marketing",
+    "team": "Team",
+    "futurePreserve": "Future Preserve",
+    "tokenSaleVolume": {
+      "name": "Token Sale Volume",
+      "value": "No cap"
+    },
+    "distributionOfTokens": {
+      "name": "Distribution of Tokens",
+      "value": "For every 100 ICOS tokens sold through the ICO 20 additional tokens will be issued for distrubtion to partners, advisors, bounty participants, and the team members."
+    },
+    "tokenPriceAtIssue": {
+      "name": "Token Price at Issue",
+      "value": "0.008_0.012 BTC depending on the time of purchase"
+    },
+    "publicPresaleStartDate": {
+      "name": "Public Presale Start Date",
+      "value": "Augus 9, 2017, 12: 00PM PDT"
+    },
+    "publicPresaleEndDate": {
+      "name": "Public Presale END Date",
+      "value": "August 15, 2017, 12: 00 PM PDT"
+    }
+  },
+  "roadmap": {
+    "roadmap": "發展計畫",
+    "future": "未來",
+    "2018": {
+      "Q4": {
+        "1": "Spirit團隊成立",
+        "2": "計畫啟動",
+        "3": "First Spirit Game Online"
+      }
+    },
+    "2019": {
+      "Q1": {
+        "1": "開發Spirit開發框架",
+        "2": "Spirit Wallet Online(beta)",
+        "3": "More Spirit Game Online"
+      },
+      "Q2": {
+        "1": "發布Spirit開發框架 Beta版本",
+        "2": "推出Spirit Wallet 產品原型",
+        "3": "建構開發者社群"
+      },
+      "Q3": {
+        "1": "正式發布Spirit開發框架",
+        "2": "正式發布Spirit Wallet",
+        "3": "賞金計劃"
+      },
+      "Q4": {
+        "1": "推出Spirit DApps Template"
+      }
+    }
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "member1": {
+      "name": "Claude Grant",
+      "job": "Founder & CEO, Lead Developer",
+      "introduce1": "Modi debitis veniam nihil quo officia.",
+      "introduce2": "Corporis itaque et quos non repellendus qui voluptas sit dolor. Fuga ipsum ut a dolore alias corrupti iure ea."
+    },
+    "member2": {
+      "name": "Frank Deckow",
+      "job": "Co_Founder & COO",
+      "introduce1": "Modi debitis veniam nihil quo officia.",
+      "introduce2": "Corporis itaque et quos non repellendus qui voluptas sit dolor. Fuga ipsum ut a dolore alias corrupti iure ea."
+    },
+    "member3": {
+      "name": "Guy Abbott",
+      "job": "Full_Stack Developer & App Leader",
+      "introduce1": "Modi debitis veniam nihil quo officia.",
+      "introduce2": "Corporis itaque et quos non repellendus qui voluptas sit dolor. Fuga ipsum ut a dolore alias corrupti iure ea."
+    }
+  },
+  "advisor": {
+    "title": "Advisor",
+    "name": "Windler, Hegmann and Buckridge",
+    "describe1": "Modi debitis veniam nihil quo officia.",
+    "describe2": "Corporis itaque et quos non repellendus qui voluptas sit dolor. Fuga ipsum ut a dolore alias corrupti iure ea.",
+    "describe3": "Et voluptatum molestiae qui quia earum ullam hic non. Id dignissimos amet sequi odit voluptatum aut ut qui delectus. Aliquid adipisci et molestiae et quo ex. Quo quis dolorem aliquid repellat. Dicta dolores corporis ea culpa et quia. Est ex laborum saepe dignissimos dolores rerum dolorem."
+  },
+  "footer": {
+    "community": "加入我們的社群"
+  }
+}

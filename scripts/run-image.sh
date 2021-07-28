@@ -8,4 +8,4 @@ BUILD_DIR=$ROOT_DIR/build
 
 source $BUILD_DIR/build-image.properties
 
-docker run -dp 8080:8080 $IMAGE_NAME
+docker run -dp 8080:$NGINX_PORT $IMAGE_NAME

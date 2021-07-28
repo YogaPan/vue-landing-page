@@ -1,11 +1,16 @@
-FROM node:16.5
+FROM node:16.5 as vue-build
 
-COPY . /usr/src/app
-WORKDIR /usr/src/app
-
+WORKDIR /app
+COPY . ./
 RUN yarn install --frozen-lockfile \
-  && yarn global add serve \
   && yarn build
 
-EXPOSE 8080
-CMD serve -s dist -l 8080
+FROM nginx:1.21.1
+ARG NGINX_CONF
+ARG NGINX_PORT
+
+COPY ${NGINX_CONF} /etc/nginx/templates/default.conf.template
+COPY --from=vue-build /app/dist /usr/share/nginx/html
+
+ENV NGINX_PORT ${NGINX_PORT}
+EXPOSE ${NGINX_PORT}

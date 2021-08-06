@@ -7,6 +7,22 @@ steps:
       - '--tag=asia-east1-docker.pkg.dev/$PROJECT_ID/vue-landing-page-repo/vue-landing-page:latest'
       - '--file=./build/Dockerfile'
       - '.'
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - 'asia-east1-docker.pkg.dev/$PROJECT_ID/vue-landing-page-repo/vue-landing-page:latest'
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'vue-landing-page-service'
+      - '--image'
+      - 'asia-east1-docker.pkg.dev/$PROJECT_ID/vue-landing-page-repo/vue-landing-page:latest'
+      - '--region'
+      - 'asia-east1'
+      - '--platform'
+      - 'managed'
 substitutions:
   _NGINX_PORT: '8080'
   _NGINX_CONF: './nginx/nginx.conf'

@@ -4,6 +4,7 @@
     "cloudsdktool",
     "entrypoint",
     "gcloud",
+    "nvmrc",
     "roadmap"
   ]
 }

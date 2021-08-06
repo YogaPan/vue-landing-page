@@ -1,0 +1,14 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '--build-arg=NGINX_PORT=${_NGINX_PORT}'
+      - '--build-arg=NGINX_CONF=${_NGINX_CONF}'
+      - '--tag=asia-east1-docker.pkg.dev/$PROJECT_ID/vue-landing-page-repo/vue-landing-page:latest'
+      - '--file=./build/Dockerfile'
+      - '.'
+substitutions:
+  _NGINX_PORT: '8080'
+  _NGINX_CONF: './nginx/nginx.conf'
+images:
+  - 'asia-east1-docker.pkg.dev/$PROJECT_ID/vue-landing-page-repo/vue-landing-page:latest'

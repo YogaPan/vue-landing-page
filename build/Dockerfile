@@ -1,9 +1,10 @@
 FROM node:16.5 as vue-build
 
 WORKDIR /app
-COPY . ./
-RUN yarn install --frozen-lockfile \
-  && yarn build
+COPY package.json yarn.lock ./
+RUN yarn install --frozen-lockfile
+COPY . .
+RUN yarn build
 
 FROM nginx:1.21.1
 ARG NGINX_CONF

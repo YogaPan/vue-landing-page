@@ -20,9 +20,11 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
+          builder: ${{ steps.buildx.outputs.name }}
           context: ./
           file: ./build/Dockerfile
-          push: false
           tags: vue-landing-page
+          build-args: NGINX_CONF=./nginx/nginx.conf
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          push: false

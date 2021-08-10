@@ -4,6 +4,7 @@
     "cloudsdktool",
     "entrypoint",
     "gcloud",
+    "kaniko",
     "nvmrc",
     "roadmap"
   ]

@@ -3,6 +3,7 @@ cloudbuild.yaml
 dist/
 docker-compose*
 Dockerfile*
+jsconfig.json
 LICENSE
 node_modules/
 npm-debug.log

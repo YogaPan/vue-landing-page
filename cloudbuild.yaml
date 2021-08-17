@@ -4,7 +4,6 @@ steps:
       - '--dockerfile=./build/Dockerfile'
       - '--build-arg=REVISION_ID=${REVISION_ID}'
       - '--build-arg=NGINX_PORT=${_NGINX_PORT}'
-      - '--build-arg=NGINX_CONF=${_NGINX_CONF}'
       - '--cache=true'
       - '--cache-ttl=24h'
       - '--destination=asia-east1-docker.pkg.dev/${PROJECT_ID}/vue-landing-page-repo/vue-landing-page'
@@ -19,4 +18,3 @@ steps:
       - '--platform=managed'
 substitutions:
   _NGINX_PORT: '8080'
-  _NGINX_CONF: './nginx/nginx.conf'

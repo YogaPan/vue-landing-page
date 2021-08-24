@@ -12,7 +12,6 @@ source ${BUILD_DIR}/build-image.properties
 
 docker build \
   --build-arg REVISION_ID=${REVISION_ID} \
-  --build-arg NGINX_PORT=${NGINX_PORT} \
   --tag ${IMAGE_NAME} \
   --file ${DOCKERFILE} \
   $ROOT_DIR

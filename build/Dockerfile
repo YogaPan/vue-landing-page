@@ -8,7 +8,7 @@ RUN yarn install --frozen-lockfile
 COPY . .
 RUN yarn lint && yarn test && yarn build
 
-FROM nginx:1.21.1 as prod
+FROM nginx:1.21.1-alpine as prod
 ARG REVISION_ID
 ARG NGINX_PORT
 LABEL revision_id=${REVISION_ID}

@@ -12,4 +12,4 @@ source ${BUILD_DIR}/build-image.properties
 cd $ROOT_DIR
 gcloud builds submit \
   --config cloudbuild.yaml \
-  --substitutions=REVISION_ID=${REVISION_ID},_NGINX_PORT=${NGINX_PORT}
+  --substitutions=REVISION_ID=${REVISION_ID}

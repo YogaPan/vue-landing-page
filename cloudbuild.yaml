@@ -3,7 +3,6 @@ steps:
     args:
       - '--dockerfile=./build/Dockerfile'
       - '--build-arg=REVISION_ID=${REVISION_ID}'
-      - '--build-arg=NGINX_PORT=${_NGINX_PORT}'
       - '--cache=true'
       - '--cache-ttl=24h'
       - '--destination=asia-east1-docker.pkg.dev/${PROJECT_ID}/vue-landing-page-repo/vue-landing-page'
@@ -16,5 +15,3 @@ steps:
       - '--image=asia-east1-docker.pkg.dev/${PROJECT_ID}/vue-landing-page-repo/vue-landing-page'
       - '--region=asia-east1'
       - '--platform=managed'
-substitutions:
-  _NGINX_PORT: '8080'

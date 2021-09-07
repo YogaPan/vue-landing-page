@@ -925,10 +925,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@galtz-library/browserslist-config@^0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@galtz-library/browserslist-config/-/browserslist-config-0.2.5.tgz#e9da14008b4996a49a967c65b90c967369203926"
-  integrity sha512-tERG2vf2gtpObt1ZL5fBSM8pquTg0/Q6s6YsgxNndyayW2V9O2Am5ldLGgi3LOO5RXmBiL0lO4stzovwua+diQ==
+"@galtz-library/browserslist-config@^0.2.6":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@galtz-library/browserslist-config/-/browserslist-config-0.2.6.tgz#646063d86257c62099aeee1f097a1972d768ce25"
+  integrity sha512-Te99kwOqvMqKpGMnR3NXiSmPrWlNZgVGTNbuBqOo7t8sRBN85fhXUhKWrtsLeVfxbig939jt6SK8FHJLpHX9Iw==
 
 "@galtz-library/eslint-config@^0.1.4":
   version "0.1.4"

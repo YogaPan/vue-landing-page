@@ -939,10 +939,10 @@
     eslint-plugin-import "^2.23.4"
     eslint-plugin-react "^7.24.0"
 
-"@galtz-library/prettier-config@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@galtz-library/prettier-config/-/prettier-config-0.1.4.tgz#61a3934e630fc13c69e2c70c6bb34a8747bba9dc"
-  integrity sha512-zalkVTVw9OXXAoeT6Mr8ZfTxQwAhZ10mlx7mi/utVMAlHVer2PEbS257v7ax/exBgDXsHGAxKm7QTzL+H7Ygaw==
+"@galtz-library/prettier-config@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@galtz-library/prettier-config/-/prettier-config-0.1.5.tgz#a594bc613db10909e77034110120450ba93b3bf7"
+  integrity sha512-ilP5hi0PE0OQVGP0DtA2y7FTKEMKX792Fr8nQ34AjTDYfK4n0PXU5ErQiQFJ8EvgF7ZhSMr7eGV0I/uViGuNQw==
 
 "@hapi/address@2.x.x":
   version "2.1.4"

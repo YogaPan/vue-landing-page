@@ -21,7 +21,7 @@
   "devDependencies": {
     "@galtz-library/browserslist-config": "^0.2.5",
     "@galtz-library/eslint-config": "^0.1.4",
-    "@galtz-library/prettier-config": "^0.1.4",
+    "@galtz-library/prettier-config": "^0.1.5",
     "@vue/cli-plugin-babel": "~4.5.13",
     "@vue/cli-plugin-eslint": "~4.5.13",
     "@vue/cli-service": "~4.5.13",

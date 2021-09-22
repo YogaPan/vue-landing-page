@@ -10,7 +10,8 @@
     "test": "exit 0",
     "serve": "serve -s dist -p 7070",
     "format": "prettier --write \"src/**/*.{js,json,vue,md}\"",
-    "clear": "rm -rf node_modules dist"
+    "clear": "rm -rf node_modules dist",
+    "prepare": "husky install"
   },
   "dependencies": {
     "core-js": "^3.16.4",
@@ -31,6 +32,8 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-vue": "^7.17.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "node-sass": "^6.0.1",
     "prettier": "^2.3.2",
     "sass-loader": "^10.2.0",

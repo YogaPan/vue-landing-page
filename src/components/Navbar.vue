@@ -35,7 +35,9 @@
           }}</a>
         </li>
         <li class="navbar__item">
-          <a @click="menuToggle(), scroll('team')">{{ $t('navigation.team') }}</a>
+          <a @click="menuToggle(), scroll('team')">{{
+            $t('navigation.team')
+          }}</a>
         </li>
         <li class="navbar__item">
           <a href="whitepaper_zh-TW.pdf" target="_blank">{{

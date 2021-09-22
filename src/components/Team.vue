@@ -41,9 +41,7 @@
           <img class="member__avatar" src="../assets/ethereum.png" />
           <h1 class="member__name">
             {{ $t('team.member2.name') }}
-            <a
-              href="https://www.linkedin.com"
-            >
+            <a href="https://www.linkedin.com">
               <img
                 class="member__linkedin"
                 src="../assets/linkedin.svg"
@@ -57,20 +55,28 @@
         </div>
         <div class="member hide-down pop-order-3">
           <div class="member__background">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-              <polygon class="poly" points="0,100 100,0 100,100"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+            >
+              <polygon class="poly" points="0,100 100,0 100,100" />
             </svg>
           </div>
           <img class="member__avatar" src="../assets/ethereum.png" />
           <h1 class="member__name">
-            {{ $t("team.member3.name") }}
+            {{ $t('team.member3.name') }}
             <a href="https://www.linkedin.com">
-              <img class="member__linkedin" src="../assets/linkedin.svg" alt="">
+              <img
+                class="member__linkedin"
+                src="../assets/linkedin.svg"
+                alt=""
+              />
             </a>
           </h1>
-          <h1 class="member__job">{{ $t("team.member3.job") }}</h1>
-          <p class="member__describe">{{ $t("team.member3.introduce1") }}</p>
-          <p class="member__describe">{{ $t("team.member3.introduce2") }}</p>
+          <h1 class="member__job">{{ $t('team.member3.job') }}</h1>
+          <p class="member__describe">{{ $t('team.member3.introduce1') }}</p>
+          <p class="member__describe">{{ $t('team.member3.introduce2') }}</p>
         </div>
       </div>
       <h1 class="advisor__title">{{ $t('advisor.title') }}</h1>

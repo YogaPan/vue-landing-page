@@ -3,6 +3,7 @@
     "browserslist",
     "buildx",
     "cloudsdktool",
+    "Depfu",
     "entrypoint",
     "gcloud",
     "kaniko",
